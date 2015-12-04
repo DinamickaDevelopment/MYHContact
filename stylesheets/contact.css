@@ -202,4 +202,5 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     display:none;
 }
 .tempMargin{margin-bottom:26.51vh;}
+#mc_embed_signup div.mce_inline_error{margin:0 0 .1em 0!important;}
 /*---------ContactForm----end-------*/

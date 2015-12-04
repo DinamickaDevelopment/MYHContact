@@ -1,0 +1,205 @@
+﻿/*
+    Dinamicka Development
+    Documentation
+
+    Сontents
+    1.ContactForm
+
+*/
+
+/*---------ContactForm--------------*/
+#contactForm{
+    margin-top:103px;
+}
+form{
+    position:relative;
+}
+.phoneNomber{
+    font-family:'Roboto-Medium';
+    font-size:1.143em;
+    letter-spacing:0.035em;
+    width:100%;
+    text-align:left;
+    color:#263238;
+}
+#mc_embed_signup{margin:0 auto;width:49%;}
+.slogan{
+    font-family:'Raleway-Light';
+    color: #ab2b56;
+    font-size: 1.429em;
+    letter-spacing: 0.15em;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+input[type=text], input[type=email],textarea {
+    height: 45px;
+    border: 1pt solid #b0bec5;
+    padding: 16px 0 16px 19px;
+    width: 100%;
+    margin:3px 0;
+}
+textarea{max-width:100%;min-height:147px;}
+label{font-weight:100;}
+/*classes for label*/
+input.placeholderimit + label.placeholderobj,textarea.placeholderimit + label.placeholderobj{
+    font-family:'Raleway-Light';
+    font-size:1em;
+    letter-spacing:0.06em;
+    color:#dcdcdc;
+    display:block;
+    position:absolute;
+    z-index:10;
+    top:16px;
+    left:16px;
+}
+input.placeholderimit + label.placeholderobj:after,textarea.placeholderimit + label.placeholderobj:after{
+    content:'*';
+    color:#c53163;
+}
+input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderimit + label.placeholderobj.nostar:after{
+    content:'';
+}
+.mc-field-group{
+    position:relative;
+    width:100%;
+}
+.contsubbtn{
+    width:146px;
+    height:48px;
+    background-color:#263238;
+    border:0;
+    color:#ffffff;
+    font-family:'ADAM-CGPRO';
+    font-size:1.143em;
+    letter-spacing:0.075em;
+    text-align:center;
+    text-decoration:none;
+    padding-bottom: 6px;
+    display:block;
+    margin:15px auto ;
+ 
+}
+.contsubbtn:hover,.contsubbtn:active{
+    color:#fafafa;
+    text-decoration:none;
+}
+
+/*imitation of radio*/
+/*hide radiobtn*/
+input[type=radio],input[type=checkbox]{
+    opacity:0;
+    display:block;
+}
+/*style for all label after radiobtn*/
+input[type=radio] + label,input[type=checkbox] + label{
+    font-family:'Raleway-Light';
+    font-size:1em;
+    letter-spacing:0.06em;
+    color:#dcdcdc;
+    cursor:pointer;
+    position:relative;
+    left: 35px;
+    top: -6px;
+}
+input[type=radio] + label{
+    left:38px;
+}
+input[type=checkbox] + label{top:1px;}
+input[type=radio] + label:before,input[type=checkbox] + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -35px;
+  border:1px solid #b0bec5;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+}    
+input[type=radio] + label:after,input[type=checkbox] + label:after  {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -30px;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  border-radius: 10px;
+  background: #c53163;
+  -moz-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  -webkit-transition: opacity .2s;
+   transition: opacity .2s;
+    }
+input[type=checkbox] + label:before,input[type=checkbox] + label:after{
+    border-radius:0;
+}
+
+/* styles for active conditions */
+input[type=radio]:checked + label:before,input[type=checkbox]:checked + label:before{
+    border-color:#2b373d;
+}
+input[type=radio]:checked + label,input[type=checkbox]:checked + label{
+    color:#2b373d;
+}
+input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:after {
+  opacity:1
+}
+.no-paddings div{padding:0}
+#mce-responses {
+    position: fixed;
+    bottom: 40px;
+    margin: 0 auto;
+    z-index: 5;
+    text-align: center;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+#mc_embed_signup div.response {
+    font-family:'Raleway-Light';
+    z-index: 5;
+    padding: 5px 28px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    background: rgba(0,0,0,.7);
+    color: white;
+    overflow:hidden;
+}
+.qrholder{
+    position: absolute;
+    z-index: 20;
+    right: -213px;
+    border: 1px solid #b0bec5;
+    margin: 3px 6px;
+    width: 200px;
+    height: 268px;
+}
+.qrholder img{display:block;margin:0 auto;}
+.qrtext{    padding-top: 10px;
+    font: 14px 'Raleway-Light';
+        letter-spacing:0.1em;
+        color:#263238;
+        text-align:center;
+        line-height:24px;
+}
+.qr{position: relative;bottom: -10px;}
+.newstxt{
+    font-family:'Raleway-Light';
+    font-size:12px;
+    color:#263238;
+    display:block;
+    height:54px;
+    line-height:54px;
+}
+#preHide{
+    display:none;
+}
+.tempMargin{margin-bottom:26.51vh;}
+/*---------ContactForm----end-------*/

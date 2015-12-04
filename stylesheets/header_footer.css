@@ -1,0 +1,204 @@
+﻿
+/*
+    Dinamicka Development
+    Documentation
+
+    Сontents
+    This file contains styles for Header and footer
+*/
+body {
+    margin:0;
+}
+h1{
+    font-family:'ADAM-CGPRO';
+    font-size: 2.357em;
+    color: #263238;
+    letter-spacing: 0.0075em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 39px;
+    margin-bottom: 31px;
+}
+h2{
+    font-family:'ADAM-CGPRO';
+    font-size: 2.357em;
+    color: #263238;
+    letter-spacing: 0.0075em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 39px;
+    margin-bottom: 31px;
+}
+h3{
+    font-family:'ADAM-CGPRO';
+    margin-top:33px;
+    margin-bottom: 31px;
+    font-size: 2.357em;
+    color: #263238;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+/*-------------header-----------------*/
+.navmy-cutom{
+    height:103px;
+    border-bottom:1px solid #c53163;
+    margin-bottom:0;
+    background-color:#ffffff;
+}
+.navmy-cutom .container{
+    height:103px;
+}
+.navbar-header{
+    height:100%;
+}
+.collapse ul.navbar-nav{
+    height:102px;
+    width: auto;
+}
+.navbar-nav{
+    height:102px;
+}
+.nav>li{
+    height: 100%;
+}
+.nav>li a{
+    font-family:'ADAM-CGPRO';
+    font-size:1.143em;
+    letter-spacing:0.075em;
+    color:#263238;
+    height: 100%;
+}
+li.current{
+    border-bottom: 3px solid #c53163;
+}
+li.current a,.nav>li a:hover{
+    color:#c53163;
+}
+
+.dropdown-menu>li>a{
+    padding:16px 71px 16px 5px;
+    color:#ffffff;
+}
+.dropdown-menu>li>a:hover{
+    background-color:#ffffff;
+    color:#263238;
+}
+.dropdown-menu>li:hover{
+    background-color:#ffffff;
+    color:#c53163;
+}
+.lang-cont{
+    display: inline-block;
+    font-family: 'Roboto-Light';
+    letter-spacing: 0.025em;
+    color:#333333!important;
+}
+.lang-cont a{
+   color:#333333!important;
+   padding:5px;
+   opacity:0.75;
+}
+.lang-cont a:hover,.lang-cont a:focus{
+    text-decoration:none;
+    color:#333333;
+    opacity:1;
+}
+.navbar-toggle{
+    margin-top:5%;
+    margin-right:25px;
+}
+.navbar-collapse {
+    background-color: #ffffff;}
+/*-------------header-------end----------*/
+/*-------------footer-------------------*/
+footer{
+    border-top:1px solid #c53163;
+    font-family:'Raleway-Regular';
+    font-size:0.857em;
+    letter-spacing:0.025em;
+    line-height:24px;
+    color:#455a64;
+    background-color:#fafafa;
+}
+.foot-img{
+    margin-bottom:22px;
+}
+.foot-txt{
+    width:100%;
+}
+.foot-info-txt{
+    color:#ffffff;
+    letter-spacing:0.15em
+}
+.undercover{
+    padding-top: 22px;background-color:#25323a;padding-left: 18px;
+}
+.wechat-logo{
+    display:inline-block;
+}
+.wechat-txt{
+    display:inline-block;
+    font-size:11px;
+    letter-spacing:0.2em;
+    color:white;
+    margin-left: 7px;
+}
+/*-------------footer------end----------*/
+/*---------Adaptive styles section--------------*/
+@media(min-width:320px){
+    .nav>li{margin:0 10px;}
+    footer{text-align:center;}
+    .margtp{margin-top:10px}
+    .botMargin2{margin-bottom:10px;}
+    .botMargin{margin-bottom:150px;}
+    .foot-cont-txt{margin-bottom:10px;}
+    ul.navbar-nav{margin-left:0;}
+    .lang-cont{margin: 42px 0 0 0;font-size: 1em;letter-spacing:0.025em}
+    .Mobile{display:inline-block;}
+    .Desktop,.Desktop-block{display:none;}
+    body{font-size:12px}
+    .navbar-collapse{height:0;overflow: hidden;}
+    li.current{border-bottom:0}
+    .expand{height:405%}
+    .hollow{height:0;}
+    .no-paddings{padding-left:15px;}
+    .mobil-center{float:none}
+    .undercover{height:275px}
+}
+@media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}.undercover{height:228px}}
+@media(min-width:769px){
+    footer{text-align:left;}
+    .botMargin{margin-bottom:50px;}
+    .foot-cont-txt{margin-bottom:29px;}
+    .Mobile{display:none;}
+    .Desktop{display:inline-block;}
+    .Desktop-block{display:block;}
+    .lang-cont{margin: 46px 0 0 0;font-size: .9em;letter-spacing:0}
+    .navbar-collapse{height:102px;overflow: visible;}
+    li.current{border-bottom: 3px solid #c53163;}
+    .expand{height:102px}
+    .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
+    .hollow{height:36px;}
+        .mobil-center{float:right}
+
+}
+@media(min-width:993px){
+    .nav>li{margin:0 15px;}
+    ul.navbar-nav{margin-left:45px;}
+    .lang-cont{margin: 42px 0 0 9%;font-size: 1em;letter-spacing:0.025em}
+    body{font-size:14px}
+    .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;}    
+    .no-paddings{padding-left:5px;}
+
+}
+@media(min-width:1201px){    
+    .nav>li{margin:0 36px;}
+    ul.navbar-nav{margin-left:60px;}
+    .lang-cont{margin: 42px 0 0 9%;font-size: 1em;letter-spacing:0.025em}
+
+}
+/*---------Adaptive styles section------end-----*/

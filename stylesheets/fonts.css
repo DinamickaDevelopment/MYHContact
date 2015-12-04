@@ -1,0 +1,33 @@
+﻿/*
+    Dinamicka Development
+    Documentation
+
+    This file contains fonts that are used on the site.
+*/
+@font-face {
+    font-family: 'ADAM-CGPRO';
+    src: url('../fonts/ADAM-CGPRO/ADAM-CGPRO.woff') format('woff'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.ttf') format('truetype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.otf') format('opentype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'Raleway-ExtraLight';
+    src: url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.woff') format('woff'), url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.ttf') format('truetype'), url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('../fonts/Raleway-Light/Raleway-Light.woff') format('woff'), url('../fonts/Raleway-Light/Raleway-Light.ttf') format('truetype'), url('../fonts/Raleway-Light/Raleway-Light.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular/Raleway-Regular.ttf') format('truetype'), url('../fonts/Raleway-Regular/Raleway-Regular.eot') format('embedded-opentype');
+}@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway-Medium/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium/Raleway-Medium.ttf') format('truetype'), url('../fonts/Raleway-Medium/Raleway-Medium.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light/Roboto-Light.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium/Roboto-Medium.eot') format('embedded-opentype');
+}

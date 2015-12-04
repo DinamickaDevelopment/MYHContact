@@ -1,0 +1,72 @@
+﻿/*
+    Dinamicka Development
+    Documentation
+
+    Сontents
+    1.AboutMYH
+    2.blackSect
+    3.prefooter
+*/
+/*-----AboutMYH------*/
+#AboutMYH{
+    display:block;
+    margin-top:102px;
+}
+.aboutTxt,.darktxt,.prefootertxt,.contareatxt{
+    width:66%;
+    margin:0 auto;
+    font-family:'Raleway-Medium';
+    font-size:1.143em;
+    color:#263238;
+    letter-spacing:0.05em;
+    text-align:center;
+    line-height:30px;
+}
+/*-----AboutMYH-end--*/
+/*-----blackSect------*/
+.darktxt{
+    background-color:#263238;
+    color:#ffffff;
+    width:100%;
+    padding:27px 0;
+}
+/*-----blackSect-end--*/
+/*-----prefooter------*/
+.prefootertxt{
+    width:100%;
+    letter-spacing:0.035em;
+    padding:32px 10px;
+}
+.contarea{
+    height:154px;
+    background-color:#fafafa;
+    margin-bottom:48px;
+}
+.contareatxt{
+    width:100%;
+    margin-bottom:28px;
+    padding-top:32px;
+}
+.contareabtn{
+    width:146px;
+    height:48px;
+    background-color:#263238;
+    margin:0 auto;
+
+}
+.contareabtn a{
+    color:#ffffff;
+    font-family:'ADAM-CGPRO';
+    font-size:1.143em;
+    letter-spacing:0.075em;
+    text-align:center;
+    text-decoration:none;
+    line-height:48px;
+    width:100%;
+    display:block;
+}
+.contareabtn a:hover,.contareabtn a:active{
+    color:#fafafa;
+    text-decoration:none;
+}
+/*-----prefooter-end--*/

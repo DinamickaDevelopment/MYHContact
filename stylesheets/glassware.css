@@ -1,0 +1,219 @@
+﻿/*
+    Dinamicka Development
+    Documentation
+
+    Сontents
+    1.posthederSlider
+    2.gravitasOmega
+*/
+
+
+/*helper class*/
+.verticalAligne {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding:0 15px;
+}
+
+
+
+/*--------posthederSlider---------*/
+#posthederSlider{
+    margin-top:102px;
+}
+.ms-nav-next,.ms-nav-prev{
+    opacity:0.3;
+}
+.ms-nav-next:hover,.ms-nav-prev:hover{
+    opacity:1;
+}
+.ms-nav-next{
+    background-image:url('../images/arrow_slider right.png');
+    display:block;
+    position:absolute;
+    top:50%;
+    right:30px;
+    left:auto;
+    width:26px;
+    height:32px;cursor:pointer;
+}
+.ms-nav-prev{
+    background-image:url('../images/arrow_slider left.png');
+    display:block;
+    position:absolute;
+    top:50%;
+    left:30px;
+    right:auto;
+    width:26px;
+    height:32px;cursor:pointer;
+}
+.ms-slide+img{
+    width:100%;
+}
+.ms-container{
+    margin:0 auto;
+}
+.rotator{position: relative;overflow: hidden;}
+.imgHolder{position:relative;left:-2129px;}
+.infinitanimation {
+    -moz-animation: rotatore 45s linear infinite;
+    -o-animation: rotatore 45s linear infinite;
+    -webkit-animation: rotatore 45s linear infinite;
+    animation: rotatore 45s linear infinite;
+}
+@-moz-keyframes rotatore{
+    from{left:-2129px}
+    to{left:-5606px}
+
+}
+
+@-webkit-keyframes rotatore{
+    from{left:-2129px}
+    to{left:-5606px}
+
+}
+
+@keyframes rotatore{
+    from{left:-2129px}
+    to{left:-5606px}
+
+}
+/*--------posthederSlider--end----*/
+
+/*--------gravitasOmega---------*/
+#gravitasOmega{
+    margin:32px 0;
+}
+.grav-cont{
+    height:100%;
+}
+.grav-img{
+    width:100%;
+    height:100%
+}
+.grav-img img{
+    width:100%;
+    display:block;
+    margin:0 auto;
+}
+.grav-txt{
+    width:100%;
+    text-align:center;
+    font-family:'Raleway-Medium';
+    font-size:1.143em;
+    letter-spacing:0.05px;
+    color:#263238;
+    padding:0 10px;    margin-bottom:40px;
+
+}
+.grav-subline{
+        width:100%;
+    text-align:center;
+    font-family:'Raleway-Regular';
+    font-size:1em;
+    letter-spacing:0.05px;
+    color:#455a64;
+    padding:0 10px;
+}
+.grav-number{
+    font-family:'Roboto-Light';
+    padding-left:5px;}
+
+/*--------gravitasOmega--end----*/
+
+/*--------glasswarePresent---------*/
+#glasswarePresent{margin-bottom:35px;}
+.glass-img img,.showMore-img img{
+    display:block;
+    margin:0 auto;
+}
+.glass-title{
+    margin-bottom:18px;
+    font-size:1.571em;
+}
+.param{
+    width:100%;
+    text-align:center;
+    font-family:'Raleway-Regular';
+    font-size:1em;
+    letter-spacing:0.075px;
+    color:#455a64;
+}
+.param-number{
+    font-family:'Roboto-Light';
+    padding-left:5px;
+}
+.swicher{
+    display:block;
+    margin-top:20px;
+    margin-bottom:47px;
+    width:100%;
+    font-family:'Raleway-Regular';
+    font-size:1em;
+    text-decoration:underline;
+    text-align:center;
+    cursor:pointer;
+}
+.showMore-img img {
+    cursor: pointer;
+    -moz-transition: transform 700ms;
+    -o-transition: transform 700ms;
+    -webkit-transition: transform 700ms;
+    transition: transform 700ms;
+}
+.rotate180 {
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.showMore-text{
+    width:93px;
+    font-family:'Raleway-ExtraLight';
+    font-size:13px;
+    cursor:pointer;
+    letter-spacing:0.2em;
+    margin:0 auto;
+}
+.showMore-textCont{
+    width:100%;
+    margin-bottom:5px;
+}
+.showMore{
+    margin-bottom:50px;
+}
+.description{
+    margin-top:25px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.generalDesc,.secenderyDesc{
+    font-family:'Raleway-Regular';
+    font-size:1em;
+    letter-spacing:0.075px;
+    line-height:20px;
+    width:100%;
+    text-align:center;
+    color:#455a64;
+}
+.desctitle{
+    display:block;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:10px;
+    text-align:center;
+    color:#c53163;
+}
+/*--------glasswarePresent--end----*/
+@media(min-width:320px){
+    .borderRight{border-right:0;}
+}
+@media(min-width:769px){
+    .borderRight{border-right:1px solid #c53163;}
+}

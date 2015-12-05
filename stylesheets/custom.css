@@ -201,9 +201,9 @@ h2.ms-layer{
 .subBtn:hover{
     background-color:#fafafa;
 }
-.subInput::-webkit-input-placeholder{color:#dcdcdc; letter-spacing:0.06em} 
-.subInput:-moz-placeholder          {color:#dcdcdc; letter-spacing:0.06em} 
-.subInput:-ms-input-placeholder     {color:#dcdcdc; letter-spacing:0.06em} 
+.subInput::-webkit-input-placeholder{color:#acacac; letter-spacing:0.06em} 
+.subInput:-moz-placeholder          {color:#acacac; letter-spacing:0.06em} 
+.subInput:-ms-input-placeholder     {color:#acacac; letter-spacing:0.06em} 
 
 .subInput::-webkit-input-placeholder::after,
 .subInput::-moz-placeholder::after,

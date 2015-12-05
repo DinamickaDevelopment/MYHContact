@@ -3,9 +3,17 @@
     Documentation
 
     Сontents
+    0.Reset style 
     1.ContactForm
 
 */
+
+/*---------Reset style--------------*/
+button, html input[type=button], input[type=reset], input[type=submit] {
+
+   -webkit-appearance:none !important;
+
+}
 
 /*---------ContactForm--------------*/
 #contactForm{
@@ -47,7 +55,7 @@ input.placeholderimit + label.placeholderobj,textarea.placeholderimit + label.pl
     font-family:'Raleway-Light';
     font-size:1em;
     letter-spacing:0.06em;
-    color:#dcdcdc;
+    color:#acacac;
     display:block;
     position:absolute;
     z-index:10;
@@ -97,7 +105,7 @@ input[type=radio] + label,input[type=checkbox] + label{
     font-family:'Raleway-Light';
     font-size:1em;
     letter-spacing:0.06em;
-    color:#dcdcdc;
+    color:#acacac;
     cursor:pointer;
     position:relative;
     left: 35px;

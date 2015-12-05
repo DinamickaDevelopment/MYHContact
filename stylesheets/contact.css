@@ -221,4 +221,5 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+.wechat{margin-bottom:8px;}
 /*---------ContactForm----end-------*/

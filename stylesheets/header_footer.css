@@ -134,6 +134,14 @@ footer{
     color:#ffffff;
     letter-spacing:0.15em
 }
+
+.footer_contacts_hkPhone, .footer_contacts_chinaPhone {
+
+    font-family:'Roboto-Light';
+    white-space:nowrap;
+
+}
+
 .undercover{
     padding-top: 22px;background-color:#25323a;padding-left: 18px;
 }
@@ -168,6 +176,11 @@ footer{
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
     .undercover{height:275px}
+
+    .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
+     display:block;
+    }
+    
 }
 @media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}.undercover{height:228px}}
 @media(min-width:769px){
@@ -183,7 +196,11 @@ footer{
     .expand{height:102px}
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
     .hollow{height:36px;}
-        .mobil-center{float:right}
+    .mobil-center{float:right}
+     
+     .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
+     display:inline;
+    }
 
 }
 @media(min-width:993px){
@@ -193,12 +210,15 @@ footer{
     body{font-size:14px}
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;}    
     .no-paddings{padding-left:5px;}
-
+    .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
+     display:block;   
 }
 @media(min-width:1201px){    
     .nav>li{margin:0 36px;}
     ul.navbar-nav{margin-left:60px;}
     .lang-cont{margin: 42px 0 0 9%;font-size: 1em;letter-spacing:0.025em}
-
+    
+    .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
+     display:inline;
 }
 /*---------Adaptive styles section------end-----*/

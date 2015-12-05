@@ -127,18 +127,12 @@ footer{
 .foot-img{
     margin-bottom:22px;
 }
-
-    .foot-img img:last-child {
-      margin-left:14px;
-    }
-
 .foot-txt{
     width:100%;
 }
 .foot-info-txt{
     color:#ffffff;
-    margin-bottom:30px;
-    /*letter-spacing:0.15em*/
+    letter-spacing:0.15em
 }
 
 .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
@@ -165,10 +159,10 @@ footer{
 /*---------Adaptive styles section--------------*/
 @media(min-width:320px){
     .nav>li{margin:0 10px;}
-    footer{text-align:center; font-size:0.7em;}
+    footer{text-align:center;}
     .margtp{margin-top:10px}
     .botMargin2{margin-bottom:8px;}
-    .botMargin{margin-bottom:150px;}
+    .botMargin{margin-bottom:70px;}
     .foot-cont-txt{margin-bottom:10px;}
     ul.navbar-nav{margin-left:0;}
     .lang-cont{margin: 42px 0 0 0;font-size: 1em;letter-spacing:0.025em}
@@ -181,23 +175,13 @@ footer{
     .hollow{height:0;}
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
-    .undercover{
-        /*height:275px;*/
-        min-height:100%;
-        
-    }
-       
+    .undercover{height:275px}
+    .footer_contacts_hkPhone, .footer_contacts_chinaPhone {display:block}
+    #mc_embed_signup{margin:0 auto;width:100%;}
 
-    .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
-     display:block;
-    }
     
 }
-@media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}
-                        .undercover{min-height:100%}
-                        footer{font-size:0.857em;}
-                          
-}
+@media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}.undercover{height:228px}}
 @media(min-width:769px){
     footer{text-align:left;}
     .botMargin{margin-bottom:50px;}
@@ -211,7 +195,7 @@ footer{
     .expand{height:102px}
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
     .hollow{height:36px;}
-    .mobil-center{float:right}
+        .mobil-center{float:right}
     .chPhone,.hkPhone{white-space:nowrap;display:block;}
      
      .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
@@ -236,7 +220,7 @@ footer{
     .nav>li{margin:0 36px;}
     ul.navbar-nav{margin-left:60px;}
     .lang-cont{margin: 42px 0 0 9%;font-size: 1em;letter-spacing:0.025em}
-    
+
     .footer_contacts_hkPhone, .footer_contacts_chinaPhone {display:inline;}
 
 /*---------Adaptive styles section------end-----*/

@@ -127,13 +127,6 @@ footer{
 .foot-img{
     margin-bottom:22px;
 }
-
-
-
-    .foot-img img:last-child {
-      margin-left:14px;
-    }
-
 .foot-txt{
     width:100%;
 }
@@ -141,7 +134,7 @@ footer{
     color:#ffffff;
     letter-spacing:0.15em
 }
-
+  
 .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
 
     font-family:'Roboto-Light';
@@ -183,9 +176,9 @@ footer{
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
     #mc_embed_signup{margin:0 auto;width:100%;}
-        
-       
-    }
+
+    
+}
 @media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}}
 @media(min-width:769px){
     footer{text-align:left;}
@@ -201,11 +194,11 @@ footer{
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
     .hollow{height:36px;}
     .mobil-center{float:right}
-    .chPhone,.hkPhone{white-space:nowrap;display:block;}
+    .chPhone,.hkPhone{white-space:nowrap;display:block;}  
     #mc_embed_signup{margin:0 auto;width:49%;}
-     
 
-    }
+
+}
 
 @media(min-width:993px) {
 .nav > li {margin: 0 15px;} 
@@ -220,5 +213,5 @@ body {font-size: 14px;}
         .nav > li {margin: 0 36px;}
         ul.navbar-nav {margin-left: 60px;}
         .lang-cont {margin: 42px 0 0 9%;font-size: 1em;letter-spacing: 0.025em;}
-}
+    }
 /*---------Adaptive styles section------end-----*/

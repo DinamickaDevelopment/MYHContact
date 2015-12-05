@@ -263,7 +263,7 @@
 
             // On successful form submission, display a success message and reset the form
             if (resp.result == "success") {
-                $('#mce-' + resp.result + '-response').html('Thank you for signing up, please check your email to confirm subscription');
+                $('#mce-' + resp.result + '-response').html('You are now subscribed');
                 $('#mce-' + resp.result + '-response').fadeIn(700);
                 setTimeout(function () {
                     $('#mce-' + resp.result + '-response').fadeOut(700);

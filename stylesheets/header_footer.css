@@ -134,6 +134,7 @@ footer{
     
     }      
 
+
 .foot-txt{
     width:100%;
 }
@@ -164,6 +165,9 @@ footer{
 }
 /*-------------footer------end----------*/
 /*---------Adaptive styles section--------------*/
+@media(max-width:993px){
+        .mobileWidth{width:100%;padding:0 15px;}
+}
 @media(min-width:320px){
     .nav>li{margin:0 10px;}
     footer{text-align:center;}
@@ -172,7 +176,7 @@ footer{
     .botMargin{margin-bottom:70px;}
     .foot-cont-txt{margin-bottom:10px;}
     ul.navbar-nav{margin-left:0;}
-    .lang-cont{margin: 42px 0 0 0;font-size: 1em;letter-spacing:0.025em}
+    .lang-cont{margin: 32px 0 0 -13px;font-size: 1em;letter-spacing:0.025em}
     .Mobile{display:inline-block;}
     .Desktop,.Desktop-block{display:none;}
     body{font-size:12px}
@@ -182,9 +186,7 @@ footer{
     .hollow{height:0;}
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
-    #mc_embed_signup{margin:0 auto;width:100%;}
-
-    
+    #mc_embed_signup{margin:0 auto;width:100%;}    
 }
 @media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}}
 @media(min-width:769px){

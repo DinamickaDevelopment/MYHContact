@@ -203,4 +203,22 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
 }
 .tempMargin{margin-bottom:26.51vh;}
 #mc_embed_signup div.mce_inline_error{margin:0 0 .1em 0!important;}
+.demo {
+    z-index: 5000;
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    width: 132px;
+    height: auto;
+    background-color: #999FF2;
+    text-align: center;
+    font-family: 'Raleway-Light';
+    color: #ab2b56;
+    font-size: 1em;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 /*---------ContactForm----end-------*/

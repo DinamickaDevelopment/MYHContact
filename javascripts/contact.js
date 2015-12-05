@@ -33,7 +33,13 @@
 
             //remove red star for telephone label  
             $('input[name=PHONE]+label').addClass("nostar");
-                
+
+            //remove required attribute
+            if ($('input[name=PHONE]').hasClass('required')) {
+                $('input[name=PHONE]').removeClass("required");
+            }
+
+                            
         } else {
 
             //add red star for telephone label  
@@ -42,7 +48,9 @@
                 $('input[name=PHONE]+label').removeClass("nostar");
             }
 
-        $('input[name=radio]+PHONE').addClass("nostar");
+            //add class required 
+
+            $('input[name=PHONE]').addClass("required");
 
         $('.hideJs').find('input').val('');
         $('.hideJs').show();

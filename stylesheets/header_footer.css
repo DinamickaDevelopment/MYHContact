@@ -189,7 +189,7 @@ footer{
     #mc_embed_signup{margin:0 auto;width:100%;}    
 }
 @media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}}
-@media(min-width:769px){
+@media(min-width:767px){
     footer{text-align:left;}
     .botMargin{margin-bottom:50px;}
     .foot-cont-txt{margin-bottom:29px;}

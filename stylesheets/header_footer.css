@@ -132,7 +132,8 @@ footer{
 }
 .foot-info-txt{
     color:#ffffff;
-    letter-spacing:0.15em
+    margin-bottom:30px;
+    /*letter-spacing:0.15em*/
 }
 
 .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
@@ -159,7 +160,7 @@ footer{
 /*---------Adaptive styles section--------------*/
 @media(min-width:320px){
     .nav>li{margin:0 10px;}
-    footer{text-align:center;}
+    footer{text-align:center; font-size:0.7em;}
     .margtp{margin-top:10px}
     .botMargin2{margin-bottom:8px;}
     .botMargin{margin-bottom:150px;}
@@ -175,14 +176,22 @@ footer{
     .hollow{height:0;}
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
-    .undercover{height:275px}
+    .undercover{
+        /*height:275px;*/
+        min-height:100%;
+        
+    }
+       
 
     .footer_contacts_hkPhone, .footer_contacts_chinaPhone {
      display:block;
     }
     
 }
-@media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}.undercover{height:228px}}
+@media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}
+                        .undercover{min-height:100%}
+
+}
 @media(min-width:769px){
     footer{text-align:left;}
     .botMargin{margin-bottom:50px;}

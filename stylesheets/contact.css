@@ -201,11 +201,11 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
 #preHide{
     display:none;
 }
-.tempMargin{margin-bottom:26.51vh;}
+.tempMargin{margin-bottom:27.74vh;}
 #mc_embed_signup div.mce_inline_error{margin:0 0 .1em 0!important;}
 .demo {
     z-index: 5000;
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: -40px;
     width: 132px;
@@ -213,7 +213,7 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     background-color: #999FF2;
     text-align: center;
     font-family: 'Raleway-Light';
-    color: #ab2b56;
+    color: white;
     font-size: 1em;
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);

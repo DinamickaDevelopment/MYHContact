@@ -153,7 +153,9 @@ footer{
 }
 
 .undercover{
-    padding-top: 22px;background-color:#25323a;padding-left: 18px;
+    padding-top: 22px;
+    padding-bottom:30px;
+    background-color:#25323a;padding-left: 18px;
 }
 .wechat-logo{
     display:inline-block;

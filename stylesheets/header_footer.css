@@ -184,7 +184,7 @@ footer{
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
     .hollow{height:36px;}
         .mobil-center{float:right}
-
+    .chPhone,.hkPhone{white-space:nowrap;display:block;}
 }
 @media(min-width:993px){
     .nav>li{margin:0 15px;}
@@ -196,6 +196,7 @@ footer{
 
 }
 @media(min-width:1201px){    
+        .chPhone,.hkPhone{white-space:nowrap;display:inline;}
     .nav>li{margin:0 36px;}
     ul.navbar-nav{margin-left:60px;}
     .lang-cont{margin: 42px 0 0 9%;font-size: 1em;letter-spacing:0.025em}

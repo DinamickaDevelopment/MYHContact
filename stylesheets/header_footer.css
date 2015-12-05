@@ -127,6 +127,11 @@ footer{
 .foot-img{
     margin-bottom:22px;
 }
+
+    .foot-img img:last-child {
+      margin-left:14px;
+    }
+
 .foot-txt{
     width:100%;
 }

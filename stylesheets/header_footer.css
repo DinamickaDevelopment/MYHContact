@@ -190,7 +190,8 @@ footer{
 }
 @media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}
                         .undercover{min-height:100%}
-    
+                        footer{font-size:0.857em;}
+                          
 }
 @media(min-width:769px){
     footer{text-align:left;}

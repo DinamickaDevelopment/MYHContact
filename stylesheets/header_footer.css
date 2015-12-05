@@ -116,6 +116,8 @@ li.current a,.nav>li a:hover{
 /*-------------header-------end----------*/
 /*-------------footer-------------------*/
 footer{
+
+    min-height:100%;
     border-top:1px solid #c53163;
     font-family:'Raleway-Regular';
     font-size:0.857em;

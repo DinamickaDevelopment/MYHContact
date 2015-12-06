@@ -217,7 +217,6 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     display:none;
 }
 .tempMargin{margin-bottom:27.74vh;}
-#mc_embed_signup div.mce_inline_error{margin:0 0 .1em 0!important;}
 .demo {
     z-index: 5000;
     position: fixed;
@@ -237,4 +236,6 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     transform: rotate(-45deg);
 }
 .wechat{margin-bottom:8px;}
+#mc_embed_signup input.error { border-color:#6B0505; } 
+#mc_embed_signup div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }
 /*---------ContactForm----end-------*/

@@ -37,6 +37,8 @@
             //remove required attribute
             if ($('input[name=PHONE]').hasClass('required')) {
                 $('input[name=PHONE]').removeClass("required");
+                $('input[name=PHONE]').removeClass('error');
+                $('input[name=PHONE]').parent().find('.error_msg').remove();
             }
 
                             
@@ -51,7 +53,6 @@
             //add class required 
 
             $('input[name=PHONE]').addClass("required");
-
         $('.hideJs').find('input').val('');
         $('.hideJs').show();
         $('.hideJs').each(function () {

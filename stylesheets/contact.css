@@ -10,9 +10,13 @@
 
 /*---------Reset style--------------*/
 button, html input[type=button], input[type=reset], input[type=submit] {
-
-   -webkit-appearance:none !important;
-
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;  
+    
+    border: 1px solid transparent !important;
+    border-radius: 0 !important;
+    
 }
 
 /*---------ContactForm--------------*/
@@ -76,19 +80,22 @@ input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderim
 .contsubbtn{
     width:146px;
     height:48px;
-    background-color:#263238;
+    /*background-color:#263238;*/
     border:0;
     color:#ffffff;
-    font-family:'ADAM-CGPRO';
-    font-size:1.143em;
-    letter-spacing:0.075em;
-    text-align:center;
-    text-decoration:none;
-    padding-bottom: 6px;
+    /*font-family:'ADAM-CGPRO';*/
+    /*font-size:16px;*/
+    /*line-height:16px;*/
+    /*letter-spacing:0.075em;*/
+    /*text-align:center;*/
+    /*vertical-align: middle !important;*/
+    /*text-decoration:none;*/
+    /*padding:0;*/
     display:block;
     margin:15px auto ;
- 
-}
+    background: url(../images/Submit.png);
+ }
+
 .contsubbtn:hover,.contsubbtn:active{
     color:#fafafa;
     text-decoration:none;

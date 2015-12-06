@@ -27,6 +27,13 @@
     font-family: 'Roboto-Light';
     src: url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light/Roboto-Light.eot') format('embedded-opentype');
 }
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../fonts/Roboto-Thin/Roboto-Thin.woff) format('woff'), url('../fonts/Roboto-Thin/Roboto-Thin.ttf') format('truetype'), url('../fonts/Roboto-Thin/Roboto-Thin.eot') format('embedded-opentype');
+}
+
+
 @font-face {
     font-family: 'Roboto-Medium';
     src: url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium/Roboto-Medium.eot') format('embedded-opentype');

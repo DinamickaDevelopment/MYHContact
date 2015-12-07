@@ -13,7 +13,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     appearance: none !important;  
-    
+
     border: 1px solid transparent !important;
     border-radius: 0 !important;
     

@@ -159,9 +159,6 @@ footer{
 
 .foot-txt{
     width:100%;
-    line-height: 24px;
-}
-.foot-cont-txt{    line-height: 24px;
 }
 .foot-info-txt{
     color:#ffffff;
@@ -210,7 +207,7 @@ footer{
     footer{text-align:center;}
     /*.margtp{margin-top:10px}*/
     .botMargin2{margin-bottom:8px;}
-    .botMargin{margin-bottom:60px;}
+    .botMargin{margin-bottom:70px;}
     .foot-cont-txt{margin-bottom:10px;}
     ul.navbar-nav{margin-left:0;}
     .lang-cont{margin: 32px 0 0 -13px;font-size: 1em;letter-spacing:0.025em}
@@ -228,8 +225,8 @@ footer{
 @media(min-width:460px){.lang-cont{margin: 42px 0 0 15%;}}
 @media(min-width:767px){
     footer{text-align:left;}
-    .botMargin{margin-bottom:50px;}
-    .foot-cont-txt{margin-bottom:40px;}
+    .botMargin{margin-bottom:54px;}
+    .foot-cont-txt{margin-bottom:29px;}
     .Mobile{display:none;}
     .Desktop{display:inline-block;}
     .Desktop-block{display:block;}

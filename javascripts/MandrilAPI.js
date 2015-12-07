@@ -18,6 +18,11 @@
         }
     
     }
+    function clearFormFieds() {
+        if ($(this).type) {
+
+        }
+    }
     function mailSend(event) {
         event.preventDefault();
         var AllValid = true
@@ -33,7 +38,7 @@
             var inqury = document.forms[0],
                 Fname = inqury.FNAME.value,
                 Lname = inqury.LNAME.value,
-                Email = inqury.EMAIL.value,
+                //Email = inqury.EMAIL.value, uncoment and add to table email variable after lname
                 Radio = $('input[name=RADIOAREA]:checked').val(),
                 CompName = '' ,
                 Title = '',
@@ -87,10 +92,10 @@
                     'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
                     'message': {
                         'from_email': 'sales@myhfinewines.com',
-                        'to': [{ 'email': 'o.petryk@dinamicka.com', 'type': 'to' }],
+                        'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
                         'autotext': 'true',
                         'subject': 'MYH INQUIRY - ' + Fname + ', '+ Lname+ ' - ' +Radio+ ' - ' + City,
-                        'html': '<head><style>td {padding: 3px;}</style></head><body><table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Email + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr>' + CompName + Title + '<tr><td>Phone</td><td>' + Phone + '</td></tr>' + Adress + '<tr><td>Name of City</td><td>' + City + '</td></tr>' + Website + '<tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table></body>'
+                        'html': '<head><style>td {padding: 3px;}</style></head><body><table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Lname + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr>' + CompName + Title + '<tr><td>Phone</td><td>' + Phone + '</td></tr>' + Adress + '<tr><td>Name of City</td><td>' + City + '</td></tr>' + Website + '<tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table></body>'
                     }
                 })
                 //, DataForUser = JSON.stringify({

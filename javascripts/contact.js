@@ -12,9 +12,14 @@
         if ($('.mainChina,.mainChina+label').is(':checked')) {
             document.getElementById('mce-NCITY').removeAttribute('disabled');
             $('#mce-NCITY').addClass('required');
+            if ($('#mce-NCITY').val() == "") {
+                $('#mce-NCITY + label').show();
+            }
         } else {
             document.getElementById('mce-NCITY').setAttribute('disabled', 'disabled');
             $('#mce-NCITY').removeClass('required');
+            $('#mce-NCITY').val("");
+            $('#mce-NCITY + label').hide();
         }
     }
     function fadeforms() {

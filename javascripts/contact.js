@@ -29,7 +29,7 @@
         if ($('#mce-RADIOAREA-0').is(':checked')) {
             
             $('.hideJs').hide();
-            $('.hideJs').find('input').val('Consumer case');
+            //$('.hideJs').find('input').val('Consumer case');
 
             //remove red star for telephone label  
             $('input[name=PHONE]+label').addClass("nostar");

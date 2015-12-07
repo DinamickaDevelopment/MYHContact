@@ -34,7 +34,6 @@ form{
     text-align:left;
     color:#263238;
 }
-#mc_embed_signup{margin:0 auto;}
 .slogan{
     font-family:'Raleway-Light';
     color: #ab2b56;
@@ -60,6 +59,8 @@ input.placeholderimit + label.placeholderobj,textarea.placeholderimit + label.pl
     font-size:1em;
     letter-spacing:0.06em;
     color:#acacac;
+    cursor:text;
+
     display:block;
     position:absolute;
     z-index:10;
@@ -105,8 +106,17 @@ input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderim
 /*hide radiobtn*/
 input[type=radio],input[type=checkbox]{
     opacity:0;
-    display:block;
+    display:none;
+    width:0;
+    height:0;
+    margin:0;
+
 }
+
+.form__rowRadioButton {
+    min-height: 67px;
+}
+
 /*style for all label after radiobtn*/
 input[type=radio] + label,input[type=checkbox] + label{
     font-family:'Raleway-Light';
@@ -116,12 +126,15 @@ input[type=radio] + label,input[type=checkbox] + label{
     cursor:pointer;
     position:relative;
     left: 35px;
-    top: -6px;
+    margin:0;   
 }
 input[type=radio] + label{
     left:38px;
 }
-input[type=checkbox] + label{top:1px;}
+input[type=checkbox] + label{
+    top:16px;
+
+}
 input[type=radio] + label:before,input[type=checkbox] + label:before {
   content: '';
   position: absolute;
@@ -151,6 +164,16 @@ input[type=checkbox] + label:before,input[type=checkbox] + label:after{
     border-radius:0;
 }
 
+label[for="mce-RADIOAREA-0"], label[for="mce-RADIOAREA-2"], label[for="mce-RADIOAREA-4"]{
+
+    top:8px;
+
+}
+
+label[for="mce-RADIOAREA-1"], label[for="mce-RADIOAREA-3"], label[for="mce-RADIOAREA-5"] {
+    top:21px;
+}
+
 /* styles for active conditions */
 input[type=radio]:checked + label:before,input[type=checkbox]:checked + label:before{
     border-color:#2b373d;
@@ -163,26 +186,23 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
 }
 .no-paddings div{padding:0}
 #mce-responses {
+        
+    display:none;
     position: fixed;
-    bottom: 40px;
-    margin: 0 auto;
-    z-index: 5;
-    text-align: center;
-    left: 50%;
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    z-index: 9999;    
+       
 }
-#mc_embed_signup div.response {
+#mce-responses div.response {
+
+    
+
     font-family:'Raleway-Light';
     z-index: 5;
     padding: 5px 28px;
     margin: 0 auto;
     text-align: center;
     line-height: 60px;
-    font-size: 32px;
+    
     background: rgba(0,0,0,.7);
     color: white;
     overflow:hidden;
@@ -236,6 +256,64 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     transform: rotate(-45deg);
 }
 .wechat{margin-bottom:8px;}
-#mc_embed_signup input.error { border-color:#6B0505; } 
-#mc_embed_signup div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }
+input.error { border-color:#6B0505; } 
+div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }
 /*---------ContactForm----end-------*/
+
+/*---------Adaptive styles section--------------*/
+
+@media (min-width:320px) {
+
+    #mce-responses{
+
+        height:200px;
+        width:100%;
+        
+        top: 50%;
+        left: 0;
+        
+        margin-top:-100px;
+    }
+
+    #mce-responses div.response {
+      font-size:1.3em;
+    }
+
+     
+}
+
+
+
+@media (min-width:768px) {
+    /*contact form success pop up*/
+     #mce-responses{
+
+        
+        width:440px;
+        height:200px;
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -210px;
+
+    }
+      
+   
+}
+
+@media (min-width:993px) {
+    
+
+
+
+ 
+
+}
+
+@media(min-width:1201px){
+
+    /*contact form success pop up*/
+    #mce-responses div.response {
+             font-size:1.5em;
+    }
+
+}

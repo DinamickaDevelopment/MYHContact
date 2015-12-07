@@ -335,7 +335,13 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     
 
 
+    .phoneNomber {
+    font-size: 1.1em;
+    }
 
+   .newstxt, input[type=radio] + label, input[type=checkbox] + label {
+    font-size: 0.8em;
+    }
  
 
 }
@@ -345,6 +351,14 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     /*contact form success pop up*/
     #mce-responses div.response {
              font-size:1.5em;
+    }
+
+    .phoneNomber {
+    font-size: 1.143em;
+    }
+
+    input[type=radio] + label, input[type=checkbox] + label {
+    font-size: 1em;
     }
 
 }

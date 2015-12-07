@@ -75,10 +75,10 @@ input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderim
     content:'';
 }
 
-div#citygroup {
-margin-top:6px;
+/*div#citygroup {
+margin-top:16px;
 
-}
+}*/
 
 .mc-field-group{
     position:relative;
@@ -191,6 +191,11 @@ input[type=radio] + label[for="mce-RADIOAREA-4"]:before, input[type=radio] + lab
         left: -1px;
 }
 
+input[type=radio] + label[for="mce-RADIOAREA-4"]:after, input[type=radio] + label[for="mce-RADIOAREA-5"]:after {
+
+        left: 4px;
+}
+
 label[for="mce-RADIOAREA-1"], label[for="mce-RADIOAREA-3"], label[for="mce-RADIOAREA-5"] {
     top:21px;
 }
@@ -284,8 +289,6 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
 .wechat{margin-bottom:8px;}
 input.error { border-color:#6B0505; } 
 div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }
-input[name=NCITY] + label{left:32px!important}
-input#mce-RADIOAREA-4 + label::after,input#mce-RADIOAREA-5 + label::after{left:4px!important}
 /*---------ContactForm----end-------*/
 
 /*---------Adaptive styles section--------------*/

@@ -234,11 +234,9 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     overflow:hidden;
 }
 .qrholder{
-    /*position: absolute;
-    z-index: 20;
-    right: -213px;*/
+   
     border: 1px solid #b0bec5;
-    /*margin: 3px 6px;*/
+    margin-bottom:100px;
     width: 200px;
     height: 268px;
 }

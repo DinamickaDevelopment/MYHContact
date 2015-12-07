@@ -3,7 +3,7 @@
     $('input.placeholderimit,textarea.placeholderimit').on('focus', hidePlace);
     $('input.placeholderimit,textarea.placeholderimit').on('blur', showPlace);
     function hidePlace() {$(this).parent().find('label.placeholderobj').hide();}
-    function showPlace() { if ($(this)[0].value == '') { $(this).parent().find('label.placeholderobj').show(); } }
+    function showPlace() { if ($(this).val() == '') { $(this).parent().find('label.placeholderobj').show(); } }
 
     //Radio Btn logick
     $('input[type=radio]').on('click', fadeforms);

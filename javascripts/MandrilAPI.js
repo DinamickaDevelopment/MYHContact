@@ -5,24 +5,34 @@
 
     function checkReq(a) {//Function for check fill of required fields;
         if ($(this).hasClass('required')) { 
-        if ($(this).val() == '') {
-            if (!$(this).hasClass('error')) {
-            $(this).addClass('error');
-            $(this).parent().append('<div class="error_msg">This field is required.</div>');
+            if ($(this).val() == '') {
+                if (!$(this).hasClass('error')) {
+                    $(this).addClass('error');
+                    $(this).parent().append('<div class="error_msg">This field is required.</div>');
+                }
+            } else {
+                $(this).removeClass('error');
+                $(this).parent().find('.error_msg').remove();
             }
-        } else {
-            $(this).removeClass('error');
-            $(this).parent().find('.error_msg').remove();
-        }
 
         }
     
     }
-    function clearFormFieds() {
-        if ($(this).type) {
 
+    function clearThisField() {//This function clear that field what located in "this" variable
+        if ($(this).attr('type') == 'text' || $(this).attr('type') == 'email') {
+            $(this).val('');
+            if ($(this).val() == '') {
+                $(this).parent().find('label.placeholderobj').show();
+            }
+        }
+        if ($(this).attr('type') == 'checkbox' || $(this).attr('type') == 'radio') {
+            if ($(this).is(':checked')) {
+                $(this).prop('checked',false)
+            }
         }
     }
+
     function mailSend(event) {
         event.preventDefault();
         var AllValid = true
@@ -38,7 +48,7 @@
             var inqury = document.forms[0],
                 Fname = inqury.FNAME.value,
                 Lname = inqury.LNAME.value,
-                //Email = inqury.EMAIL.value, uncoment and add to table email variable after lname
+                Email = inqury.EMAIL.value,
                 Radio = $('input[name=RADIOAREA]:checked').val(),
                 CompName = '' ,
                 Title = '',
@@ -95,7 +105,7 @@
                         'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
                         'autotext': 'true',
                         'subject': 'MYH INQUIRY - ' + Fname + ', '+ Lname+ ' - ' +Radio+ ' - ' + City,
-                        'html': '<head><style>td {padding: 3px;}</style></head><body><table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Lname + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr>' + CompName + Title + '<tr><td>Phone</td><td>' + Phone + '</td></tr>' + Adress + '<tr><td>Name of City</td><td>' + City + '</td></tr>' + Website + '<tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table></body>'
+                        'html': '<head><style>td {padding: 3px;}</style></head><body><table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Email + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr>' + CompName + Title + '<tr><td>Phone</td><td>' + Phone + '</td></tr>' + Adress + '<tr><td>Name of City</td><td>' + City + '</td></tr>' + Website + '<tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table></body>'
                     }
                 })
                 //, DataForUser = JSON.stringify({
@@ -130,6 +140,7 @@
                             $("#mce-responses").css("display", "none");
                         }
 
+                        $('input,textarea').each(clearThisField);
 
 
                     //});

@@ -49,7 +49,7 @@ input[type=text], input[type=email],textarea {
     border: 1pt solid #b0bec5;
     padding: 16px 0 16px 19px;
     width: 100%;
-    margin:3px 0;
+    /*margin:3px 0;*/
 }
 textarea{max-width:100%;min-height:147px;}
 label{font-weight:100;}
@@ -64,7 +64,7 @@ input.placeholderimit + label.placeholderobj,textarea.placeholderimit + label.pl
     display:block;
     position:absolute;
     z-index:10;
-    top:16px;
+    top:13px;
     left:16px;
 }
 input.placeholderimit + label.placeholderobj:after,textarea.placeholderimit + label.placeholderobj:after{
@@ -77,6 +77,7 @@ input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderim
 .mc-field-group{
     position:relative;
     width:100%;
+    margin-top:6px;
 }
 .contsubbtn{
     width:146px;
@@ -113,8 +114,17 @@ input[type=radio],input[type=checkbox]{
 
 }
 
-.form__rowRadioButton {
-    min-height: 67px;
+.paddingLeft0 {
+  padding-left:0;
+}
+
+.paddingRigth0 {
+    padding-right:0;
+}
+
+.paddingLeftRigth0 {
+    padding-left:0;
+    padding-right:0;
 }
 
 /*style for all label after radiobtn*/
@@ -124,12 +134,14 @@ input[type=radio] + label,input[type=checkbox] + label{
     letter-spacing:0.06em;
     color:#acacac;
     cursor:pointer;
-    position:relative;
-    left: 35px;
-    margin:0;   
+    /*position:relative;
+    left: 35px;*/
+    margin:0;  
+    height: 26px; 
+    padding-left:32px;
 }
 input[type=radio] + label{
-    left:38px;
+        line-height: 26px;
 }
 input[type=checkbox] + label{
     top:16px;
@@ -138,18 +150,17 @@ input[type=checkbox] + label{
 input[type=radio] + label:before,input[type=checkbox] + label:before {
   content: '';
   position: absolute;
-  top: -4px;
-  left: -35px;
   border:1px solid #b0bec5;
   width: 26px;
   height: 26px;
   border-radius: 13px;
+  left: 15px;
 }    
 input[type=radio] + label:after,input[type=checkbox] + label:after  {
   content: '';
   position: absolute;
-  top: 1px;
-  left: -30px;
+  top: 5px;
+  left: 20px;
   width: 16px;
   height: 16px;
   opacity: 0;
@@ -159,15 +170,19 @@ input[type=radio] + label:after,input[type=checkbox] + label:after  {
   -o-transition: opacity .2s;
   -webkit-transition: opacity .2s;
    transition: opacity .2s;
-    }
+
+ }
+
+
+
 input[type=checkbox] + label:before,input[type=checkbox] + label:after{
     border-radius:0;
 }
 
-label[for="mce-RADIOAREA-0"], label[for="mce-RADIOAREA-2"], label[for="mce-RADIOAREA-4"]{
 
-    top:8px;
+input[type=radio] + label[for="mce-RADIOAREA-4"]:before, input[type=radio] + label[for="mce-RADIOAREA-5"]:before {
 
+        left: -1px;
 }
 
 label[for="mce-RADIOAREA-1"], label[for="mce-RADIOAREA-3"], label[for="mce-RADIOAREA-5"] {
@@ -208,11 +223,11 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     overflow:hidden;
 }
 .qrholder{
-    position: absolute;
+    /*position: absolute;
     z-index: 20;
-    right: -213px;
+    right: -213px;*/
     border: 1px solid #b0bec5;
-    margin: 3px 6px;
+    /*margin: 3px 6px;*/
     width: 200px;
     height: 268px;
 }

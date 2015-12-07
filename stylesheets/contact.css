@@ -246,13 +246,20 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
         line-height:24px;
 }
 .qr{position: relative;bottom: -10px;}
+
+.form__subscribeRow {
+
+    height:56px;
+}
+
 .newstxt{
     font-family:'Raleway-Light';
     font-size:12px;
     color:#263238;
     display:block;
-    height:54px;
-    line-height:54px;
+    height:26px;
+    line-height:26px;
+    text-align:right;
 }
 #preHide{
     display:none;

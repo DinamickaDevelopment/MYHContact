@@ -75,10 +75,10 @@ input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderim
     content:'';
 }
 
-div#citygroup {
+/*div#citygroup {
 margin-top:16px;
 
-}
+}*/
 
 .mc-field-group{
     position:relative;
@@ -189,6 +189,11 @@ input[type=checkbox] + label:before,input[type=checkbox] + label:after{
 input[type=radio] + label[for="mce-RADIOAREA-4"]:before, input[type=radio] + label[for="mce-RADIOAREA-5"]:before {
 
         left: -1px;
+}
+
+input[type=radio] + label[for="mce-RADIOAREA-4"]:after, input[type=radio] + label[for="mce-RADIOAREA-5"]:after {
+
+        left: 4px;
 }
 
 label[for="mce-RADIOAREA-1"], label[for="mce-RADIOAREA-3"], label[for="mce-RADIOAREA-5"] {

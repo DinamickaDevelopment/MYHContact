@@ -49,8 +49,16 @@ input[type=text], input[type=email],textarea {
     border: 1pt solid #b0bec5;
     padding: 16px 0 16px 19px;
     width: 100%;
-    /*margin:3px 0;*/
 }
+
+.form__nameRow_NameFieldCover{
+        
+    padding-right:6px;
+
+}
+
+
+
 textarea{max-width:100%;min-height:147px;}
 label{font-weight:100;}
 /*classes for label*/
@@ -75,31 +83,22 @@ input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderim
     content:'';
 }
 
-div#citygroup {
-margin-top:6px;
+/*div#citygroup {
+margin-top:16px;
 
-}
+}*/
 
 .mc-field-group{
+    margin-top:6px;
     position:relative;
     width:100%;
-    margin-top:6px;
 }
 .contsubbtn{
     width:146px;
     height:48px;
-    /*background-color:#263238;*/
     border:0;
     color:#ffffff;
-    /*font-family:'ADAM-CGPRO';*/
-    /*font-size:16px;*/
-    /*line-height:16px;*/
-    /*letter-spacing:0.075em;*/
-    /*text-align:center;*/
-    /*vertical-align: middle !important;*/
-    /*text-decoration:none;*/
-    /*padding:0;*/
-    display:block;
+        display:block;
     margin:15px auto ;
     background: url(../images/Submit.png);
  }
@@ -133,6 +132,16 @@ input[type=radio],input[type=checkbox]{
     padding-right:0;
 }
 
+.form__firstCheckboxRowCover {
+margin-top:8px;
+}
+
+
+
+.secondCheckboxRowCover {
+    margin-top:8px;
+}
+
 /*style for all label after radiobtn*/
 input[type=radio] + label,input[type=checkbox] + label{
     font-family:'Raleway-Light';
@@ -140,9 +149,6 @@ input[type=radio] + label,input[type=checkbox] + label{
     letter-spacing:0.06em;
     color:#acacac;
     cursor:pointer;
-    /*position:relative;
-    left: 35px;*/
-    margin:0;  
     height: 26px; 
     padding-left:32px;
 }
@@ -153,6 +159,11 @@ input[type=checkbox] + label{
     line-height:26px;
 
 }
+
+label[for*=mce-RADIOAREA] {
+    margin: 0 0 8px 0;
+}
+
 input[type=radio] + label:before,input[type=checkbox] + label:before {
   content: '';
   position: absolute;
@@ -186,10 +197,8 @@ input[type=checkbox] + label:before,input[type=checkbox] + label:after{
 }
 
 
-input[type=radio] + label[for="mce-RADIOAREA-4"]:before, input[type=radio] + label[for="mce-RADIOAREA-5"]:before {
 
-        left: -1px;
-}
+
 
 label[for="mce-RADIOAREA-1"], label[for="mce-RADIOAREA-3"], label[for="mce-RADIOAREA-5"] {
     top:21px;
@@ -229,11 +238,9 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
     overflow:hidden;
 }
 .qrholder{
-    /*position: absolute;
-    z-index: 20;
-    right: -213px;*/
+   
     border: 1px solid #b0bec5;
-    /*margin: 3px 6px;*/
+    margin-bottom:100px;
     width: 200px;
     height: 268px;
 }
@@ -286,8 +293,6 @@ input[type=radio]:checked + label:after,input[type=checkbox]:checked + label:aft
 .wechat{margin-bottom:8px;}
 input.error { border-color:#6B0505; } 
 div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }
-input[name=NCITY] + label{left:32px!important}
-input#mce-RADIOAREA-4 + label::after,input#mce-RADIOAREA-5 + label::after{left:4px!important}
 /*---------ContactForm----end-------*/
 
 /*---------Adaptive styles section--------------*/
@@ -309,6 +314,23 @@ input#mce-RADIOAREA-4 + label::after,input#mce-RADIOAREA-5 + label::after{left:4
       font-size:1.3em;
     }
 
+    .form__firstCheckboxRowCover_WineCompany {
+   padding-left:15px;
+   }
+
+    .form__firstCheckboxRowCover_HomewareRetailer {
+   padding-left:15px;
+   }
+
+   input[type=radio] + label[for="mce-RADIOAREA-4"]:before, input[type=radio] + label[for="mce-RADIOAREA-5"]:before {
+
+        left: 15px;
+   }
+
+   input[type=radio] + label[for="mce-RADIOAREA-4"]:after, input[type=radio] + label[for="mce-RADIOAREA-5"]:after {
+
+        left: 20px;
+   }
      
 }
 
@@ -334,9 +356,33 @@ input#mce-RADIOAREA-4 + label::after,input#mce-RADIOAREA-5 + label::after{left:4
     
 
 
+    .phoneNomber {
+    font-size: 1.1em;
+    }
 
+   .newstxt, input[type=radio] + label, input[type=checkbox] + label {
+    font-size: 0.8em;
+    }
+
+
+   .form__firstCheckboxRowCover_WineCompany {
+   padding-left:0;
+   }
+
+   .form__firstCheckboxRowCover_HomewareRetailer {
+   padding-left:0;
+   }
  
+   input[type=radio] + label[for="mce-RADIOAREA-4"]:before, input[type=radio] + label[for="mce-RADIOAREA-5"]:before {
 
+        left: -1px;
+   }
+
+   input[type=radio] + label[for="mce-RADIOAREA-4"]:after, input[type=radio] + label[for="mce-RADIOAREA-5"]:after {
+
+        left: 4px;
+   }
+   
 }
 
 @media(min-width:1201px){
@@ -344,6 +390,14 @@ input#mce-RADIOAREA-4 + label::after,input#mce-RADIOAREA-5 + label::after{left:4
     /*contact form success pop up*/
     #mce-responses div.response {
              font-size:1.5em;
+    }
+
+    .phoneNomber {
+    font-size: 1.143em;
+    }
+
+    input[type=radio] + label, input[type=checkbox] + label {
+    font-size: 1em;
     }
 
 }

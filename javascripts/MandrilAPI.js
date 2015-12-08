@@ -2,7 +2,7 @@
     $('#mc-embedded-subscribe-form input').on('change', checkReq);
     //Submit eventon the contact form 
     $('#mc-embedded-subscribe-form').on('submit',mailSend)
-
+    var MailInProgres = false;
     function checkReq(a) {//Function for check fill of required fields;
         if ($(this).hasClass('required')) { 
             if ($(this).val() == '') {
@@ -44,7 +44,9 @@
                 }
             }
         });
-        if (AllValid) {
+        if (AllValid && MailInProgres == false) {
+            MailInProgres = true;
+            $('#mc-embedded-subscribe').addClass('ajaxLoader');
             var inqury = document.forms[0],
                 Fname = inqury.FNAME.value,
                 Lname = inqury.LNAME.value,
@@ -93,9 +95,10 @@
                     if ($(this).val() == 'MainChina') {
                         City += inqury.NCITY.value + ', ';
                     } else {
-                        City += $(this).val() + ' ';
+                        City += $(this).val() + ', ';
                     }
                 })
+
             // if user did not chose a Consumer radio button 
                 if (Radio != "Consumer") {
 
@@ -105,7 +108,7 @@
                         'from_email': 'sales@myhfinewines.com',
                         'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
                         'autotext': 'true',
-                        'subject': 'MYH INQUIRY - ' + Fname + ', '+ Lname+ ' - ' +Radio+ ' - ' + City,
+                        'subject': 'MYH INQUIRY - ' + Fname + ' '+ Lname+ ' - ' +Radio+ ' - ' + City,
                         'html': '    <table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Email + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr><tr><td>Job Title</td><td>' + CompName + '</td></tr><tr><td>Phone</td><td>' + Phone + '</td></tr><tr><td>Address</td><td>' + Adress + '</td></tr><tr><td>Name of City</td><td>' + City + '</td></tr><tr><td>Website</td><td>' + Website + '</td></tr><tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table>'
                     }
                 })
@@ -117,7 +120,7 @@
                             'from_email': 'sales@myhfinewines.com',
                             'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
                             'autotext': 'true',
-                            'subject': 'MYH INQUIRY - ' + Fname + ', '+ Lname+ ' - ' +Radio+ ' - ' + City,
+                            'subject': 'MYH INQUIRY - ' + Fname + ' '+ Lname+ ' - ' +Radio+ ' - ' + City,
                             'html': '    <table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Email + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr><tr><td>Phone</td><td>' + Phone + '</td></tr><tr><td>Name of City</td><td>' + City + '</td></tr><tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table>'
                         }
                     })
@@ -132,6 +135,8 @@
                         function showSucessMessage() {
                             $("#mce-responses").css("display", "none");
                         }
+                        $('#mc-embedded-subscribe').removeClass('ajaxLoader');
+                        MailInProgres = false;
                         $('input,textarea').each(clearThisField);
                   });
                     

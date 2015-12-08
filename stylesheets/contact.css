@@ -102,6 +102,7 @@ margin-top:16px;
     margin:15px auto ;
     background: url(../images/Submit.png);
  }
+.ajaxLoader{background:url('../images/ajaxloader.gif');}
 
 .contsubbtn:hover,.contsubbtn:active{
     color:#fafafa;

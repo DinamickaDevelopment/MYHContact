@@ -25,7 +25,7 @@
     function fadeforms() {
         if ($('#preHide').css('display') == 'none') {
             $('#preHide').css('display', 'block');
-            $('.tempMargin').css('margin-bottom','0')
+            $('#contactForm').removeClass('botOffset');
         }
 
         //When "Consumer" button is cheked. The attribute chacked set up 

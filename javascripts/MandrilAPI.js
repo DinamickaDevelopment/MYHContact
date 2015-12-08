@@ -73,7 +73,7 @@
                     'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
                     'message': {
                         'from_email': 'sales@myhfinewines.com',
-                        'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
+                        'to': [{ 'email': 'sales@myhfinewines.com', 'type': 'to' }],
                         'autotext': 'true',
                         'subject': 'MYH Newsletter Subscribe - Contact Page',
                         'html': 'You have new subscriber ' + Email
@@ -106,7 +106,7 @@
                     'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
                     'message': {
                         'from_email': 'sales@myhfinewines.com',
-                        'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
+                        'to': [{ 'email': 'sales@myhfinewines.com', 'type': 'to' }],
                         'autotext': 'true',
                         'subject': 'MYH INQUIRY - ' + Fname + ' '+ Lname+ ' - ' +Radio+ ' - ' + City,
                         'html': '    <table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Email + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr><tr><td>Job Title</td><td>' + CompName + '</td></tr><tr><td>Phone</td><td>' + Phone + '</td></tr><tr><td>Address</td><td>' + Adress + '</td></tr><tr><td>Name of City</td><td>' + City + '</td></tr><tr><td>Website</td><td>' + Website + '</td></tr><tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table>'
@@ -118,7 +118,7 @@
                         'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
                         'message': {
                             'from_email': 'sales@myhfinewines.com',
-                            'to': [{ 'email': 'b.druzhynin@dinamicka.com', 'type': 'to' }],
+                            'to': [{ 'email': 'sales@myhfinewines.com', 'type': 'to' }],
                             'autotext': 'true',
                             'subject': 'MYH INQUIRY - ' + Fname + ' '+ Lname+ ' - ' +Radio+ ' - ' + City,
                             'html': '    <table border="1" style="border:1px solid black;border-collapse: collapse; overflow:auto;width:400px"><tr><td>First Name</td><td>' + Fname + '</td></tr><tr><td>Last Name</td><td>' + Lname + '</td></tr><tr><td>Email</td><td>' + Email + '</td></tr><tr><td>Type of Enquiry</td><td>' + Radio + '</td></tr><tr><td>Phone</td><td>' + Phone + '</td></tr><tr><td>Name of City</td><td>' + City + '</td></tr><tr><td>Newsletter</td><td>' + Newsletter + '</td></tr><tr><td>Enquiry Message</td><td>' + InquryMsg + '</td></tr></table>'

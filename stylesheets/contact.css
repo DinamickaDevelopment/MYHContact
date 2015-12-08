@@ -157,7 +157,9 @@ input[type=radio] + label{
 }
 input[type=checkbox] + label{
     line-height:26px;
-
+    padding-left:48px;
+    margin-top:9px;
+    position:relative;
 }
 
 label[for*=mce-RADIOAREA] {
@@ -331,7 +333,19 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
         left: 20px;
    }
-     
+   .col-hk{
+       width:11.66666667%;
+   }
+   .col-mc{
+       width:100%;
+       margin-bottom:10px;
+
+   }
+   .paddingLeft0-desktop{padding-left:15px;}
+   .paddingLeft0-desktop label{left:31px!important}
+   .newstxt{font-size:11px;text-align:left;margin-top:-2px;padding-left:3px;}
+   .paddingLeft0{padding-left:15px;}
+   .form__nameRow_NameFieldCover{padding-right:15px;}
 }
 
 
@@ -348,8 +362,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
         margin: -100px 0 0 -210px;
 
     }
-      
-   
+    .paddingLeft0{padding-left:0;}
+    .form__nameRow_NameFieldCover{padding-right: 6px;}
+   .newstxt{font-size:11px;text-align:right;margin-top:15px;padding-left:0;}
 }
 
 @media (min-width:993px) {
@@ -382,7 +397,15 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
         left: 4px;
    }
-   
+   .paddingLeft0-desktop{padding-left:0;}
+   .paddingLeft0-desktop label{left:16px!important}
+
+      .col-mc{
+       width:30%;
+       margin-bottom:0;
+   }
+         .newstxt{font-size:12px;}
+
 }
 
 @media(min-width:1201px){

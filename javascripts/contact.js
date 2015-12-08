@@ -34,7 +34,8 @@
         if ($('#mce-RADIOAREA-0').is(':checked')) {
             
             $('.hideJs').hide();
-            //$('.hideJs').find('input').val('Consumer case');
+            //auto fill need to pass validation of hiden required fields. when consumer checked hiden fields woudnt include to JSON object
+            $('.hideJs').find('input').attr('value','Consumer case');
 
             //remove red star for telephone label  
             $('input[name=PHONE]+label').addClass("nostar");

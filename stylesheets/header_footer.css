@@ -148,6 +148,7 @@ footer{
 
 .foot-img{
     margin-bottom:22px;
+
 }
 
     .foot-img img:last-child {
@@ -159,10 +160,14 @@ footer{
 
 .foot-txt{
     width:100%;
+    line-height:24px;
 }
 .foot-info-txt{
     color:#ffffff;
     letter-spacing:0.15em
+}
+.foot-cont-txt{
+    line-height:24px;
 }
 
     .footer_contacts_saleEmail {

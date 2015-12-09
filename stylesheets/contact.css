@@ -9,14 +9,19 @@
 */
 
 /*---------Reset style--------------*/
-button, html input[type=button], input[type=reset], input[type=submit] {
+button, input[type=button], input[type=reset], input[type=submit], input[type=text] {
+    
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
-    appearance: none !important;  
-
-    border: 1px solid transparent !important;
-    border-radius: 0 !important;
     
+     border-radius: 0 !important;
+    
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+
+    border:1px solid transparent !important;
+
 }
 
 /*---------ContactForm--------------*/
@@ -100,7 +105,8 @@ margin-top:16px;
     color:#ffffff;
         display:block;
     margin:15px auto ;
-    background: url(../images/Submit.png);
+    background-color:#263238;
+    /*background: url(../images/Submit.png);*/
  }
 .ajaxLoader{background:url('../images/ajaxloader.gif');}
 

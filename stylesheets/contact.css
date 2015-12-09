@@ -84,14 +84,14 @@ input.placeholderimit + label.placeholderobj:after,textarea.placeholderimit + la
     content:'*';
     color:#c53163;
 }
+
 input.placeholderimit + label.placeholderobj.nostar:after,textarea.placeholderimit + label.placeholderobj.nostar:after{
     content:'';
 }
 
-/*div#citygroup {
-margin-top:16px;
-
-}*/
+input[name=NCITY]:disabled + label.placeholderobj:after {
+    content:'';
+} 
 
 .mc-field-group{
     margin-top:6px;

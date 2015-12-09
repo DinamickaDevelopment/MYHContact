@@ -55,6 +55,7 @@ h3{
 
     .navmy-cutom .navbar-brand {
             height:initial !important;     
+            padding-right:0;     
     }
 
 
@@ -218,7 +219,7 @@ footer{
     .nav>li{margin:0 10px;}
     footer{text-align:center;}
     .botMargin2{margin-bottom:8px;}
-    .botMargin{margin-bottom:70px;}
+    .botMargin{margin-bottom:0;}
     .foot-cont-txt{margin-bottom:10px;}
     ul.navbar-nav{margin-left:0;}
     .lang-cont{margin: 32px 0 0 0;font-size: 1em;letter-spacing:0.025em;}

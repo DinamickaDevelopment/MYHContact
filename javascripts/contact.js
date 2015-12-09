@@ -44,6 +44,7 @@
             if ($('input[name=PHONE]').hasClass('required')) {
                 $('input[name=PHONE]').removeClass("required");
                 $('input[name=PHONE]').removeClass('error');
+                $('input[name=PHONE]').removeClass('invalid');
                 $('input[name=PHONE]').parent().find('.error_msg').remove();
             }
 

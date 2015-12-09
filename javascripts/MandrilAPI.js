@@ -3,16 +3,49 @@
     //Submit eventon the contact form 
     $('#mc-embedded-subscribe-form').on('submit',mailSend)
     var MailInProgres = false;
-    function checkReq(a) {//Function for check fill of required fields;
-        if ($(this).hasClass('required')) { 
+    function checkReq() {//Function for validation form
+        if ($(this).hasClass('required')) {
+            // email regexp
+            if ($(this).prop('type') == 'email' && $(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) == null && $(this).val() !== '') {
+                if ($(this).hasClass('error')) {
+                    $(this).removeClass('error');
+                    $(this).parent().find('.error_msg').remove();
+                }
+                $(this).addClass('invalid');
+                $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
+            } else {
+                if ($(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) !== null) {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+            //phone regexp /(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})/g
+            if ($(this).prop('name') == 'PHONE' && $(this).val().match(/(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})/g) == null && $(this).val() !== '') {
+                if ($(this).hasClass('error')) {
+                    $(this).removeClass('error');
+                    $(this).parent().find('.error_msg').remove();
+                }
+                $(this).addClass('invalid');
+                $(this).parent().append('<div class="error_msg">This value is invalid.</div>');
+            } else {
+                if ($(this).val().match(/(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})/g) !== null) {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+            //check fill of required fields
             if ($(this).val() == '') {
+                $(this).removeClass('invalid');
+                $(this).parent().find('.error_msg').remove();
                 if (!$(this).hasClass('error')) {
                     $(this).addClass('error');
                     $(this).parent().append('<div class="error_msg">This field is required.</div>');
                 }
             } else {
-                $(this).removeClass('error');
-                $(this).parent().find('.error_msg').remove();
+                if (!$(this).hasClass('invalid')) {
+                    $(this).removeClass('error');
+                    $(this).parent().find('.error_msg').remove();
+                }
             }
 
         }
@@ -44,6 +77,9 @@
                 }
             }
         });
+        if ($('#mce-anti').val() !== '') {//check fake field to find bot-program
+            AllValid = false;
+        }
         if (AllValid && MailInProgres == false) {
             MailInProgres = true;
             $('#mc-embedded-subscribe').addClass('ajaxLoader');

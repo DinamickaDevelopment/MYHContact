@@ -231,8 +231,8 @@ footer{
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
     .wechat-logo{display:block;}
-    .foot-info-txt,.wechat-txt{margin-top:15px}
-
+.footer_contacts_saleEmail,.footer_contacts_webSite,.wechat-txt{margin-top:15px}
+.wechat-txt{margin-left:0;}
 }
 @media(min-width:460px){
     .lang-cont{margin: 42px 0 0 0;}
@@ -258,8 +258,8 @@ footer{text-align:left;}
 .Mobile-foot{display:none;}
 .Desktop-foot{display:block;}
 .wechat-logo{display:inline-block;}
-.foot-info-txt,.wechat-txt{margin-top:0}
-
+.footer_contacts_saleEmail,.footer_contacts_webSite,.wechat-txt{margin-top:0}
+.wechat-txt{margin-left:8px;}
 }
 @media(min-width:993px) {
 .nav > li {margin: 0 15px;} 

@@ -238,7 +238,7 @@ footer{
 
 }
 @media(min-width:767px){
-    footer{text-align:left;}
+    /*footer{text-align:left;}*/
     .botMargin{margin-bottom:54px;}
     .foot-cont-txt{margin-bottom:29px;}
     .Mobile{display:none;}
@@ -257,6 +257,7 @@ footer{
 }
 
 @media(min-width:993px) {
+footer{text-align:left;}
 .nav > li {margin: 0 15px;} 
 ul.navbar-nav {margin-left: 45px;}
 .lang-cont {margin: 42px 0 0 9%;font-size: 1em;letter-spacing: 0.025em}

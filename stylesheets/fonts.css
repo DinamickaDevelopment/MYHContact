@@ -14,7 +14,12 @@
 }
 @font-face {
     font-family: 'Raleway-Light';
-    src: url('../fonts/Raleway-Light/Raleway-Light.woff') format('woff'), url('../fonts/Raleway-Light/Raleway-Light.ttf') format('truetype'), url('../fonts/Raleway-Light/Raleway-Light.eot') format('embedded-opentype');
+    src: url('../fonts/Raleway-Light/Raleway-Light.woff') format('woff'), 
+         url('../fonts/Raleway-Light/Raleway-Light.ttf')  format('truetype'), 
+         url('../fonts/Raleway-Light/Raleway-Light.eot')  format('embedded-opentype'),
+         url(../fonts/Raleway-Light/raleway-light.svg)    format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Raleway-Regular';

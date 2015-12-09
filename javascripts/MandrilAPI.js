@@ -89,7 +89,7 @@
         if (AllValid && MailInProgres == false) {
             MailInProgres = true;
             //ajax loader logick
-
+            $('#mc-embedded-subscribe').prop('value','');
             $('#mc-embedded-subscribe').addClass('ajaxLoader');
             var inqury = document.forms[0],
                 Fname = inqury.FNAME.value,
@@ -181,6 +181,8 @@
                             $("#mce-responses").css("display", "none");
                         }
                         $('#mc-embedded-subscribe').removeClass('ajaxLoader');
+                        $('#mc-embedded-subscribe').prop('value', 'SUBMIT');
+
                         MailInProgres = false;
                         $('input,textarea').each(clearThisField);
                   });

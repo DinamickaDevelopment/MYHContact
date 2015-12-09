@@ -9,7 +9,7 @@
 */
 
 /*---------Reset style--------------*/
-button, input[type=button], input[type=reset], input[type=submit], input[type=text] {
+textarea, button, input {
     
     -webkit-appearance: none !important;
     -moz-appearance: none !important;

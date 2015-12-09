@@ -11,8 +11,10 @@
                     $(this).removeClass('error');
                     $(this).parent().find('.error_msg').remove();
                 }
+                if (!$(this).hasClass('invalid')){
                 $(this).addClass('invalid');
                 $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
+            }
             } else {
                 if ($(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) !== null) {
                     $(this).removeClass('invalid');
@@ -25,8 +27,10 @@
                     $(this).removeClass('error');
                     $(this).parent().find('.error_msg').remove();
                 }
-                $(this).addClass('invalid');
-                $(this).parent().append('<div class="error_msg">This value is invalid.</div>');
+                if (!$(this).hasClass('invalid')) {
+                    $(this).addClass('invalid');
+                    $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
+                }
             } else {
                 if ($(this).val().match(/(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})/g) !== null) {
                     $(this).removeClass('invalid');
@@ -35,8 +39,10 @@
             }
             //check fill of required fields
             if ($(this).val() == '') {
-                $(this).removeClass('invalid');
-                $(this).parent().find('.error_msg').remove();
+                if ($(this).hasClass('invalid')) {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
                 if (!$(this).hasClass('error')) {
                     $(this).addClass('error');
                     $(this).parent().append('<div class="error_msg">This field is required.</div>');

@@ -8,9 +8,21 @@
     font-family: 'ADAM-CGPRO';
     src: url('../fonts/ADAM-CGPRO/ADAM-CGPRO.woff') format('woff'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.ttf') format('truetype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.otf') format('opentype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.eot') format('embedded-opentype');
 }
+
+/*@font-face {
+    font-family: 'Noto-Regular';
+    src: url('../fonts/Noto-Regular/NotoSansCJKsc-Regular-3500.woff') format('woff'), 
+         url('../fonts/Noto-Regular/NotoSansCJKsc-Regular-3500.ttf') format('truetype'), 
+         url('../fonts/Noto-Regular/NotoSansCJKsc-Regular-3500.eot') format('embedded-opentype');
+}*/
+
+
 @font-face {
     font-family: 'Raleway-ExtraLight';
-    src: url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.woff') format('woff'), url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.ttf') format('truetype'), url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.eot') format('embedded-opentype');
+    src: url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.woff') format('woff'), 
+         url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.ttf') format('truetype'),
+         url('../fonts/Raleway-ExtraLight/raleway-extralight.svg') format('svg'), 
+         url('../fonts/Raleway-ExtraLight/Raleway-ExtraLight.eot') format('embedded-opentype');
 }
 @font-face {
     font-family: 'Raleway-Light';
@@ -21,6 +33,18 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: url('../fonts/Releway-Thin/Raleway-Thin.woff') format('woff'), 
+         url('../fonts/Releway-Thin/Raleway-Thin.ttf')  format('truetype'), 
+         url('../fonts/Releway-Thin/Raleway-Thin.eot')  format('embedded-opentype'),
+         url('../fonts/Releway-Thin/raleway-thin.svg') format('svg');      
+}
+
+
+
+ 
 @font-face {
     font-family: 'Raleway-Regular';
     src: url('../fonts/Raleway-Regular/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular/Raleway-Regular.ttf') format('truetype'), url('../fonts/Raleway-Regular/Raleway-Regular.eot') format('embedded-opentype');
@@ -28,6 +52,9 @@
     font-family: 'Raleway-Medium';
     src: url('../fonts/Raleway-Medium/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium/Raleway-Medium.ttf') format('truetype'), url('../fonts/Raleway-Medium/Raleway-Medium.eot') format('embedded-opentype');
 }
+
+
+
 @font-face {
     font-family: 'Roboto-Light';
     src: url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light/Roboto-Light.eot') format('embedded-opentype');
@@ -35,7 +62,10 @@
 
 @font-face {
     font-family: 'Roboto-Thin';
-    src: url(../fonts/Roboto-Thin/Roboto-Thin.woff) format('woff'), url('../fonts/Roboto-Thin/Roboto-Thin.ttf') format('truetype'), url('../fonts/Roboto-Thin/Roboto-Thin.eot') format('embedded-opentype');
+    src: url(../fonts/Roboto-Thin/Roboto-Thin.woff) format('woff'), 
+         url('../fonts/Roboto-Thin/Roboto-Thin.ttf') format('truetype'),
+        
+         url('../fonts/Roboto-Thin/Roboto-Thin.eot') format('embedded-opentype');
 }
 
 

@@ -129,11 +129,16 @@ footer{
     font-family:'Raleway-Regular';
     font-size:11px;
     letter-spacing:0.025em;
-    line-height:14px;
+    line-height:11px;
     color:#455a64;
     background-color:#fafafa;
 }
  .botOffset{margin-bottom:200px;}
+
+.footer__logoCover {
+  padding-top:21px;
+}
+
 .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover {
 
     font-family:'Roboto-Light';
@@ -166,15 +171,74 @@ footer{
 
 
 .foot-txt{
-    width:100%;
+    /*width:100%;*/
     line-height:24px;
 }
 .foot-info-txt{
     color:#ffffff;
     letter-spacing:0.15em
 }
-.foot-cont-txt{
-    line-height:24px;
+
+.footer__Address {
+padding-top:21px;
+}
+
+.footer__Address_HK, .footer__Address_China{
+    line-height:11px;
+}
+
+.footer__Address_HKLine1, 
+.footer__Address_HKLine2, 
+.footer__Address_HKLine3 {
+
+    
+ }
+
+
+.footer__Address_HKLine1 {
+    font-family:'Raleway-Regular';
+}
+
+.footer__Address_HKLine2 {
+    font-family:'Raleway-Light';
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    margin-bottom:14px;
+}
+
+.footer__Address_HKLine3 {
+    font-family:Noto-Regular;
+    
+}
+
+
+
+.footer__Address_ChinaLine1, 
+.footer__Address_ChinaLine2, 
+.footer__Address_ChinaLine3 {
+
+
+
+}
+
+.footer__Address_ChinaLine1 {
+font-family:'Raleway-Regular';
+margin-bottom:14px;
+}
+
+.footer__Address_ChinaLine2 {
+    font-family:'Raleway-Light';
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    margin-bottom:14px;    
+}
+
+.footer__Address_ChinaLine3 {
+ font-family:Noto-Regular;
 }
 
     .footer_contacts_saleEmail {
@@ -191,8 +255,8 @@ footer{
 
 
 .undercover{
-    padding:21px 0 29px 27px;
-    background-color:#25323a;padding-left: 18px;
+    /*padding:21px 15px 29px 15px;*/
+    background-color:#25323a;
 }
 
     .undercover .container-fluid {    
@@ -210,17 +274,19 @@ footer{
 /*-------------footer------end----------*/
 /*---------Adaptive styles section--------------*/
 @media(max-width:993px){ .mobileWidth{width:100%;padding:0 15px;}}
+
 @media(min-width:320px){
     .Mobile{display:block;}
     .Desktop,.Desktop-block{display:none;}
     .Mobile-foot{display:block;}
     .Desktop-foot{display:none;}
+    .undercover{ padding:21px 15px 0 15px;}
     .navbar-header {text-align:center}
     .nav>li{margin:0 10px;}
     footer{text-align:center;}
     .botMargin2{margin-bottom:8px;}
     .botMargin{margin-bottom:0;}
-    .foot-cont-txt{margin-bottom:10px;}
+    .footer__Address_HK, .footer__Address_China{margin-bottom:30px;}
     ul.navbar-nav{margin-left:0;}
     .lang-cont{margin: 32px 0 0 0;font-size: 1em;letter-spacing:0.025em;}
     body{font-size:12px}
@@ -231,7 +297,7 @@ footer{
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
     .wechat-logo{display:block;}
-    .foot-info-txt,.wechat-txt{margin-top:15px}
+    .foot-info-txt,.wechat-txt{margin-top:15px;margin-bottom:15px;}
 
 }
 @media(min-width:460px){
@@ -240,8 +306,8 @@ footer{
 }
 
 @media(min-width:767px){
-    .botMargin{margin-bottom:54px;}
-    .foot-cont-txt{margin-bottom:29px;}
+    .botMargin{margin-bottom:50px;}
+    /*.footer__Address_HK, .footer__Address_China{margin-bottom:29px;}*/
     .Mobile{display:none;}
     .Desktop{display:inline-block;}
     
@@ -254,14 +320,15 @@ footer{
     .mobil-center{float:right}
 }
 @media(min-width:769px){
-footer{text-align:left;}
-.Mobile-foot{display:none;}
-.Desktop-foot{display:block;}
-.wechat-logo{display:inline-block;}
-.foot-info-txt,.wechat-txt{margin-top:0}
+
+
+
+
+.foot-info-txt{margin-top:0}
 
 }
 @media(min-width:993px) {
+footer{text-align:left;}
 .nav > li {margin: 0 15px;} 
 ul.navbar-nav {margin-left: 45px;}
 .lang-cont {margin: 42px 0 0 9%;font-size: 1em;letter-spacing: 0.025em}
@@ -269,6 +336,10 @@ body {font-size: 14px;}
 .dropdown-menu {background-color: #263238;padding: 0;border: 1px solid transparent;}
 .no-paddings {padding-left: 5px;}
 .Desktop-block{display:block;}
+.Desktop-foot{display:block;}
+.Mobile-foot{display:none;}
+.undercover{ padding:21px 15px 29px 15px;}
+.wechat-logo{display:inline-block;}
 }
     @media(min-width:1201px) {
         .chPhone, .hkPhone {white-space: nowrap;display: inline;}

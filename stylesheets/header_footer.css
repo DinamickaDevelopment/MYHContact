@@ -174,6 +174,11 @@ footer{
     /*width:100%;*/
     line-height:24px;
 }
+
+.footer__logoCover_CopyRight {
+    line-height:11px;
+}
+
 .foot-info-txt{
     color:#ffffff;
     letter-spacing:0.15em
@@ -210,6 +215,7 @@ padding-top:21px;
 
 .footer__Address_HKLine3 {
     font-family:Noto-Regular;
+    font-size:12px;
     
 }
 
@@ -239,6 +245,7 @@ margin-bottom:14px;
 
 .footer__Address_ChinaLine3 {
  font-family:Noto-Regular;
+ font-size:12px;
 }
 
     .footer_contacts_saleEmail {
@@ -250,6 +257,10 @@ margin-bottom:14px;
     .footer_contacts_webSite {
         font-family:Raleway-ExtraLight;
         display:inline-block;
+        
+        -webkit-font-kerning: none;
+        font-kerning:none;
+
     }
 
 
@@ -280,6 +291,7 @@ margin-bottom:14px;
     .Desktop,.Desktop-block{display:none;}
     .Mobile-foot{display:block;}
     .Desktop-foot{display:none;}
+    .footer__logoCover_CopyRight {display:none;}
     .undercover{ padding:21px 15px 0 15px;}
     .navbar-header {text-align:center}
     .nav>li{margin:0 10px;}
@@ -306,7 +318,7 @@ margin-bottom:14px;
 }
 
 @media(min-width:767px){
-    .botMargin{margin-bottom:50px;}
+    .botMargin{margin-bottom:47px;}
     /*.footer__Address_HK, .footer__Address_China{margin-bottom:29px;}*/
     .Mobile{display:none;}
     .Desktop{display:inline-block;}
@@ -337,6 +349,7 @@ body {font-size: 14px;}
 .no-paddings {padding-left: 5px;}
 .Desktop-block{display:block;}
 .Desktop-foot{display:block;}
+.footer__logoCover_CopyRight {display:block;}
 .Mobile-foot{display:none;}
 .undercover{ padding:21px 15px 29px 15px;}
 .wechat-logo{display:inline-block;}

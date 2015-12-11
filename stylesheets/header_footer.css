@@ -250,13 +250,15 @@ margin-bottom:14px;
 
 
     .footer_contacts_saleEmail {
-     font-family:"Open_sans_light" !important;
+     font-family:"Raleway-Light" !important;
+     letter-spacing: 0;
      margin-bottom:14px;
      display:inline-block;
     }
 
     .footer_contacts_webSite {
-        font-family: "Open_sans_light" !important;
+        font-family: "Raleway-Light" !important;
+        letter-spacing: 0;
         display:inline-block;
         
         /*-webkit-font-kerning: normal;
@@ -277,9 +279,9 @@ margin-bottom:14px;
 
 .wechat-txt{
     display:inline-block;
-    font-family:"Open_sans_light" !important;
+    font-family:"Raleway-Light" !important;
     font-size:11px;
-    
+    letter-spacing:0;  
     color:white;
     margin-left: 8px;
 }
@@ -311,9 +313,8 @@ margin-bottom:14px;
     .mobil-center{float:none}
     .wechat-logo{display:block;}
     .foot-info-txt,.wechat-txt{margin-top:15px;margin-bottom:15px;}
-    .footer_contacts_EmailSiteCover {margin-top:15px;margin-bottom:15px;color:white; letter-spacing: 0.15em;}
+    .footer_contacts_EmailSiteCover {margin-top:15px;margin-bottom:15px;color:white;}
     .footer_contacts_TwoTelephoneCover {margin-top:15px;margin-bottom:15px; color:white; letter-spacing: 0.15em;}
-    /*.wechat-txt { letter-spacing:0.2em;}*/ 
 }
 
 @media(min-width:460px){
@@ -355,7 +356,7 @@ body {font-size: 14px;}
 .Mobile-foot{display:none;}
 .undercover{ padding:21px 15px 29px 15px;}
 .wechat-logo{display:inline-block;}
-.wechat-txt { letter-spacing:0.2em;}
+
 }
     @media(min-width:1201px) {
         .chPhone, .hkPhone {white-space: nowrap;display: inline;}

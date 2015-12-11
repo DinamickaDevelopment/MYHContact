@@ -73,3 +73,8 @@
     font-family: 'Roboto-Medium';
     src: url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium/Roboto-Medium.eot') format('embedded-opentype');
 }
+
+@font-face {
+    font-family: 'Jalane_light';
+    src: url('../fonts/Jalane/Jalane_light.ttf')  format('truetype');         
+}

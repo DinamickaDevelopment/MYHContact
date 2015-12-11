@@ -248,18 +248,19 @@ margin-bottom:14px;
  font-size:12px;
 }
 
+
     .footer_contacts_saleEmail {
-     font-family:Raleway-ExtraLight;
+     font-family:"Segoe UI Light";
      margin-bottom:14px;
      display:inline-block;
     }
 
     .footer_contacts_webSite {
-        font-family:Raleway-ExtraLight;
+        font-family: "Segoe UI Light";
         display:inline-block;
         
-        -webkit-font-kerning: normal;
-        font-kerning:normal;
+        /*-webkit-font-kerning: normal;
+        font-kerning:normal;*/
 
     }
 
@@ -276,7 +277,7 @@ margin-bottom:14px;
 
 .wechat-txt{
     display:inline-block;
-    font-family:Raleway-Light;
+    font-family:"Segoe UI Light";
     font-size:11px;
     
     color:white;
@@ -312,7 +313,7 @@ margin-bottom:14px;
     .foot-info-txt,.wechat-txt{margin-top:15px;margin-bottom:15px;}
     .footer_contacts_EmailSiteCover {margin-top:15px;margin-bottom:15px;color:white; letter-spacing: 0.15em;}
     .footer_contacts_TwoTelephoneCover {margin-top:15px;margin-bottom:15px; color:white; letter-spacing: 0.15em;}
-    .wechat-txt { letter-spacing:0.2em;} 
+    /*.wechat-txt { letter-spacing:0.2em;}*/ 
 }
 
 @media(min-width:460px){

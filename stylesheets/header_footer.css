@@ -258,8 +258,8 @@ margin-bottom:14px;
         font-family:Raleway-ExtraLight;
         display:inline-block;
         
-        -webkit-font-kerning: none;
-        font-kerning:none;
+        -webkit-font-kerning: normal;
+        font-kerning:normal;
 
     }
 
@@ -278,7 +278,7 @@ margin-bottom:14px;
     display:inline-block;
     font-family:Raleway-Light;
     font-size:11px;
-    letter-spacing:0.2em;
+    
     color:white;
     margin-left: 8px;
 }
@@ -312,8 +312,9 @@ margin-bottom:14px;
     .foot-info-txt,.wechat-txt{margin-top:15px;margin-bottom:15px;}
     .footer_contacts_EmailSiteCover {margin-top:15px;margin-bottom:15px;color:white; letter-spacing: 0.15em;}
     .footer_contacts_TwoTelephoneCover {margin-top:15px;margin-bottom:15px; color:white; letter-spacing: 0.15em;}
-
+    .wechat-txt { letter-spacing:0.2em;} 
 }
+
 @media(min-width:460px){
     .lang-cont{margin: 42px 0 0 0;}
 
@@ -353,6 +354,7 @@ body {font-size: 14px;}
 .Mobile-foot{display:none;}
 .undercover{ padding:21px 15px 29px 15px;}
 .wechat-logo{display:inline-block;}
+.wechat-txt { letter-spacing:0.2em;}
 }
     @media(min-width:1201px) {
         .chPhone, .hkPhone {white-space: nowrap;display: inline;}

@@ -310,6 +310,8 @@ margin-bottom:14px;
     .mobil-center{float:none}
     .wechat-logo{display:block;}
     .foot-info-txt,.wechat-txt{margin-top:15px;margin-bottom:15px;}
+    .footer_contacts_EmailSiteCover {margin-top:15px;margin-bottom:15px;color:white; letter-spacing: 0.15em;}
+    .footer_contacts_TwoTelephoneCover {margin-top:15px;margin-bottom:15px; color:white; letter-spacing: 0.15em;}
 
 }
 @media(min-width:460px){
@@ -318,7 +320,7 @@ margin-bottom:14px;
 }
 
 @media(min-width:767px){
-    .botMargin{margin-bottom:53px;}
+    .botMargin{margin-bottom:39px;}
     /*.footer__Address_HK, .footer__Address_China{margin-bottom:29px;}*/
     .Mobile{display:none;}
     .Desktop{display:inline-block;}
@@ -333,12 +335,10 @@ margin-bottom:14px;
 }
 @media(min-width:769px){
 
-
-
-
-.foot-info-txt{margin-top:0}
-
+.footer_contacts_TwoTelephoneCover {margin-top:0; margin-bottom:0;}
+.footer_contacts_EmailSiteCover {margin-top:0; margin-bottom:0;}
 }
+
 @media(min-width:993px) {
 footer{text-align:left;}
 .nav > li {margin: 0 15px;} 

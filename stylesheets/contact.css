@@ -71,7 +71,7 @@ input.placeholderimit + label.placeholderobj,textarea.placeholderimit + label.pl
     font-family:'Raleway-Light';
     font-size:1em;
     letter-spacing:0.06em;
-    color:#acacac;
+    color:#7d7d7d;
     cursor:text;
 
     display:block;
@@ -154,7 +154,7 @@ input[type=radio] + label,input[type=checkbox] + label{
     font-family:'Raleway-Light';
     font-size:1em;
     letter-spacing:0.06em;
-    color:#acacac;
+    color:#7d7d7d;
     cursor:pointer;
     height: 26px; 
     padding-left:32px;

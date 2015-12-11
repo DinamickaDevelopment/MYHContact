@@ -251,14 +251,14 @@ margin-bottom:14px;
 
     .footer_contacts_saleEmail {
      font-family:"Raleway-Light" !important;
-     letter-spacing: 0;
+     letter-spacing: -0.05em;
      margin-bottom:14px;
      display:inline-block;
     }
 
     .footer_contacts_webSite {
         font-family: "Raleway-Light" !important;
-        letter-spacing: 0;
+        letter-spacing: -0.05em;
         display:inline-block;
         
         /*-webkit-font-kerning: normal;
@@ -281,7 +281,7 @@ margin-bottom:14px;
     display:inline-block;
     font-family:"Raleway-Light" !important;
     font-size:11px;
-    letter-spacing:0;  
+    letter-spacing:-0.05em;  
     color:white;
     margin-left: 8px;
 }

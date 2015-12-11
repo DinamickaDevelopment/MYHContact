@@ -74,7 +74,8 @@
     src: url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium/Roboto-Medium.eot') format('embedded-opentype');
 }
 
+
 @font-face {
-    font-family: 'Jalane_light';
-    src: url('../fonts/Jalane/Jalane_light.ttf')  format('truetype');         
+    font-family: 'Open_sans_light';
+    src: url('../fonts/Open Sans Light/2209.ttf') format('truetype');
 }

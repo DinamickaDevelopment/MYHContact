@@ -250,13 +250,13 @@ margin-bottom:14px;
 
 
     .footer_contacts_saleEmail {
-     font-family:"Segoe UI Light";
+     font-family:"Open_sans_light" !important;
      margin-bottom:14px;
      display:inline-block;
     }
 
     .footer_contacts_webSite {
-        font-family: "Segoe UI Light";
+        font-family: "Open_sans_light" !important;
         display:inline-block;
         
         /*-webkit-font-kerning: normal;
@@ -277,7 +277,7 @@ margin-bottom:14px;
 
 .wechat-txt{
     display:inline-block;
-    font-family:"Segoe UI Light";
+    font-family:"Open_sans_light" !important;
     font-size:11px;
     
     color:white;

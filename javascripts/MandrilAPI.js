@@ -31,7 +31,8 @@
                     $(this).addClass('invalid');
                     $(this).parent().append('<div class="error_msg">This value is invalid.</div>');
                 }
-            } else {
+            }
+            else {
                 if ($(this).val().match(/^[0-9\(\)\+\-\s]{5,20}$/gmi) !== null) {
                     $(this).removeClass('invalid');
                     $(this).parent().find('.error_msg').remove();
@@ -56,6 +57,51 @@
 
         }
     
+        //Telephone field when Consumer radio button was checked and field without requrement
+        else if ($(this).prop('id') == 'mce-PHONE') {
+            //phone regexp /^[0-9\(\)\+\-\s]{5,20}$/gmi
+            // this is telephone field is NOT empty
+            if ($(this).val() !== '') {
+
+                if ($(this).val().match(/^[0-9\(\)\+\-\s]{5,20}$/gmi) == null) {
+                    //if input has a class error 
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+                    // if input has text, but this text is INVALID 
+                    if (!$(this).hasClass('invalid')) {
+                        $(this).addClass('invalid');
+                        $(this).parent().append('<div class="error_msg">This value is invalid.</div>');
+                    }
+                }
+                //if input has a text, but this text is VALID 
+                else {
+                    if ($(this).val().match(/^[0-9\(\)\+\-\s]{5,20}$/gmi) !== null) {
+                        $(this).removeClass('invalid');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+                }
+
+            } 
+            else if ($(this).val() === '') { //this is telephone field is EMTPY
+
+                if ($(this).hasClass('error')) {
+                    $(this).removeClass('error');
+                    $(this).parent().find('.error_msg').remove();
+                }
+
+                if ($(this).hasClass('invalid')) {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+
+            }
+
+        } // it is a telephone field
+
+         
+
     }
 
     function clearThisField() {//This function clear that field what located in "this" variable

@@ -285,6 +285,8 @@ margin-bottom:14px;
     color:white;
     margin-left: 8px;
 }
+.wechat{margin-bottom:8px;}
+
 /*-------------footer------end----------*/
 /*---------Adaptive styles section--------------*/
 @media(max-width:993px){ .mobileWidth{width:100%;padding:0 15px;}}

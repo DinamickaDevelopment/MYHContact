@@ -245,6 +245,11 @@ h2.ms-layer{
     color: white;
     overflow:hidden;
 }
+button, input {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border-radius: 0 !important;
+}
 /*---------subscr------end-----*/
 /*---------discoProc-----------*/
 #discoProc{

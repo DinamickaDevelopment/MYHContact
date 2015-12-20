@@ -51,7 +51,11 @@
                 }
                 if (!$(this).hasClass('error')) {
                     $(this).addClass('error');
-                    $(this).parent().append('<div class="error_msg">This field is required.</div>');
+                    if (Zhversion) {
+                        $(this).parent().append('<div class="error_msg">必填</div>');
+                    } else {
+                        $(this).parent().append('<div class="error_msg">This field is required.</div>');
+                    }
                 }
             } else {
                 if (!$(this).hasClass('invalid')) {
@@ -155,7 +159,7 @@
                 InquryMsg = inqury.ENQUIRY.value,
                 City = '',
                 Newsletter, DataForAdminInquary, DataForAdminNewsletter,
-                emailGot = 'sales@myhfinewines.com';
+                emailGot = 'b.druzhynin@dinamicka.com';
 
             var successResponse = $('#mce-success-response');
             var newsLetterObj = $('#Newsletter');
@@ -163,8 +167,13 @@
             if (newsLetterObj.prop('checked')) {
 
                 Newsletter = 'Yes';               
-                //change a pop up messages if nesletter was chacked
+                //change a pop up messages if nesletter was chacked   谢谢您的订阅！我们会及时回复您的询问。
+                if (Zhversion) {
+                successResponse.html("谢谢您的订阅！我们会及时回复您的询问。");
+                } else {
                 successResponse.html("Thank you. <br/> You are subscribed to the newsletter. <br/> We will promptly reply to your inquiry.");
+
+                }
                 DataForAdminNewsletter = JSON.stringify({
                     'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
                     'message': {
@@ -184,7 +193,12 @@
 
                 Newsletter = 'No';
                 //change a pop up messages if nesletter was chacked
-                successResponse.html("Thank you. </br> We will promptly reply to your inquiry.");
+                if (Zhversion) {
+                    successResponse.html("谢谢您！我们会及时回复您的询问。");
+                } else {
+                    successResponse.html("Thank you. </br> We will promptly reply to your inquiry.");
+
+                }
 
             }
                 $('input[name=groupCity]:checked').each(function () {

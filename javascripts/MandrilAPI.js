@@ -159,7 +159,7 @@
                 InquryMsg = inqury.ENQUIRY.value,
                 City = '',
                 Newsletter, DataForAdminInquary, DataForAdminNewsletter,
-                emailGot = 'b.druzhynin@dinamicka.com';
+                emailGot = 'sales@myhfinewines.com';
 
             var successResponse = $('#mce-success-response');
             var newsLetterObj = $('#Newsletter');

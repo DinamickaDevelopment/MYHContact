@@ -1,24 +1,43 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <title>Home</title>
+    <title>Contact us</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <!-- CSS Files -->
     <!-- Fonts library -->
-    <link href="stylesheets/fonts.css" rel="stylesheet" />
-    <!-- Bootstrap core CSS-------->
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom css------->
-    <link href="stylesheets/custom.css" rel="stylesheet" />
-    <link href="stylesheets/header_footer.css" rel="stylesheet"/>
+    <link href="../stylesheets/fonts.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom css -->
+    <link href="../stylesheets/contact.css" rel="stylesheet" />
+    <link href="../stylesheets/header_footer.css" rel="stylesheet" />
     <!-- Master Slider core CSS -->
-    <link href="stylesheets/masterslider.css" rel="stylesheet" />
-
+    <link href="../stylesheets/masterslider.css" rel="stylesheet" />
+    <style>
+        h1,.phoneNomber,input.placeholderimit + label.placeholderobj, textarea.placeholderimit + label.placeholderobj,
+        input[type=radio] + label, input[type=checkbox] + label,.newstxt,input,.slogan,.qrtext{
+            font-family:'Microsoft YaHei UI';
+        }
+        input.placeholderimit + label.placeholderobj:after,textarea.placeholderimit + label.placeholderobj:after{
+            font-family:'Raleway-Light';
+        }
+        h1{font-weight:900}
+        .qrholder{height:225px;}
+        @media (min-width:320px) {
+        .col-hk{width:16.66666667%;}
+        .col-mc{width:100%;margin-bottom:10px;}
+        }
+        @media (min-width:993px) {
+        .col-mc{width:25%;margin-bottom:0; }
+        }
+    </style>
 </head>
 <body>
+    <!--<div class="demo">DEMO</div>-->
+
     <nav class="navbar navmy-cutom navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -37,13 +56,13 @@
                     </svg>
                 </a>
                 <div class="lang-cont Mobile">
-                    <a href="index.html" class="lang">ENGLISH</a>|
-                    <a href="#" class="lang">中文 </a>
+                    <a href="../contact.html" class="lang">ENGLISH</a>|
+                    <a href="contactZH.html" class="lang">中文 </a>
                 </div>
             </div>
             <div class="navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav ">
-                    <li class="current"><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ZALTO GLASSWARE<span class="caret"></span></a>
@@ -53,290 +72,205 @@
                             <li><a href="thepraise.html">THE PRAISE</a></li>
                         </ul>
                     </li>
-                    <li ><a href="contact.html">CONTACT US</a></li>
+                    <li class="current"><a href="contact.html">CONTACT US</a></li>
                 </ul>
                 <div class="lang-cont Desktop">
-                    <a href="index.html" class="lang">ENGLISH</a>|
-                    <a href="#" class="lang">中文 </a>
+                    <a href="../contact.html" class="lang">ENGLISH</a>|
+                    <a href="contactZH.html" class="lang">中文 </a>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
     </nav>
-    <section id="mainSlider">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="images/mainslider/slider.jpg" alt="Zalto">
-                    <div class="carousel-content content1">
-                        <img alt="Zalto" src="images/mainslider/zalto_slider.png" />
-                        <h2>HANDCRAFTED</h2>
-                        <p>PERFECTION ACHIEVED</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/mainslider/Gravitas.jpg" alt="Gravitas">
-                    <div class="carousel-content content2">
-                        <div class="gravomega">GRAVITAS OMEGA</div>
-                        <div class="contetnBtn">
-                            <a href="theglassware.html">View Glassware</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/mainslider/L'Imperatrice-IngaBeckmann-edited.jpg" alt="L'Imperatrice">
-                    <div class="carousel-content content3">
-                        <div class="contetnP">Zalto glassware always gives our wines</div>
-                        <div class="contetnH2">an extra “oomph”</div>
-                        <div class="contetnP2">Julien Froger, Founder L'Imperatrice</div>
-                        <div class="contetnBtn">
-                            <a href="theglassware.html">View praise</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="ms-nav-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="ms-nav-next"></span>
-            </a>
-        </div>
-    </section>
-    <section id="zaltoGlassware">
+    <section id="contactForm" class="botOffset">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2>zalto glassware</h2>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                    <h1>购买及服务咨询</h1>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="slogan" style="margin-bottom:0">In the opinion of many, simply the best wine glassware in the world</div>
-                    <div class="hyper"><a href="theglassware.html" class="underline">View All Zalto Glassware</a><a href="theglassware.html" class="not-under"><span> ></span></a></div>
+                    <div class="slogan">铭英会将对您的咨询及时回复</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/Burgundy.png" alt="Burgundy" />
-                    </div>
-                    <h3 class="glass-title">Burgundy</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">230mm</span></div>
-                        <div class="param">Volume:<span class="param-number">960ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For structured, elegant red and white wines with depth and persistence</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Pinot Noir, Nebbiolo, Barbera, as well as for full-bodied whites like Chardonnay or Grüner Veltliner</div>
-                    </div>
 
-                    <span class="swicher">View more</span>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/Bordeaux.png" alt="Bordeaux" />
-                    </div>
-                    <h3 class="glass-title">Bordeaux</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">240mm</span></div>
-                        <div class="param">Volume:<span class="param-number">765ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For full-bodied wines, supported by more tannins and extract</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Bordeaux, Rioja, Brunello, Cabernet Sauvignon, Merlotand Shiraz</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/Universal.png" alt="Universal" />
-                    </div>
-                    <h3 class="glass-title">Universal</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">235mm</span></div>
-                        <div class="param">Volume:<span class="param-number">530ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">The versatile choice for both red and white fine wines</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Riesling, Chardonnay, Chianti and full-bodied whites without barrel maturation</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/White Wine.png" alt="White Wine" />
-                    </div>
-                    <h3 class="glass-title">White Wine</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">230mm</span></div>
-                        <div class="param">Volume:<span class="param-number">400ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For elegant, classical fruit forward white wines and medium-bodied red wines</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Sauvignon Blanc, Muskateller, Sangiovese, Rosè, Prosecco, Vintage Champagne</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-            </div>
-            <div class="row zaltoPart2">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/Champagne.png" alt="Champagne" />
-                    </div>
-                    <h3 class="glass-title">Champagne</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">240mm</span></div>
-                        <div class="param">Volume:<span class="param-number">220ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For the noble, elegant sparkling wines of the world</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Champagne, Sparkling Wines, Spumante and Cava</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/Sweet Wine.png" alt="Sweet Wine" />
-                    </div>
-                    <h3 class="glass-title">Sweet Wine</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">230mm</span></div>
-                        <div class="param">Volume:<span class="param-number">320ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For classic dessert wines, old Vintage Champagnes and barrel-aged distillates</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Sauternes, Ice Wine, Port, Sherry, Madeira and exclusive aged spirits like Single Malts or Cognac</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/Universal.png" alt="Universal" />
-                    </div>
-                    <h3 class="glass-title">Digestif</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">210mm</span></div>
-                        <div class="param">Volume:<span class="param-number">140ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For fine, harmonious distillates or Liqueurs</div>
-                        <div class="secenderyDesc"><span class="desctitle">Especially for:</span>Fruit distillates, Grappa, Liqueurs and Bitters</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="glass-img">
-                        <img src="images/White Wine.png" alt="White Wine" />
-                    </div>
-                    <h3 class="glass-title">Beer</h3>
-                    <div class="glass-param">
-                        <div class="param">Height:<span class="param-number">223mm</span></div>
-                        <div class="param">Volume:<span class="param-number">350ml</span></div>
-                    </div>
-                    <div class="description">
-                        <div class="generalDesc">For finely hopped Pilsner and Lager beers</div>
-                    </div>
-                    <span class="swicher">View more</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="showMore">
-                        <div class="showMore-textCont">
-                            <div class="showMore-text">Show more</div>
+
+            <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="novalidate">
+
+                <div class="row">
+
+                    <div class="col-lg-offset-3 col-lg-6     col-md-offset-2 col-md-8     col-sm-offset-2 col-sm-8    col-xs-12">
+                        <div id="mc_embed_signup" class="row">
+
+                            <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12">
+                                <div class="phoneNomber">香港电话: <span class="hkPhone">+852 8120 7488</span></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 paddingLeft0">
+                                <div class="phoneNomber">中国大陆电话: <span class="chPhone">+86 (10) 6568 3631</span></div>
+                            </div>
                         </div>
-                        <div class="showMore-img">
-                            <img id="ShowMorePIC" src="images/arrow.png" alt="Show more" />
+                        <!--Row with Name and LName -->
+                        <div class="row">
+                            <div class="col-lg-6  col-md-6 col-sm-6 col-xs-12 form__nameRow_NameFieldCover">
+
+                                <div class="mc-field-group">
+                                    <input type="text" value="" name="FNAME" class="placeholderimit required" id="mce-FNAME">
+                                    <label for="mce-FNAME" class="placeholderobj">名</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 paddingLeft0">
+                                <div class="mc-field-group">
+                                    <input type="text" value="" name="LNAME" class="placeholderimit required" id="mce-LNAME">
+                                    <label for="mce-LNAME" class="placeholderobj">姓</label>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="subscr">
-        <div class="container">
-            <div class="row">
-                <h3 style="margin-bottom:16px">Signup for Newsletter</h3>
-                <div class="udertext">Receive exclusive offerings. Privacy guaranteed.</div>
-            </div>
-            <div class="row" >
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <!-- Begin MailChimp Signup Form -->
-                    <div id="mc_embed_signup">
-                        <form id="Homepage form" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <div class="row">
-                                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                                        <input type="email" value="" name="EMAIL" class="required email subInput" id="mce-EMAIL" placeholder="Email Address">
-                                    </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="mc-field-group">
+                                    <input type="email" value="" name="EMAIL" class="email placeholderimit required" id="mce-EMAIL">
+                                    <label for="mce-EMAIL" class="placeholderobj">邮箱</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mc_embed_signup_scroll">
+                            
+                                <div class="row form__firstCheckboxRowCover">
                                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                        <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="subBtn">
+                                        <input type="radio" value="Consumer" name="RADIOAREA" id="mce-RADIOAREA-0"><label for="mce-RADIOAREA-0">客户</label>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <input type="radio" value="Corporate Gifting" name="RADIOAREA" id="mce-RADIOAREA-2"><label for="mce-RADIOAREA-2">企业礼品</label>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form__firstCheckboxRowCover_WineCompany">
+                                        <input type="radio" value="Wine Company" name="RADIOAREA" id="mce-RADIOAREA-4"><label for="mce-RADIOAREA-4">葡萄酒公司</label>
                                     </div>
                                 </div>
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_66d3ca932ee7b025ebb7ede53_366f29e352" tabindex="-1" value=""></div>
+                            
+                            
+                                <div class="row form__secondCheckboxRowCover">
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <input type="radio" value="Media" name="RADIOAREA" id="mce-RADIOAREA-1"><label for="mce-RADIOAREA-1">媒体</label>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <input type="radio" value="Gastronomy Service" name="RADIOAREA" id="mce-RADIOAREA-3"><label for="mce-RADIOAREA-3">美食服务</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form__firstCheckboxRowCover_HomewareRetailer">
+                                        <input type="radio" value="Homeware Retailer" name="RADIOAREA" id="mce-RADIOAREA-5"><label for="mce-RADIOAREA-5">家居零售店</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="mce-responses" class="clear ">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <!--End mc_embed_signup-->
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="discoProc">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <h3>Discover zalto craftmanship</h3>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="slogan">Watch the master glass artists at work</div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="videoContainer">
-                        <video id="ProcVideo" controls poster="images/poster.jpg">
-                            <source src="video/process.mp4" />
-                            <source src="video/process.ogv" />
-                            <source src="video/process.webm" />
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="aboutBrad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <h3>The Zalto brand</h3>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="aboutTxt">The beautiful line of handcrafted Zalto Denk'Art glasses, elevates your daily wine experience. From wine novices to serious collectors and wine professionals, Zalto has garnered a passionate and loyal following worldwide.<br /> Join us in a toast and discover the excellence of Zalto glasses.</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-3"></div>
-                <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-                    <div class="brand-btn"><a href="thebrand.html">Discover Zalto</a></div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-                    <div class="praise-btn"><a href="thepraise.html">Zalto praise</a></div>
 
+                        <div id="preHide">
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="mc-field-group hideJs">
+                                        <input type="text" value="" name="COMPANAM" class="placeholderimit required" id="mce-COMPANAM">
+                                        <label for="mce-COMPANAM" class="placeholderobj">公司名称</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                                    <div class="mc-field-group hideJs">
+                                        <input type="text" value="" name="TITLE" class="placeholderimit required" id="mce-TITLE">
+                                        <label for="mce-TITLE" class="placeholderobj">职务</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                                    <div class="mc-field-group">
+                                        <input type="text" value="" name="PHONE" class="placeholderimit required" id="mce-PHONE">
+                                        <label for="mce-PHONE" class="placeholderobj">电话</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                                    <div class="mc-field-group hideJs">
+                                        <input type="text" value="" name="ADDRESS" class="placeholderimit required" id="mce-ADDRESS">
+                                        <label for="mce-ADDRESS" class="placeholderobj">地址</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="mc-field-group input-group" id="citygroup">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 paddingLeft0 col-hk">
+                                        <input type="checkbox" value="HK" name="groupCity" id="mce-group[20113]-20113-0">
+                                        <label for="mce-group[20113]-20113-0">香港</label>
+                                    </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 paddingLeft0">
+                                        <input type="checkbox" value="Macau" name="groupCity" id="mce-group[20113]-20113-1">
+                                        <label for="mce-group[20113]-20113-1">澳门</label>
+                                    </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 paddingLeft0 col-mc">
+                                        <input type="checkbox" value="MainChina" name="groupCity" class="mainChina" id="mce-group[20113]-20113-2">
+                                        <label for="mce-group[20113]-20113-2">中国大陆</label>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 paddingLeft0-desktop" style="padding-right:15px;">
+                                        <input type="text" value="" disabled name="NCITY" class="placeholderimit" id="mce-NCITY">
+                                        <label for="mce-NCITY" class="placeholderobj">城市</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                                    <div class="mc-field-group hideJs">
+                                        <input type="text" value="" name="WEBSITE" class="placeholderimit" id="mce-WEBSITE">
+                                        <label for="mce-WEBSITE" class="placeholderobj nostar">网址</label>
+                                    </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 paddingLeftRigth0">
+                                    <div class="mc-field-group input-group">
+                                        <input type="checkbox" value="8" name="group[20117][8]" id="Newsletter"><label style="margin-bottom:9px;" for="Newsletter">订阅电子期刊</label>
+                                    </div>
+                                    </div>
+                                <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12" style="padding-left:13px">
+                                        <div class="newstxt">接收独家资讯隐私保障</div>
+                                    </div>
+                                </div>                               
+                            <div class="mc-field-group">
+                                <textarea type="text" value="" name="ENQUIRY" class="placeholderimit" id="mce-ENQUIRY"></textarea>
+                                <label for="mce-ENQUIRY" class="placeholderobj nostar">询问 </label>
+                            </div>
+                            <div class="antibotHolder" style="display:none">
+                                <input type="email" value="" name="EmailAnti" id="mce-anti" />
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_66d3ca932ee7b025ebb7ede53_aa85e205bc" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="提交" name="subscribe" id="mc-embedded-subscribe" class="button contsubbtn mobil-center"></div>
+                        </div>
+                    </div>
+
+                    <!--Left column with QR code-->
+
+                    <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12" style="padding:0">
+                        <div class="qrholder Desktop-block" style="margin-top:28px;">
+                            <div class="qrtext">铭英会微信</div>
+                            <div class="qr"><img src="../images/QR.png" /></div>
+                        </div>
+                    </div>
                 </div>
+
+            </form>
+
+            <div id="mce-responses" class="clear">
+                <!--<div class="response" id="mce-error-response" style="display:none"></div>-->
+                <div class="response" id="mce-success-response"></div>
+
             </div>
         </div>
     </section>
+    
     <footer>
         <div class="container mobileWidth">
             <!-- mobileWidth -->
@@ -466,14 +400,14 @@
                     <div class="footer__logoCover_CopyRight">© <span style="font-family:'Roboto-Light'">2015</span> MYH Fine Wines</div>
                 </div>
 
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 footer__Address" style="padding-top: 16px;">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 footer__Address">
                     <div class="footer__Address_HK margtp">
                         <div class="footer__Address_HKLine1">Hong Kong/Macau:</div><div class="footer__Address_HKLine2">Ming Ying Hui (Hong Kong) Trading Ltd.</div><div class="footer__Address_HKLine3">銘英會(香港)貿易有限公司</div>
                     </div>
                     <div class="footer__Address_China">
                         <div class="footer__Address_ChinaLine1">Mainland China:</div>
                         <div class="footer__Address_ChinaLine2">Ming Ying Hui (Beijing) Trading Ltd.</div>
-                        <div class="footer__Address_ChinaLine3">銘英會(北京)貿易有限公司</div>
+                        <div class="footer__Address_ChinaLine3">銘英會(北京)貿易有限公司</div> 
                     </div>
                 </div>
 
@@ -495,7 +429,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12 wechat Desktop-foot">
                             <div class="Desktop-foot">
-                                <div class="wechat-logo"><img src="images/WeChat-Logo.png" /></div><div class="wechat-txt">m y h f i n e w i n e s</div>
+                                <div class="wechat-logo"><img src="../images/WeChat-Logo.png" /></div><div class="wechat-txt">m y h f i n e w i n e s</div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
@@ -504,7 +438,7 @@
                                 <span class="footer_contacts_webSite">w w w . m y h f i n e w i n e s . c o m</span>
                             </div>
                             <div class="Mobile-foot">
-                                <div class="wechat-logo"><img src="images/WeChat-Logo.png" /></div><div class="wechat-txt">m y h f i n e w i n e s</div>
+                                <div class="wechat-logo"><img src="../images/WeChat-Logo.png" /></div><div class="wechat-txt">m y h f i n e w i n e s</div>
                             </div>
                         </div>
                     </div>
@@ -519,38 +453,15 @@
         </div>
     </footer>
 
-
-
-    <!-- Bootstrap core JS-------->
-    <script src="javascripts/jquery-1.11.3.min.js"></script>
-    <script src="javascripts/jquery-migrate-1.2.1.min.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
-    <!-- Master slider core JS -->
-    <script src="javascripts/masterslider.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="../javascripts/jquery-1.11.3.min.js"></script>
+    <script src="../javascripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/MandrilAPI.js"></script>
     <!-- Java Script area -->
-    <script src="javascripts/custom.js"></script>
-    <!--<script>
-        //var sliderW = $(window).width(), sliderH = sliderW/2.6;
+    <script src="../javascripts/contact.js"></script>
+    <script src="../javascripts/custom.js"></script>
 
-        var slider = new MasterSlider();
-        slider.setup('masterslider', {
-            space: 0,
-            layout: 'fullwidth',
-            height: 520,
-            loop: true,
-            swipe: false,
-            grabCursor: false,
-            overPause:false,
-            //autoplay: true,
 
-        });
-        slider.control('bullets', {
-            autohide: false, dir: "h", margin: 30
-        })
-        slider.control('arrows', {
-            autohide: false
-        });
-
-    </script>-->
 </body>
 </html>

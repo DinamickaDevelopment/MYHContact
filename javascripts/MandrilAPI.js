@@ -1,4 +1,9 @@
 ﻿$(window).ready(function () {
+    if ($('html').prop('lang') == 'zh') {
+        Zhversion = true
+    } else {
+        Zhversion = false;
+    }
     $('#mc-embedded-subscribe-form input').on('change', checkReq);
     //Submit eventon the contact form 
     $('#mc-embedded-subscribe-form').on('submit',mailSend)

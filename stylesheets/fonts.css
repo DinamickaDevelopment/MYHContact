@@ -59,13 +59,15 @@
     src: url('../fonts/Open Sans Light/2209.ttf') format('truetype');
 }
 /*	Chinese Fonts*/
-
 @font-face {
-    font-family: 'NotoSans';
+    font-family: 'NotoSansCJKsc-Medium';
+    src: url('../fonts/Noto/NotoSansCJKsc-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKsc-Regular';
     src: url('../fonts/Noto/NotoSansCJKsc-Regular.otf') format('opentype');
 }
-
 @font-face {
-    font-family: 'yahei';
-    src: url('../fonts/microsoft/MSYH.TTC');
+    font-family: 'NotoSansCJKsc-Bold';
+    src: url('../fonts/Noto/NotoSansCJKsc-Bold.otf') format('opentype');
 }

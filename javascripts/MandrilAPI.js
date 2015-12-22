@@ -133,7 +133,7 @@
         $('input').each(checkReq);
         $('input').each(function () {
             if ($(this).hasClass('required')) {
-                if ($(this).hasClass('error')) {
+                if ($(this).hasClass('error') || $(this).hasClass('invalid')) {
                     AllValid = false;
                 }
             }
@@ -141,7 +141,7 @@
         if ($('#mce-anti').val() !== '') {//check fake field to find bot-program
             AllValid = false;
         }
-        if (AllValid && MailInProgres == false) {
+        if (AllValid && MailInProgres == false && $('#mc-embedded-subscribe-form').prop('name') == 'contactForm') {//check type of form , is it on homepage or contantpage
             MailInProgres = true;
             //ajax loader logick
             $('#mc-embedded-subscribe').prop('value','');
@@ -158,8 +158,9 @@
                 Website = inqury.WEBSITE.value,
                 InquryMsg = inqury.ENQUIRY.value,
                 City = '',
-                Newsletter, DataForAdminInquary, DataForAdminNewsletter,
-                emailGot = 'sales@myhfinewines.com';
+                Newsletter,
+                DataForAdminInquary, DataForAdminNewsletter,
+                emailGot = 'sales@myhfinewines.com';//sales@myhfinewines.com
 
             var successResponse = $('#mce-success-response');
             var newsLetterObj = $('#Newsletter');
@@ -172,7 +173,6 @@
                 successResponse.html("谢谢您的订阅！我们会及时回复您的询问。");
                 } else {
                 successResponse.html("Thank you. <br/> You are subscribed to the newsletter. <br/> We will promptly reply to your inquiry.");
-
                 }
                 DataForAdminNewsletter = JSON.stringify({
                     'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
@@ -253,7 +253,54 @@
                   });
                     
                         
-        } 
+        } else {//block for homepage form
+            if (AllValid && MailInProgres == false) {
+                MailInProgres = true;
+                $('#mc-embedded-subscribe').prop('value', '');
+                $('#mc-embedded-subscribe').addClass('ajaxLoader');
+                var inqury = document.forms[0],
+                Email = inqury.EMAIL.value,
+                DataForAdminNewsletter,
+                emailGot = 'sales@myhfinewines.com';//sales@myhfinewines.com
+
+                var successResponse = $('#mce-success-response');
+                if (Zhversion) {
+                    successResponse.html("您已经订阅成功。");
+                } else {
+                    successResponse.html("You are now subscribed");
+                }
+                DataForAdminNewsletter = JSON.stringify({
+                    'key': 'V0D_Zxz9tADoT1PJUBYXhQ',
+                    'message': {
+                        'from_email': 'sales@myhfinewines.com',
+                        'to': [{ 'email': emailGot, 'type': 'to' }],
+                        'autotext': 'true',
+                        'subject': 'MYH Newsletter Subscribe - Home Page',
+                        'html': 'You have new subscriber ' + Email
+                    }
+                })
+
+                $.ajax({
+                    type: "POST",
+                    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+                    data: DataForAdminNewsletter,
+                }).done(function (response) {
+                    $("#mce-responses").css("display", "block");
+                    setTimeout(showSucessMessage, 3000);
+                    function showSucessMessage() {
+                        $("#mce-responses").css("display", "none");
+                    }
+                    $('#mc-embedded-subscribe').removeClass('ajaxLoader');
+                    $('#mc-embedded-subscribe').prop('value', 'SUBMIT');
+
+                    MailInProgres = false;
+                    $('input,textarea').each(clearThisField);
+                });
+
+
+
+            }
+        }
 
     }
 });

@@ -37,23 +37,28 @@ h2.ms-layer{
 }
 .ms-nav-next{
     background-image:url('../images/arrow_slider right1.png');
+    background-repeat:no-repeat;
     display:block;
     position:absolute;
     top:50%;
-    right:10%;
-    left:auto;
-    width:26px;
-    height:32px;cursor:pointer;
+    /*right:10%;
+    left:auto;*/
+    /*width:26px;
+    height:32px*/;
+    cursor:pointer;
 }
 .ms-nav-prev{
     background-image:url('../images/arrow_slider left1.png');
+    background-repeat:no-repeat;
+    
     display:block;
     position:absolute;
     top:50%;
-    left:10%;
-    right:auto;
-    width:26px;
-    height:32px;cursor:pointer;
+    /*left:10%;
+    right:auto;*/
+    /*width:26px;
+    height:32px;*/
+    cursor:pointer;
 }
 .carousel-indicators li{
     display: inline-block;
@@ -75,38 +80,32 @@ h2.ms-layer{
 .carousel-content{
     position:absolute;
     top: 0;             
-    text-align:center;
     font-size:14px;
 }
-.carousel-content h1, .carousel-content h2, .carousel-content p {
+
+.carousel__firstItem_contentCover h2, 
+.carousel__firstItem_contentCover p {
     font-family: 'ADAM-CGPRO';
     color: white;
     font-weight: 100;
     display: block;
     width: initial;
 }
-.carousel-content h2{
-    font-size:3.214em;
-    margin:10px 0;
-}
-.carousel-content p {
-    font-size: 1.786em;
+
+.carousel__firstItem_contentCover p {
     font-weight: 100;
     letter-spacing: 0.075em;
 }
+
 .gravomega{
     color:#263238;
     font-family:'Raleway-ExtraLight';
     font-size:4.429em;
 }
-.content1{top:25%;left:10%}
-.content2{top:25%;right:10%}
-.content3{top:25%;right:10%;text-align:right}
-.content2 .contetnBtn{margin-top:16%;}
+
+
 .contetnP{
-    font-family:'ADAM.CG PRO';
-    font-size:1.786em;
-    letter-spacing:0.055em;
+    font-family:sans-serif;    
     color:#ffffff;
 }
 .contetnP2{
@@ -119,36 +118,29 @@ h2.ms-layer{
 }
 .contetnH2{
     font-family:'Raleway-Light';
-    font-size:3.571em;
-    letter-spacing:0.054em;
     color:#ffffff;
     text-transform:uppercase;
 }
-.contetnBtn{
-    text-transform:uppercase;
-    width:185px;
-    height:48px;
-    background-color:#263238;
-    display:block;
-    margin:15px 0;
-    float:right;
-}
-.contetnBtn a{
+
+.contetnBtn {
     color:#ffffff;
     font-family:'ADAM-CGPRO';
     font-size:1.143em;
     letter-spacing:0.075em;
     text-align:center;
     text-decoration:none;
-    line-height:45px;
-    width:100%;
-    display:block;
+    text-transform:uppercase;
+    
+    white-space: nowrap;
+    display:table-cell;
+    background-color: rgba(38,50,56,0.8);
+    float:right;
 }
-.contetnBtn a:hover,.contetnBtn a:active{
+ a.contetnBtn:hover, a.contetnBtn:active{
     color:#fafafa;
     text-decoration:none;
 }
-.carousel-control{width:10%;}
+
 /*---------mainSlider----end-------*/
 /*---------zaltoGlassware--------------*/
 .zaltoGlassware{
@@ -194,7 +186,7 @@ h2.ms-layer{
     text-align:center;
     cursor:pointer;
 }
-.hyper{font-family:1.071em;}
+/*.hyper{font-family:1.071em;}*/
 .swicher{text-decoration:underline;}
 .pointer{font-family:'ADAM-CGPRO';text-decoration:none;}
 .underline{text-decoration:underline;color:#263238;}
@@ -221,6 +213,7 @@ h2.ms-layer{
     font-size:13px;
     cursor:pointer;
     letter-spacing:0.2em;
+    text-align:center;
     margin:0 auto;
 }
 .showMore-textCont{
@@ -273,13 +266,19 @@ h2.ms-layer{
     margin-bottom:27px;
 }
 .subInput{
+    /*color: #7d7d7d;*/
+
     width: 100%;
     height: 35px;
+
     padding:0 0 0 1.286em;
+    /*color: #7d7d7d;*/
     color: #263238;
     border: 2px solid white;
     position: relative;
-    font-family:'Raleway-Regular';
+    font-family: 'Raleway-Light';
+    letter-spacing: 0.06em;
+    /*font-family:'Raleway-Regular';*/
     font-size:1em;
 }
 .subBtn{
@@ -292,12 +291,13 @@ h2.ms-layer{
     padding: 0;
         display:block;
 }
+
 .subBtn:hover{
     background-color:#fafafa;
 }
-.subInput::-webkit-input-placeholder{color:#7d7d7d; letter-spacing:0.06em} 
-.subInput:-moz-placeholder          {color:#7d7d7d; letter-spacing:0.06em} 
-.subInput:-ms-input-placeholder     {color:#7d7d7d; letter-spacing:0.06em} 
+.subInput::-webkit-input-placeholder{color:black; letter-spacing:0.06em} 
+.subInput:-moz-placeholder          {color:black; letter-spacing:0.06em} 
+.subInput:-ms-input-placeholder     {color:black; letter-spacing:0.06em} 
 
 .subInput::-webkit-input-placeholder::after,
 .subInput::-moz-placeholder::after,
@@ -426,31 +426,141 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
       font-size:1.3em;
     }
 
+    /*button gravitas omega*/
+    .gravomega {font-size:1.2em}
+    a.contetnBtn {font-size:0.7em; line-height:1.4em; padding: 3px;}
 
-    .carousel-content{font-size:4px;}
-    .content2 .contetnBtn{margin-top:5%}
-    .content1 img{width:40%}
-    .carousel-content h2{margin:5px 0}
-    .contetnBtn{width:77px;height:22px;}
-     .contetnBtn a{line-height:22px;}
+    .carousel__content_gravitas {margin:5px 0;}
+
+
+    .content2{top:25%;right:7%}
+    
     .carousel-indicators{bottom:0}
+    
+    /*Arrow for slider*/
+    .carousel-control{width:14px;}
+    .ms-nav-next, .ms-nav-prev {
+        background-size: 13px 13px;
+        background-position: center;
+        width:13px;
+        height:13px;        
+}
+    .ms-nav-next {left:0;}
+    .ms-nav-prev { right:0;}
+
+    /*//////////////////First Zalto logo slide////////////////////////////*/
+    .carousel__firstItem_contentCover {width:100%;}    
+    .carousel__firstItem_contentCover img{margin: 10px 0 0 10px; width: 25%;}
+    .carousel__firstItem_contentCover h2 { font-size: 0.9em; margin: 5px 0; }
+    .carousel__firstItem_contentCover p {text-align: center; font-size: 1.4em;} 
+
+    /*//////////////////Third OMHOO slide////////////////////////////*/
+    .content3 { right:0; left:0; top:10%; text-align:center;}
+    .contetnP { font-size:0.8em; letter-spacing:0.2em;}
+
+    .contetnH2 {font-size: 1.5em; letter-spacing: 0.2em;}
+    .contetnP2 {font-size: 0.75em;}
+    .carousel__content_oomph { margin:5px auto 0; display:table; float:none;}
+    
+    .carousel__thirdItem_img {       
+        filter: blur(2px); 
+	    -webkit-filter: blur(2px); 
+	    -moz-filter: blur(2px); 
+	    -o-filter: blur(2px); 
+	    -ms-filter: blur(2px); 
+         filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); 
+    }
+
+    
+
 }
 @media(min-width:550px){    
-    .carousel-content{font-size:7px;}
+    
+    /*button gravitas omega*/
+     .gravomega { font-size: 2em;}
+    a.contetnBtn  {font-size:0.9em; line-height:1.5em; padding:7px;}
+    .carousel__content_gravitas {margin:5px 0;}
+        
     .carousel-indicators{bottom:0}
-    .content1 img{width:50%}
-    .content2 .contetnBtn{margin-top:10%}
-    .contetnBtn{width:125px;height:35px;}
-    .contetnBtn a{line-height:33px;}
+    
+    /*Arrow for slider*/
+    .carousel-control{width:20px;}
+    .ms-nav-next, .ms-nav-prev {
+        background-size: 13px 16px;
+        background-position: center;
+        width:20px;
+        height:20px;        
+    }
+    .ms-nav-next {left:0;}
+    .ms-nav-prev { right:0;}
+
+     /*//////////////////First Zalto logo slide////////////////////////////*/
+    .carousel__firstItem_contentCover {width:40%; left:7%; top:15%;}    
+    .carousel__firstItem_contentCover img{margin: 10px auto 0 auto; width: 50%; display:block;}
+    .carousel__firstItem_contentCover h2 { font-size: 1.7em; margin: 5px 0; }
+    .carousel__firstItem_contentCover p {text-align: center; font-size: 0.9em;}
+
+    /*////////////////Third OMHOO slide//////////////////////////////*/
+    .content3 { right:0; left:0; top:10%; text-align:center;}
+    .contetnP { font-size:1.2em; letter-spacing:0.2em;}
+    .contetnH2 {font-size: 2.2em; letter-spacing: 0.2em;}
+    .contetnP2 {font-size: 1.2em;}
+    .carousel__content_oomph { margin:4% auto 0; display:table; float:none;}
+    .carousel__thirdItem_img {       
+        filter: blur(2px); 
+	    -webkit-filter: blur(2px); 
+	    -moz-filter: blur(2px); 
+	    -o-filter: blur(2px); 
+	    -ms-filter: blur(2px); 
+         filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); }
+
+
 }
 @media(min-width:767px){    
-    .carousel-content{font-size:10px;}
+
+     /*button gravitas omega*/
+     .gravomega { font-size: 2.9em;}
+     a.contetnBtn  {font-size:1em; line-height:1.5em; padding: 10px 13px;}
+     .carousel__content_gravitas {margin:22px 0;}
+
     .carousel-indicators{bottom:10px}
-    .content1 img{width:56%}
-    .content2 .contetnBtn{margin-top:10%}
-    .contetnBtn{width:185px;height:48px;}
-    .contetnBtn a{line-height:48px;}
+    .content2{top:25%;right:60px}
+             
     .carousel-content h2{margin:10px 0}
+    
+     /*Arrow for slider*/
+    .carousel-control{width:32px;}
+
+    .ms-nav-next, .ms-nav-prev {
+        background-size: 26px 32px;
+        background-position: center;
+        width:32px;
+        height:32px;        
+    }
+    .ms-nav-next {left:0;}
+    .ms-nav-prev {right:0;}
+
+     /*//////////////////First Zalto logo slide////////////////////////////*/
+    .carousel__firstItem_contentCover {width:40%; left:7%; top:18%;}    
+    .carousel__firstItem_contentCover img{margin: 10px auto 0 auto; width: 45%; display:block;}
+    .carousel__firstItem_contentCover h2 { font-size: 2.2em; margin: 5px 0; }
+    .carousel__firstItem_contentCover p {text-align: center; font-size: 1.2em;}
+
+    /*////////////////Third OMHOO slide//////////////////////////////*/
+    .content3 { right:80px; left:auto; top:20%; text-align:right;}
+    .contetnP { font-size:1.5em; letter-spacing:0.2em;}
+    .contetnH2 {font-size: 2.45em; letter-spacing: 0.2em;}
+    .contetnP2 {font-size: 1.2em;}
+    .carousel__content_oomph { margin:8px 0 0 0; display:table; float:right;}
+    .carousel__thirdItem_img {       
+        filter: blur(2px); 
+	    -webkit-filter: blur(2px); 
+	    -moz-filter: blur(2px); 
+	    -o-filter: blur(2px); 
+	    -ms-filter: blur(2px); 
+         filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); }
+
+
          #mce-responses{
 
         
@@ -462,7 +572,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
     }
 }
-@media(min-width:769px){
+
+
+/*@media(min-width:769px){
     footer{text-align:left;}
     .botMargin2{margin-bottom:77px;}
     .botMargin{margin-bottom:50px;}
@@ -473,8 +585,8 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     .navbar-collapse{height:102px}
     li.current{border-bottom: 3px solid #c53163;}
     .expand{height:102px}
-    .content2 .contetnBtn{margin-top:16%}
-}
+    .content2 .contetnBtn{margin-top:10%}
+}*/
 @media(min-width:993px){
     .nav>li{margin:0 15px;}
     ul.navbar-nav{margin-left:45px;}
@@ -482,14 +594,76 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     body{font-size:14px}
         .subBtn{width:100%;margin:0 auto 35px;}
         .carousel-content{font-size:14px;}
+
+     /*button gravitas omega*/
+     .gravomega { font-size: 4.0em; line-height: 0.75em;}
+     a.contetnBtn  {font-size:1.14em; line-height:1.5em; padding: 17px 14px;}
+     .carousel__content_gravitas {margin:88px 0;}
+
+     /*Arrow for slider*/
+    .carousel-control{width:42px;}
+    .ms-nav-next, .ms-nav-prev {
+        background-size: 26px 32px;
+        background-position: center;
+        width:32px;
+        height:32px;        
+    }
+    .ms-nav-next {left:0;}
+    .ms-nav-prev {right:0;}
+
+      /*//////////////////First Zalto logo slide////////////////////////////*/
+    .carousel__firstItem_contentCover {width:40%; left:7%; top:18%;}    
+    .carousel__firstItem_contentCover img{margin: 10px auto 0 auto; width: 40%; display:block;}
+    .carousel__firstItem_contentCover h2 { font-size: 2.7em; margin: 5px 0; }
+    .carousel__firstItem_contentCover p {text-align: center; font-size: 1.5em;}
+
+    /*////////////////Third OMHOO slide//////////////////////////////*/
+    .content3 { right:120px; left:auto; top:20%; text-align:right;}
+    .contetnP { font-size:1.786em; letter-spacing:0.2em;}
+    .contetnH2 {font-size: 3.571em; letter-spacing: 0.2em;}
+    .contetnP2 {font-size: 1.429em}
+    .carousel__content_oomph { margin:8px 0 0 0; display:table; float:right;}
+    .carousel__thirdItem_img {       
+        filter: blur(2px); 
+	    -webkit-filter: blur(2px); 
+	    -moz-filter: blur(2px); 
+	    -o-filter: blur(2px); 
+	    -ms-filter: blur(2px); 
+         filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2px'); }
 }
+
 @media(min-width:1201px){    
+     /*button gravitas omega*/
+     .gravomega { font-size: 4.5em; line-height: 0.75em;}
+     a.contetnBtn  {font-size:1.14em; line-height:1.5em; padding: 17px 14px;}
+     .carousel__content_gravitas {margin:88px 0;}
+
     .nav>li{margin:0 36px;}
     ul.navbar-nav{margin-left:60px;}
     .lang-cont{margin: 42px 0 42px 9%;font-size: 1em;letter-spacing:0.025em}
         #mce-responses div.response {
              font-size:1.5em;
     }
+        
+    /*//////////////////First Zalto logo slide////////////////////////////*/
+    .carousel__firstItem_contentCover img{width:40%}
+    .carousel__firstItem_contentCover h2 { margin: 5px 0; font-size: 3.214em;}
+    .carousel__firstItem_contentCover p { font-size: 1.786em;}
+    
+    /*//////////////// Second OMHOO slide//////////////////////////////*/
+    .content3 { right:120px; left:auto; top:20%; text-align:right;}
+    .contetnP { font-size:1.786em; letter-spacing:0.2em;}
+    .contetnH2 {font-size: 3.571em; letter-spacing: 0.2em;}
+    .contetnP2 {font-size: 1.429em}
+    .carousel__content_oomph { margin:8px 0 0 0; display:table; float:right;}
+    .carousel__thirdItem_img {       
+        filter: blur(0); 
+	    -webkit-filter: blur(0); 
+	    -moz-filter: blur(0); 
+	    -o-filter: blur(0); 
+	    -ms-filter: blur(0); 
+         filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); }
+
 }
 /*---------Adaptive styles section------end-----*/
 

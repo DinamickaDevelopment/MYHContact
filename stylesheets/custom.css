@@ -266,14 +266,14 @@ h2.ms-layer{
     margin-bottom:27px;
 }
 .subInput{
-    color: #7d7d7d;
+    /*color: #7d7d7d;*/
 
     width: 100%;
     height: 35px;
 
     padding:0 0 0 1.286em;
-    color: #7d7d7d;
-    /*color: #263238;*/
+    /*color: #7d7d7d;*/
+    color: #263238;
     border: 2px solid white;
     position: relative;
     font-family: 'Raleway-Light';
@@ -294,12 +294,13 @@ h2.ms-layer{
         margin:0 auto 28px;
 
 }
+
 .subBtn:hover{
     background-color:#fafafa;
 }
-.subInput::-webkit-input-placeholder{color:#7d7d7d; letter-spacing:0.06em} 
-.subInput:-moz-placeholder          {color:#7d7d7d; letter-spacing:0.06em} 
-.subInput:-ms-input-placeholder     {color:#7d7d7d; letter-spacing:0.06em} 
+.subInput::-webkit-input-placeholder{color:black; letter-spacing:0.06em} 
+.subInput:-moz-placeholder          {color:black; letter-spacing:0.06em} 
+.subInput:-ms-input-placeholder     {color:black; letter-spacing:0.06em} 
 
 .subInput::-webkit-input-placeholder::after,
 .subInput::-moz-placeholder::after,

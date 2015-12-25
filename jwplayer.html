@@ -1,0 +1,29 @@
+﻿<HTML>
+<HEAD>
+    <TITLE>Amazon CloudFront Streaming with JW Player 6</TITLE>
+      
+
+    <script type='text/javascript' src='https://d7io7dti9fwp9.cloudfront.net/video/jwplayer-7.2.4/jwplayer.js'></script>
+    <script type="text/javascript">jwplayer.key = "AHKJ8oqvx6qWX8d9RY00tDP7VTETGz814NNzLw==";</script>
+</HEAD>
+
+<BODY>
+    <H1>This video is streamed by CloudFront and played by JW Player 6.</H1>
+
+    
+    <!--<video controls="controls">
+        <source src="video/process.mp4" type="video/mp4" />
+    </video>-->
+    <div id='mediaplayer'></div>
+    <script type="text/javascript">
+        jwplayer('mediaplayer').setup({
+            //flashplayer: 'jwplayer.flash.swf',
+         
+      file: "rtmp://s2z3jy56jskpuw.cloudfront.net/cfx/st/mp4:process.mp4",
+      width: "720",
+      height: "480"
+   });
+    </script>
+
+</BODY>
+</HTML>

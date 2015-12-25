@@ -62,19 +62,23 @@ h3{
 .navbar-header{
     height:100%;
 }
+/*.navbar-collapse.in {
+overflow-y: visible;
+}*/
 .collapse ul.navbar-nav{
-    height:102px;
+    /*height:102px;*/
     width: auto;
 }
 .navbar-nav{
-    height:102px;
+    /*height:102px;*/
 }
 .nav>li{
     height: 100%;
 }
 .nav>li a{
     font-family:'ADAM-CGPRO';
-    font-size:1.143em;
+    /*font-size:1.143em;*/
+    font-size:16px;
     letter-spacing:0.075em;
     color:#263238;
     height: 100%;
@@ -292,6 +296,15 @@ margin-bottom:14px;
 @media(max-width:993px){ .mobileWidth{width:100%;padding:0 15px;}}
 
 @media(min-width:320px){
+
+      /*navigation menu*/
+    .nav>li{margin:0 10px;}
+    ul.navbar-nav{margin-left:0;}
+    .navbar-collapse{}
+    .collapse ul.navbar-nav {height:100%;}
+    .navbar-nav > li > a {line-height:normal !important;}
+    li.current{border-bottom:0}
+    
     .Mobile{display:block;}
     .Desktop,.Desktop-block{display:none;}
     .Mobile-foot{display:block;}
@@ -299,17 +312,15 @@ margin-bottom:14px;
     .footer__logoCover_CopyRight {display:none;}
     .undercover{ padding:21px 15px 0 15px;}
     .navbar-header {text-align:center}
-    .nav>li{margin:0 10px;}
     footer{text-align:center;}
     .botMargin2{margin-bottom:8px;}
     .botMargin{margin-bottom:0;}
     .footer__Address_HK, .footer__Address_China{margin-bottom:30px;}
-    ul.navbar-nav{margin-left:0;}
+    
     .lang-cont{margin: 32px 0 0 0;font-size: 1em;letter-spacing:0.025em;}
     body{font-size:12px}
-    .navbar-collapse{height:0;overflow: hidden;}
-    li.current{border-bottom:0}
-    .expand{height:405%}
+    
+    
     .hollow{height:0;}
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
@@ -331,7 +342,8 @@ margin-bottom:14px;
     .Desktop{display:inline-block;}
     
     .lang-cont{margin: 46px 0 0 0;font-size: .9em;letter-spacing:0}
-    .navbar-collapse{height:102px;overflow: visible;}
+    .navbar-collapse{height:102px !important;}
+    .navbar-nav>li>a{line-height:75px !important;}
     li.current{border-bottom: 3px solid #c53163;}
     .expand{height:102px}
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
@@ -342,6 +354,33 @@ margin-bottom:14px;
 
 .footer_contacts_TwoTelephoneCover {margin-top:0; margin-bottom:0;}
 .footer_contacts_EmailSiteCover {margin-top:0; margin-bottom:0;}
+}
+
+@media (max-width: 767px){
+.navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+    
+.navbar-nav .open .dropdown-menu>li>a {
+    padding: 10px 15px 10px 25px;
+    color:#263238 !important;
+    line-height:normal;
+}
+
+
+
+    .navbar-nav .open .dropdown-menu > li > a:hover {
+    color:#c53163 !important;
+    }
+
 }
 
 @media(min-width:993px) {

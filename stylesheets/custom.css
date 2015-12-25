@@ -380,13 +380,26 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     text-align:center;
     line-height:30px;
 }
+
+.zaltoBrand__buttonCovers {
+  /*padding:0!important;*/
+}
 .brand-btn,.praise-btn{
     text-transform:uppercase;
     width:185px;
     height:48px;
+    padding-top: 18px;
+
     background-color:#263238;
-    display:block;
-    margin:10px auto;
+        
+}
+
+.brand-btn {
+margin:10px 0 0 auto;
+}
+
+.praise-btn {
+    margin:10px auto 0 0;
 }
 
 .brand-btn a,.praise-btn a{
@@ -396,9 +409,10 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     letter-spacing:0.075em;
     text-align:center;
     text-decoration:none;
-    line-height:45px;
-    width:100%;
-    display:block;
+    
+    display: block;
+    height: 12px;
+    line-height: 9px;
 }
 
 .brand-btn a:hover,.brand-btn a:active,.praise-btn a:hover,.praise-btn a:active{
@@ -408,7 +422,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 /*---------aboutBrad---end-----*/
 /*---------Adaptive styles section--------------*/
 @media(min-width:320px){
-    .nav>li{margin:0 10px;}
+    
+  
+
     footer{text-align:center;}
     .margtp{margin-top:10px}
     .botMargin2{margin-bottom:10px;}
@@ -419,9 +435,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     .Mobile{display:inline-block;}
     .Desktop{display:none;}
     body{font-size:12px}
-    .navbar-collapse{height:0}
+    
     li.current{border-bottom:0}
-    .expand{height:405%}
+    
     .subBtn{width:135px;margin:28px auto ;}
         #mce-responses{
 

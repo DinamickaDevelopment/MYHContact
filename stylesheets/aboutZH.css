@@ -1,0 +1,24 @@
+﻿
+ul.china > li{
+    font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+}
+@media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}}
+h1.about-myh{
+        font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+.aboutTxt, .darktxt, .prefootertxt, .contareatxt, .contareabtn a, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover{
+    font-family:'Microsoft YaHei UI';
+}
+.botMargin,.footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover, .footer__Address_ChinaLine1, .footer__Address_HKLine3{
+     font-family:'Microsoft YaHei UI';
+ }

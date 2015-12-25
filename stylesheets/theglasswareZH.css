@@ -1,0 +1,8 @@
+﻿div.verticalAligne > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2{
+        font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .desctitle, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover{
+            font-family:'Microsoft YaHei UI';
+
+}

@@ -1,0 +1,110 @@
+﻿div.carousel-content > h2 {
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+div.carousel-content > h2~p {
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+.gravomega{
+    font-family:'Microsoft YaHei UI';
+    font-weight:500;
+    /*font-size:3.938em;*/
+}
+.carousel__content_gravitas, .carousel__content_oomph{
+    width:155px;
+     font-family:'Microsoft YaHei UI';
+}
+.contetnP{
+    font-family:'Microsoft YaHei UI';
+        letter-spacing: 3px;
+}
+/*.content2{
+    width:37%;
+}*/
+div.contetnP2 > span{
+    font-family:'Times New Roman';
+}
+
+div.contetnH2 >span{
+    font-family:'Times New Roman', Times, serif;
+}
+ul.china > li{
+    font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+}
+@media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}}
+.contetnH2{
+    letter-spacing: 0.09em;
+    }
+.tagline > h2 > span{
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+a.underline,.param{
+     font-family:'Microsoft YaHei UI';
+     
+}
+h3.glass-title, h3.subs_tagline{
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+span.swicher, .showMore-text{
+    font-family:'Microsoft YaHei UI';
+}
+ div.udertext{
+     font-family:'Microsoft YaHei UI';
+         letter-spacing: 0.09em;
+}
+ .subBtn, h3.video_tagline, h3.zalto-brand{
+      font-weight:600;
+      font-family:'Microsoft YaHei UI';
+ }
+ div.slogan{
+     font-family:'Microsoft YaHei UI';
+     font-weight:100;
+}
+ .aboutTxt, div.brand-btn a, div.praise-btn a{
+     font-family:'Microsoft YaHei UI';
+ }
+ .botMargin,.footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover, .footer__Address_ChinaLine1{
+     font-family:'Microsoft YaHei UI';
+ }
+ /*@media (min-width: 320px){
+.content2 {
+    width:auto;
+}
+}*/
+ @media (min-width: 993px){
+.carousel-content {
+    font-size: 14px;
+     width:37%;
+}
+}
+@media (min-width: 767px){
+.content2 {
+    top: 25%;
+    right: 60px;
+    
+}
+    a.contetnBtn {
+        width: 155px;
+    }
+}
+@media (min-width: 550px){
+ a.contetnBtn {
+        width: 155px;
+    }
+}
+@media (min-width: 320px){
+.carousel__content_gravitas, .carousel__content_oomph{
+    width:80px;
+}}

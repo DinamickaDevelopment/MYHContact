@@ -395,7 +395,14 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     padding-top:18px!important;    
 }
 
-.brand-btn a,.praise-btn a{
+.brand-btn:hover,.brand-btn:active,.praise-btn:hover,.praise-btn:active{
+    color:#fafafa;
+    text-decoration:none;
+    cursor:pointer; 
+}
+
+
+.brand-btn div,.praise-btn div{
     color:#ffffff;
     font-family:'ArcaMajoraHeavy';
     font-size:16px;
@@ -408,19 +415,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     line-height: 16px;
     margin:0!important;
     padding:0!important;       
-}
-
-    /*.brand-btn input, .praise-btn input {
-     background:none;
-     border:0;
-     width:inherit;
-     height:inherit;
-    }*/
+}    
     
-.brand-btn a:hover,.brand-btn a:active,.praise-btn a:hover,.praise-btn a:active{
-    color:#fafafa;
-    text-decoration:none;
-}
+
 /*---------aboutBrad---end-----*/
 /*---------Adaptive styles section--------------*/
 @media(min-width:320px){

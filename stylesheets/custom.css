@@ -125,20 +125,21 @@ h2.ms-layer{
 .contetnBtn {
     color:#ffffff;
     font-family:'ArcaMajoraHeavy';
-    font-size:1.143em;
     letter-spacing:0.075em;
     text-align:center;
     text-decoration:none;
     text-transform:uppercase;
-    
     white-space: nowrap;
-    display:table-cell;
-    background-color: rgba(38,50,56,0.8);
-    float:right;
+    background-color: rgba(38,50,56,0.8);    
+    cursor:pointer;
 }
- a.contetnBtn:hover, a.contetnBtn:active{
+ .contetnBtn:hover, .contetnBtn:active{
     color:#fafafa;
     text-decoration:none;
+}
+
+.carousel__content_gravitasCover {   
+    float:right;
 }
 
 /*---------mainSlider----end-------*/
@@ -675,9 +676,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 @media(min-width:1201px){    
      /*button gravitas omega*/
      .gravomega { font-size: 4.5em; line-height: 0.75em;}
-     a.contetnBtn  {font-size:1.14em; line-height:1.5em; padding: 17px 14px;}
-     .carousel__content_gravitasCover {margin:88px 0; height:57px; width:185px;}
-
+     /*a.contetnBtn  {font-size:1.14em; line-height:1.5em; padding: 17px 14px;}*/
+     .carousel__content_gravitasCover {margin:88px 0; height:57px; width:185px; padding-top:22px;}
+     .carousel__content_gravitas {line-height:18px; font-size:16px; height:13px;}
     .nav>li{margin:0 36px;}
     ul.navbar-nav{margin-left:60px;}
     .lang-cont{margin: 42px 0 42px 9%;font-size: 1em;letter-spacing:0.025em}

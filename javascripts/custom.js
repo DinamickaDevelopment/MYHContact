@@ -5,7 +5,7 @@
             $(this).html('Hide details');
         } else {
             $(this).parent().find('.description').slideUp(700);
-            $(this).html('查看细节');
+            $(this).html('View more');
         }
     });
     $('#ShowMorePIC , .showMore-text').on('click', function () {

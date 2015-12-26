@@ -136,7 +136,7 @@ h2.ms-layer{
     background-color: rgba(38,50,56,0.8);
     float:right;
 }
- .contetnBtn:hover, a.contetnBtn:active{
+ a.contetnBtn:hover, a.contetnBtn:active{
     color:#fafafa;
     text-decoration:none;
 }
@@ -392,7 +392,7 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     width:185px;
     height:48px;
     background-color:#263238;    
-    /*padding-top:18px!important;*/    
+    padding-top:18px!important;    
 }
 
 .brand-btn a,.praise-btn a{
@@ -404,10 +404,10 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     text-decoration:none;
     
     display: block;
-    height: 48px;
+    height: 12px;
     line-height: 16px;
     margin:0!important;
-    padding-top:18px!important;       
+    padding:0!important;       
 }
 
     /*.brand-btn input, .praise-btn input {

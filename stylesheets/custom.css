@@ -455,7 +455,7 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     /*button gravitas omega*/
     .gravomega {font-size:1.2em}
     .carousel__content_gravitasCover {    
-    margin: 0px 0;
+    margin: 0;
     height: 26px;
     width: 115px;
     padding-top: 8px;
@@ -494,8 +494,19 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
     .contetnH2 {font-size: 1.5em; letter-spacing: 0.2em;}
     .contetnP2 {font-size: 0.75em;}
-    .carousel__content_oomph { margin:5px auto 0; display:table; float:none;}
+    .carousel__content_oomphCover { 
+        margin:5px auto 0; 
+        height: 26px;
+        width: 115px;
+        padding-top: 8px;
+        float:none;}
     
+    .carousel__content_oomph {
+         line-height: 12px;
+         font-size: 10px;
+         height: 10px;
+    }
+
     .carousel__thirdItem_img {       
         filter: blur(2px); 
 	    -webkit-filter: blur(2px); 
@@ -549,7 +560,13 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     .contetnP { font-size:1.2em; letter-spacing:0.2em;}
     .contetnH2 {font-size: 2.2em; letter-spacing: 0.2em;}
     .contetnP2 {font-size: 1.2em;}
-    .carousel__content_oomph { margin:4% auto 0; display:table; float:none;}
+    .carousel__content_oomphCover { margin:4% auto 0;  height: 40px;
+    width: 170px;
+    padding-top: 13px;
+    float:none;}
+    .carousel__content_oomph {
+    line-height:16px; font-size:14px; height:14px;
+    }
     .carousel__thirdItem_img {       
         filter: blur(2px); 
 	    -webkit-filter: blur(2px); 
@@ -599,7 +616,13 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     .contetnP { font-size:1.5em; letter-spacing:0.2em;}
     .contetnH2 {font-size: 2.45em; letter-spacing: 0.2em;}
     .contetnP2 {font-size: 1.2em;}
-    .carousel__content_oomph { margin:8px 0 0 0; display:table; float:right;}
+    .carousel__content_oomphCover { 
+        margin:8px 0 0 0;  
+        height: 50px;
+        width: 170px;
+        padding-top: 18px; 
+        float:right;}
+    .carousel__content_oomph {line-height:16px; font-size:14px; height:14px;}
     .carousel__thirdItem_img {       
         filter: blur(2px); 
 	    -webkit-filter: blur(2px); 
@@ -675,8 +698,9 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     .contetnP { font-size:1.786em; letter-spacing:0.2em;}
     .contetnH2 {font-size: 3.571em; letter-spacing: 0.2em;}
     .contetnP2 {font-size: 1.429em}
-    .carousel__content_oomph { margin:8px 0 0 0; display:table; float:right;}
-    .carousel__thirdItem_img {       
+    .carousel__content_oomphCover { margin:8px 0 0 0; height:57px; width:185px; padding-top:22px; float:right;}
+    .carousel__content_oomph {line-height:18px; font-size:16px; height:13px;}
+     .carousel__thirdItem_img {       
         filter: blur(2px); 
 	    -webkit-filter: blur(2px); 
 	    -moz-filter: blur(2px); 
@@ -712,7 +736,8 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     .contetnP { font-size:1.786em; letter-spacing:0.2em;}
     .contetnH2 {font-size: 3.571em; letter-spacing: 0.2em;}
     .contetnP2 {font-size: 1.429em}
-    .carousel__content_oomph { margin:8px 0 0 0; display:table; float:right;}
+    .carousel__content_oomphCover { margin:8px 0 0 0; height:57px; width:185px; padding-top:22px; float:right;}
+    .carousel__content_oomph {line-height:18px; font-size:16px; height:13px;}
     .carousel__thirdItem_img {       
         filter: blur(0); 
 	    -webkit-filter: blur(0); 

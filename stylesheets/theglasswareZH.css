@@ -6,3 +6,16 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
             font-family:'Microsoft YaHei UI';
 
 }
+ul.china > li{
+    font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+}
+@media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}}

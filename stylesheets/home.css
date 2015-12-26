@@ -78,13 +78,21 @@ span.swicher, .showMore-text{
  .botMargin,.footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover, .footer__Address_ChinaLine1{
      font-family:'Microsoft YaHei UI';
  }
+ div.verticalAligne > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2{
+        font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .desctitle, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover{
+            font-family:'Microsoft YaHei UI';
+
+}
  /*@media (min-width: 320px){
 .content2 {
     width:auto;
 }
 }*/
  @media (min-width: 993px){
-.carousel-content {
+.content2 {
     font-size: 14px;
      width:37%;
 }

@@ -454,9 +454,17 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
     /*button gravitas omega*/
     .gravomega {font-size:1.2em}
-    a.contetnBtn {font-size:0.7em; line-height:1.4em; padding: 3px;}
-
-    .carousel__content_gravitasCover {margin:5px 0;}
+    .carousel__content_gravitasCover {    
+    margin: 0px 0;
+    height: 26px;
+    width: 115px;
+    padding-top: 8px;
+    }
+     .carousel__content_gravitas {
+         line-height: 12px;
+         font-size: 10px;
+         height: 10px;
+     }
 
 
     .content2{top:25%;right:7%}
@@ -510,8 +518,12 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     
     /*button gravitas omega*/
      .gravomega { font-size: 2em;}
-    a.contetnBtn  {font-size:0.9em; line-height:1.5em; padding:7px;}
-    .carousel__content_gravitasCover {margin:5px 0;}
+    .carousel__content_gravitasCover {    
+    margin: 10px 0;
+    height: 40px;
+    width: 170px;
+    padding-top: 13px;}
+     .carousel__content_gravitas {line-height:16px; font-size:14px; height:14px;}
         
     .carousel-indicators{bottom:0}
     
@@ -552,8 +564,12 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
      /*button gravitas omega*/
      .gravomega { font-size: 2.9em;}
-     a.contetnBtn  {font-size:1em; line-height:1.5em; padding: 10px 13px;}
-     .carousel__content_gravitasCover {margin:22px 0;}
+      .carousel__content_gravitasCover {    
+          margin: 10px 0;
+          height: 50px;
+          width: 170px;
+          padding-top: 18px;}
+     .carousel__content_gravitas {line-height:16px; font-size:14px; height:14px;}
 
     .carousel-indicators{bottom:10px}
     .content2{top:25%;right:60px}
@@ -634,8 +650,8 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 
      /*button gravitas omega*/
      .gravomega { font-size: 4.0em; line-height: 0.75em;}
-     a.contetnBtn  {font-size:1.14em; height:57px; line-height:57px; padding: 0 14px;}
-     .carousel__content_gravitasCover {margin:88px 0;}
+    .carousel__content_gravitasCover {margin:88px 0; height:57px; width:185px; padding-top:22px;}
+     .carousel__content_gravitas {line-height:18px; font-size:16px; height:13px;}
 
      /*Arrow for slider*/
     .carousel-control{width:42px;}

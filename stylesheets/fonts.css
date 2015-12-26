@@ -6,7 +6,11 @@
 */
 @font-face {
     font-family: 'ADAM-CGPRO';
-    src: url('../fonts/ADAM-CGPRO/ADAM-CGPRO.woff') format('woff'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.ttf') format('truetype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.otf') format('opentype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.eot') format('embedded-opentype');
+    src: url('../fonts/ADAM-CGPRO/ADAM-CGPRO.woff') format('woff'), 
+        url('../fonts/ADAM-CGPRO/ADAM-CGPRO.ttf') format('truetype'), 
+        url('../fonts/ADAM-CGPRO/ADAM-CGPRO.otf') format('opentype'), 
+        url('../fonts/ADAM-CGPRO/ADAM.svg') format('svg'),
+        url('../fonts/ADAM-CGPRO/ADAM-CGPRO.eot') format('embedded-opentype');
 }
 
 @font-face {

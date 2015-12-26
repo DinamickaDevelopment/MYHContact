@@ -1,0 +1,38 @@
+﻿/*-------------menu start------------*/
+ul.china > li{
+    font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+}
+@media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}}
+/*-------------menu end------------*/
+div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName{
+        font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+ .jurdescr-txt{
+     font-family:'Microsoft YaHei UI';
+}
+ .maintxt{
+     font-family:'Microsoft YaHei UI';
+     text-align:left;
+     letter-spacing: 0.13em;
+ }
+ .leftText{
+         padding-right: 5%!important;
+ }
+ .rightText{
+     padding-left: 5%!important;
+ }
+
+ /*--------------------footer start-----------------*/
+ .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover{
+font-family:'Microsoft YaHei UI';
+ }

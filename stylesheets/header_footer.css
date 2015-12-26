@@ -205,7 +205,7 @@ padding-top:11px;
 
 
 .footer__Address_HKLine1 {
-    font-family:'Raleway-Regular';
+    font-family:'Microsoft YaHei UI';
 }
 
 .footer__Address_HKLine2 {
@@ -218,7 +218,7 @@ padding-top:11px;
 }
 
 .footer__Address_HKLine3 {
-    font-family:Noto-Regular;
+    font-family:'Microsoft YaHei UI';
     font-size:12px;
     
 }
@@ -234,7 +234,7 @@ padding-top:11px;
 }
 
 .footer__Address_ChinaLine1 {
-font-family:'Raleway-Regular';
+font-family:'Microsoft YaHei UI';
 margin-bottom:14px;
 }
 
@@ -248,7 +248,7 @@ margin-bottom:14px;
 }
 
 .footer__Address_ChinaLine3 {
- font-family:Noto-Regular;
+ font-family:'Microsoft YaHei UI';
  font-size:12px;
 }
 

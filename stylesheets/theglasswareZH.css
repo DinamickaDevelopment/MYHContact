@@ -19,3 +19,15 @@ ul.navbar-nav {
 ul.navbar-nav {
     margin-left: 11%;
 }}
+ /*--------------------footer start-----------------*/
+
+footer {
+    min-height: 100%;
+    border-top: 1px solid #c53163;
+    font-family:'Microsoft YaHei UI';
+    font-size: 11px;
+    letter-spacing: 0.025em;
+    line-height: 11px;
+    color: #455a64;
+    background-color: #fafafa;
+}

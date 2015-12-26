@@ -7,6 +7,11 @@
     1.ContactForm
 
 */
+ /*--------------------footer start-----------------*/
+ .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover{
+font-family:'Microsoft YaHei UI'!important;
+ }
+
 
 /*---------Reset style--------------*/
 textarea, button, input {

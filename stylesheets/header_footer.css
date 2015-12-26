@@ -146,7 +146,7 @@ footer{
 .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover {
 
     font-family:'Roboto-Light';
-    line-height: 14px;
+    line-height: 12px;
 
     white-space:nowrap;
     display:inline-block;
@@ -189,7 +189,7 @@ footer{
 }
 
 .footer__Address {
-padding-top:21px;
+padding-top:11px;
 }
 
 .footer__Address_HK, .footer__Address_China{
@@ -321,8 +321,12 @@ margin-bottom:14px;
     
     .lang-cont{margin: 32px 0 0 0;font-size: 1em;letter-spacing:0.025em;}
     body{font-size:12px}
-    
-    
+         
+     .margtp{margin-top:10px}
+    /*.botMargin2{margin-bottom:10px;}
+    .botMargin{margin-bottom:150px;}*/
+    .foot-cont-txt{margin-bottom:10px;}
+
     .hollow{height:0;}
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}

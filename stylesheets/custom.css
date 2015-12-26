@@ -392,7 +392,7 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     width:185px;
     height:48px;
     background-color:#263238;    
-    padding:0;    
+    padding:0!important;    
 }
 
 
@@ -408,7 +408,8 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
     display: block;
     height: 48px;
     line-height: 48px;
-    padding:0;
+    padding:0!important;
+    margin:0!important;
 }
 
 .brand-btn a:hover,.brand-btn a:active,.praise-btn a:hover,.praise-btn a:active{

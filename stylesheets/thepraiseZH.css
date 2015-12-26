@@ -1,0 +1,22 @@
+﻿ /*--------------------footer start-----------------*/
+ .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover, .praTestemon, .praTitle, .praPersonetitle > span, .praPersonetitle{
+font-family:'Microsoft YaHei UI';
+ }
+ /*--------------------menu start------------*/
+ ul.china > li{
+    font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+}
+@media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}}
+div.part-clien > h2{
+    font-family:'Microsoft YaHei UI';;
+     font-weight:800;
+}

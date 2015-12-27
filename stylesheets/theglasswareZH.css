@@ -1,4 +1,4 @@
-﻿div.verticalAligne > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2{
+﻿.grav-desc > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2{
         font-family:'Microsoft YaHei UI';
     font-weight:600;
 }
@@ -10,15 +10,40 @@ ul.china > li{
     font-family:'Microsoft YaHei UI';
     font-weight:800;
 }
-@media (min-width: 1201px){
-ul.navbar-nav {
-    margin-left: 11%;
+
+@media (min-width: 320px){
+    .grav-h2_ch{margin-top:0; margin-bottom:10px;}
 }
+
+@media (min-width: 550px){
+    .grav-h2_ch{margin-top:0; margin-bottom:10px;}
 }
+
+@media (min-width: 769px){
+    .grav-h2_ch{margin-top:0;}
+}
+
+
 @media (min-width: 993px){
 ul.navbar-nav {
     margin-left: 11%;
-}}
+}
+
+    .decantersRow__MystiqueCH {padding-top:114px;}
+    .decantersRow__CarafeCH {padding-top:69px;}
+    .grav-h2_ch{margin-top:17px;}
+}
+
+@media (min-width: 1201px) {
+    .decantersRow__MystiqueCH {padding-top:54px;}
+    .decantersRow__CarafeCH {padding-top:0;}
+
+    .grav-h2_ch{margin-top:45px;}
+    ul.navbar-nav {margin-left: 11%;}
+
+}
+
+
  /*--------------------footer start-----------------*/
 
 footer {

@@ -232,7 +232,7 @@
 @media(min-width:769px){
     img[alt="Mystique Decanter"] {width: auto;}
     img[alt="Carafe 25, 75, 150"] {width: auto;}
-    .borderRight{border-right:1px solid #c53163;}
+   
     .grav-desc {height: 218px; padding:7% 15px;}
     .grav-txt {margin: 0 0 10px 0;}
     .grav-h2 {margin: 0 0 10px 0;}
@@ -244,6 +244,7 @@
 @media(min-width:993px) {
      img[alt="Mystique Decanter"] {width: 100%;}
     img[alt="Carafe 25, 75, 150"] {width: 100%;}
+     .borderRight{border-right:1px solid #c53163;}
     .grav-desc {height: 293px;}
     .grav-txt {margin: 0 0 40px 0;}
     .grav-h2 {margin: 26px 0 31px 0;}

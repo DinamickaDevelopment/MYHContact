@@ -328,7 +328,19 @@ h2 {
         .maintxt{
         line-height: 30px;
     }
-        .history{
-            padding-top:5%;
+        .history, .angles{
+            padding-top:8%;
+        }
+        .denk{
+            padding-top:11%;
+        }
+        .unique{
+            padding-top: 10%;
+        }
+        .modern{
+            padding-top:9%;
+        }
+        .etching, .recognition{
+            padding-top:12%;
         }
 }

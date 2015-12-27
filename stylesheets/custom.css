@@ -28,7 +28,7 @@ h2.ms-layer{
 }
 /*Bootstrap slider classes*/
 .left,.right{background-image:none!important}
-.carousel-inner>.item>a>img, .carousel-inner>.item>img{width: 100%;max-height: 520px}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{width: 100%/*;max-height: 520px*/}
 .ms-nav-next,.ms-nav-prev{
     opacity:0.3;
 }

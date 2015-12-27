@@ -10,12 +10,12 @@
     });
     $('#ShowMorePIC , .showMore-text').on('click', function () {
         if ($('.zaltoPart2').css('display') == 'none') {
-            $('.showMore-text').html('Show less');
+            $('.showMore-text').html('显示较少'); //Show less
             $('#ShowMorePIC').addClass('rotate180')
             $('.zaltoPart2').slideDown(700);
         } else {
             $('.zaltoPart2').slideUp(700);
-            $('.showMore-text').html('Show more');
+            $('.showMore-text').html('显示更多');  // Show more
             $('#ShowMorePIC').removeClass('rotate180')
 
         }

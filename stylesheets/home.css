@@ -92,9 +92,8 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
     line-height:26px;
     }
 
-.carousel__content_gravitasCover {
-      width:90px;
-    }
+.carousel__content_gravitasCover {width:75px;}
+.carousel__content_oomphCover { width:55px; margin-top:1px; }
 }
 
 @media (min-width: 550px){
@@ -103,9 +102,8 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
     line-height:40px;
     }
 
-.carousel__content_gravitasCover {
-      width:110px;
-    }
+.carousel__content_gravitasCover {width:110px;}
+.carousel__content_oomphCover {  width:75px; margin-top:10px; }
 
 }
 
@@ -120,9 +118,9 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
     line-height:50px;
     }
     
-    .carousel__content_gravitasCover {
-      width:130px;
-    }
+    .carousel__content_gravitasCover { width:130px; }
+    .carousel__content_oomphCover {  width:105px; }
+
 }
 
  @media (min-width: 993px){
@@ -134,9 +132,8 @@ ul.navbar-nav {
     line-height:57px;
     }
 
- .carousel__content_gravitasCover {
-      width:140px;
-    }
+ .carousel__content_gravitasCover {width:140px;}
+ .carousel__content_oomphCover {  width:120px; }
 
 .content2 {
     font-size: 14px;
@@ -155,9 +152,8 @@ ul.navbar-nav {
     line-height:57px;
 }
 
-    .carousel__content_gravitasCover {
-      width:140px;
-    }
+    .carousel__content_gravitasCover {width:140px;}
+    .carousel__content_oomphCover {  width:120px; }
 }
 
 

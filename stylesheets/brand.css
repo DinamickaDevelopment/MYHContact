@@ -140,7 +140,7 @@ h2 {
 
 @media (min-width: 320px) {
     .history {
-        height: 385px;
+        height: 395px;
         padding-top: 5%;
             width: 92%;
         margin: auto;
@@ -151,14 +151,14 @@ h2 {
         margin: auto;
     }
     .angles {
-        height: 420px;
+        height: 410px;
         padding-top: 5%;
                     width: 92%;
         margin: auto;
     }
 
     .unique {
-        height: 365px;
+        height: 408px;
         padding-top: 5%;
                     width: 92%;
         margin: auto;
@@ -172,7 +172,7 @@ h2 {
     }
 
     .etching {
-        height: 300px;
+        height: 310px;
         padding-top: 5%;
                     width: 92%;
         margin: auto;

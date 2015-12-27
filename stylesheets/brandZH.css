@@ -47,29 +47,41 @@ div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName, .jurtitle > h2, .ju
 }
 
 @media (min-width: 320px) {
-    .first, .third {
+    .first {
         height: 290px;
+        padding-top: 5%;
+        width: 92%;
+        margin: auto;
+    }
+    .third {
+        height: 310px;
         padding-top: 5%;
         width: 92%;
         margin: auto;
     }
 
     .second {
-        height: 260px;
+        height: 290px;
         padding-top: 5%;
             width: 92%;
     margin: auto;
     }
 
-    .fourth, .fifth {
+     .fifth {
         height: 235px;
+        padding-top: 5%;
+            width: 92%;
+    margin: auto;
+    }
+    .fourth {
+        height: 255px;
         padding-top: 5%;
             width: 92%;
     margin: auto;
     }
 
     .sixth {
-        height: 245px;
+        height: 253px;
         padding-top: 5%;
             width: 92%;
     margin: auto;

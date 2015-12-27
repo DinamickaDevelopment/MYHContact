@@ -207,6 +207,10 @@ h2 {
 
     .blackmobile {
         width: 43%;
+            background-color: #263238;
+            margin:auto;
+    height: 32px;
+    line-height: 32px;
     }
 }
 

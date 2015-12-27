@@ -14,7 +14,7 @@ font-family:'Microsoft YaHei UI'!important;
 
 
 /*---------Reset style--------------*/
-textarea, button, input {
+textarea, input {
     
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
@@ -23,7 +23,7 @@ textarea, button, input {
     
 }
 
-button, input[type=button], input[type=reset], input[type=submit] {
+input[type=button], input[type=reset], input[type=submit] {
 
     border:1px solid transparent !important;
 
@@ -358,7 +358,7 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
    .newstxt{font-size:11px;text-align:left;margin-top:-2px;padding-left:3px;}
    .paddingLeft0{padding-left:15px;}
    .form__nameRow_NameFieldCover{padding-right:15px;}
-   .qrholder{width:182px;}
+   .qrholder{width:182px; display:none;}
 }
 
 
@@ -419,6 +419,7 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
    }
          .newstxt{font-size:12px;}
 
+         .qrholder{display:block;}
 }
 
 @media(min-width:1201px){

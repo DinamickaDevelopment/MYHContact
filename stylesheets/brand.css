@@ -100,9 +100,9 @@ h2 {
 }
 
 .jurdescr-img {
-    width: 65px;
+    width: 90px;
     height: 23px;
-    background-image: url('/images/zalto trace copy.png');
+    /*background-image: url('../images/zalto trace copy.png');*/
     display: block;
     margin: 25px auto 13px;
 }

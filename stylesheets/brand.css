@@ -37,19 +37,19 @@ h2 {
 }
 
 .verticalAligne {
-    position: relative;
+    /*position: relative;
     top: 50%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 15px;
+    transform: translateY(-50%);*/
+    padding: 0 35px;
 }
 
 .imgContainer img {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
 .aligne-right {
@@ -60,6 +60,12 @@ h2 {
 /*-----juryRes------*/
 .black {
     background-color: #263238;
+}
+
+.blackmobile {
+    background-color: #263238;
+    width: 50%;
+    margin: auto;
 }
 
 .jurName {
@@ -73,7 +79,16 @@ h2 {
     font-size: 1.286em;
     color: #fffefe;
     letter-spacing: 0.05em;
-    width: 100%;
+    /*width: 100%;*/
+    text-align: center;
+}
+
+.jurplace-m {
+    font-family: 'Raleway-Medium';
+    font-size: 1.286em;
+    color: #fffefe;
+    letter-spacing: 0.05em;
+    /*width: 100%;*/
     text-align: center;
 }
 
@@ -101,9 +116,9 @@ h2 {
     margin-bottom: 33px;
 }
 
-.jurhei {
+/*.jurhei {
     height: 400px;
-}
+}*/
 
 .placehold {
     width: 51%;
@@ -128,14 +143,41 @@ h2 {
     .unique {
         height: 365px;
     }
-    .modern{
+
+    .modern {
         height: 390px;
     }
-    .etching{
+
+    .etching {
         height: 300px;
     }
-    .recognition{
-         height: 425px;
+
+    .recognition {
+        height: 425px;
+    }
+
+    .result {
+        top: 31%;
+    }
+
+    .jurhei {
+        padding-top: 12%;
+    }
+
+    .jurName-m {
+        display: block;
+    }
+
+    .jurplace-m {
+        display: block;
+    }
+
+    .Desktop-block {
+        display: none;
+    }
+
+    .blackmobile {
+        width: 43%;
     }
 }
 
@@ -151,13 +193,41 @@ h2 {
     .unique {
         height: 341px;
     }
-      .modern{
+
+    .modern {
         height: 341px;
     }
-          .etching{
+
+    .etching {
         height: 341px;
     }
-              .recognition{
-         height: 341px;
+
+    .recognition {
+        height: 341px;
+    }
+
+    .result {
+        top: 50%;
+    }
+
+    .verticalAligne {
+        padding: 0 135px;
+    }
+        .blackmobile {
+        width: 33%;
+    }
+}
+
+@media (min-width: 768px) {
+    .jurName-m {
+        display: none;
+    }
+
+    .jurplace-m {
+        display: none;
+    }
+
+    .Desktop-block {
+        display: block;
     }
 }

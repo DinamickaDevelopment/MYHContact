@@ -308,7 +308,7 @@ margin-bottom:14px;
     li.current{border-bottom:0}
     
     .Mobile{display:block;}
-    .Desktop,.Desktop-block{display:none;}
+    /*.Desktop,.Desktop-block{display:none;}*/
     .Mobile-foot{display:block;}
     .Desktop-foot{display:none;}
     .footer__logoCover_CopyRight {display:none;}

@@ -13,7 +13,7 @@ ul.navbar-nav {
     margin-left: 11%;
 }}
 /*-------------menu end------------*/
-div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName{
+div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName, .jurtitle > h2,.jurName-m{
         font-family:'Microsoft YaHei UI';
     font-weight:600;
 }
@@ -25,18 +25,64 @@ div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName{
      text-align:left;
      letter-spacing: 0.13em;
  }
- .leftText{
+ /*.leftText{
          padding-right: 5%!important;
- }
- .rightText{
+ }*/
+ /*.rightText{
      padding-left: 5%!important;
- }
+ }*/
 
  /*--------------------footer start-----------------*/
- .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover{
+ .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover, .jurplace-m{
 font-family:'Microsoft YaHei UI';
  }
  /*-------------dropdown menuitem------------*/
 .drop{
     font-family:'Microsoft YaHei UI'!important;
+}
+@media (min-width: 320px) {
+ .first, .third{
+     height: 290px;
+         padding-top: 5%;
+ }
+ .second{
+          height: 260px;
+         padding-top: 5%;
+ }
+ 
+ .fourth, .fifth, .sixth {
+           height: 235px;
+         padding-top: 5%;
+ }
+ .seventh{
+                height: 320px;
+         padding-top: 5%;
+ }
+ 
+}
+
+@media (min-width: 550px) {
+  .first, .second, .third, .seventh{
+     height: 220px;
+         
+ }
+   .fourth, .fifth, .sixth{
+           height: 190px;
+ }
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px){
+   div.first > div.leftText, div.third > div.leftText, div.fifth > div.leftText,div.seventh > div.leftText{
+     padding-right:5%;
+ }
+   div.second > div.rightText, div.fourth > div.rightText,div.sixth > div.rightText {
+    padding-left: 5%;
+}
+
+}
+@media (min-width: 1200px) {
+
 }

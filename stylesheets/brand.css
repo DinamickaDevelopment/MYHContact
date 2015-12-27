@@ -130,7 +130,9 @@ h2 {
     top: 103%;
 }
 /*-----juryRes-end--*/
-
+.verticalAligne >h2{
+    margin-bottom: 13px;
+}
 @media (min-width: 320px) {
     .history {
         height: 385px;
@@ -191,28 +193,30 @@ h2 {
 
 @media (min-width: 550px) {
     .history {
-        height: 341px;
+        height: 280px;
             
     }
-
+    .denk{
+        height: 250px;
+    }
     .angles {
-        height: 341px;
+        height: 280px;
     }
 
     .unique {
-        height: 341px;
+        height: 250px;
     }
 
     .modern {
-        height: 341px;
+        height: 275px;
     }
 
     .etching {
-        height: 341px;
+        height: 220px;
     }
 
     .recognition {
-        height: 341px;
+        height: 250px;
     }
 
     .result {
@@ -239,4 +243,48 @@ h2 {
     .Desktop-block {
         display: block;
     }
+}
+@media (min-width: 992px){
+    .history {
+    height: 0;
+    padding-top:0;
+}
+
+     .denk{
+       height: 0;
+    }
+    .angles {
+        height:0;
+       
+    }
+
+    .unique {
+        height: 0;
+       
+    }
+
+    .modern {
+        height: 0;
+        
+    }
+
+    .etching {
+        height: 0;
+       
+    }
+
+    .recognition {
+        height: 0;
+       
+    }
+
+    .maintxt{
+        line-height: 27px;
+    }
+}
+@media (min-width: 1200px) {
+        .maintxt{
+        line-height: 30px;
+    }
+}
 }

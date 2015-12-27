@@ -7,13 +7,19 @@ div.carousel-content > h2~p {
     font-weight:600;
 }
 .gravomega{
+    text-align:right;
     font-family:'Microsoft YaHei UI';
     font-weight:500;
-    /*font-size:3.938em;*/
 }
+.carousel__content_gravitasCover,
+.carousel__content_oomphCover {
+padding-top:0;
+}
+
 .carousel__content_gravitas, .carousel__content_oomph{
-    width:155px;
+     height: 100%;
      font-family:'Microsoft YaHei UI';
+     
 }
 .contetnP{
     font-family:'Microsoft YaHei UI';
@@ -33,15 +39,7 @@ ul.china > li{
     font-family:'Microsoft YaHei UI';
     font-weight:800;
 }
-@media (min-width: 1201px){
-ul.navbar-nav {
-    margin-left: 11%;
-}
-}
-@media (min-width: 993px){
-ul.navbar-nav {
-    margin-left: 11%;
-}}
+
 .contetnH2{
     letter-spacing: 0.09em;
     }
@@ -86,33 +84,90 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
             font-family:'Microsoft YaHei UI';
 
 }
- /*@media (min-width: 320px){
-.content2 {
-    width:auto;
+
+
+@media (min-width: 320px){
+.carousel__content_gravitas,
+.carousel__content_oomph {
+    line-height:26px;
+    }
+
+.carousel__content_gravitasCover {
+      width:90px;
+    }
 }
-}*/
- @media (min-width: 993px){
-.content2 {
-    font-size: 14px;
-     width:37%;
+
+@media (min-width: 550px){
+.carousel__content_gravitas,
+.carousel__content_oomph {
+    line-height:40px;
+    }
+
+.carousel__content_gravitasCover {
+      width:110px;
+    }
+
 }
-}
+
 @media (min-width: 767px){
 .content2 {
     top: 25%;
-    right: 60px;
+    right: 160px;
     
 }
-    a.contetnBtn {
-        width: 155px;
+    .carousel__content_gravitas,
+    .carousel__content_oomph {
+    line-height:50px;
+    }
+    
+    .carousel__content_gravitasCover {
+      width:130px;
     }
 }
-@media (min-width: 550px){
- a.contetnBtn {
-        width: 155px;
+
+@media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+ .carousel__content_gravitas,
+ .carousel__content_oomph {
+    line-height:57px;
+    }
+
+ .carousel__content_gravitasCover {
+      width:140px;
+    }
+
+ .content2 {
+     font-size: 14px;
+     width:37%;
+}
+
+}
+
+
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+    .carousel__content_gravitas,
+    .carousel__content_oomph {
+    line-height:57px;
+    }
+
+    .carousel__content_gravitasCover {
+      width:140px;
     }
 }
-@media (min-width: 320px){
-.carousel__content_gravitas, .carousel__content_oomph{
-    width:80px;
-}}
+
+
+
+
+
+
+
+
+
+
+
+

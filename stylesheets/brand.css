@@ -147,30 +147,42 @@ h2 {
     }
     .denk{
         padding-top: 5%;
+                    width: 92%;
+        margin: auto;
     }
     .angles {
         height: 420px;
         padding-top: 5%;
+                    width: 92%;
+        margin: auto;
     }
 
     .unique {
         height: 365px;
         padding-top: 5%;
+                    width: 92%;
+        margin: auto;
     }
 
     .modern {
         height: 390px;
         padding-top: 5%;
+                    width: 92%;
+        margin: auto;
     }
 
     .etching {
         height: 300px;
         padding-top: 5%;
+                    width: 92%;
+        margin: auto;
     }
 
     .recognition {
         height: 425px;
         padding-top: 5%;
+                    width: 92%;
+        margin: auto;
     }
 
     .result {

@@ -10,14 +10,14 @@
 
 /*helper class*/
 .verticalAligne {
-    position: relative;
+    /*position: relative;
     top: 50%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding:0 15px;
+    transform: translateY(-50%);*/
+    padding:7% 15px;
 }
 
 
@@ -210,10 +210,50 @@
     text-align:center;
     color:#c53163;
 }
+
 /*--------glasswarePresent--end----*/
 @media(min-width:320px){
     .borderRight{border-right:0;}
+    img[alt="Mystique Decanter"] {width:100%;}
+    img[alt="Carafe 25, 75, 150"] {width:100%;}
+    /*.grav-desc {height: 218px; padding:0 15px;}*/
+    .grav-txt {margin: 0 0 10px 0;}
+    .grav-h2 {margin: 0 0 18px 0;}
 }
+
+@media(min-width:550px) {
+    img[alt="Mystique Decanter"] {width: auto;}
+    img[alt="Carafe 25, 75, 150"] {width: auto;}
+    /*.grav-desc {height: 130px; padding:0 15px;}*/
+    .grav-txt {margin: 0 0 18px 0;}
+    .grav-h2 {margin: 0 0 10px 0;}
+}
+
 @media(min-width:769px){
+    img[alt="Mystique Decanter"] {width: auto;}
+    img[alt="Carafe 25, 75, 150"] {width: auto;}
     .borderRight{border-right:1px solid #c53163;}
+    .grav-desc {height: 218px; padding:7% 15px;}
+    .grav-txt {margin: 0 0 10px 0;}
+    .grav-h2 {margin: 0 0 10px 0;}
+    .decantersRow__Mystique {padding-top:0;}
+    .decantersRow__Carafe {padding-top:0;}
+    
 }
+
+@media(min-width:993px) {
+     img[alt="Mystique Decanter"] {width: 100%;}
+    img[alt="Carafe 25, 75, 150"] {width: 100%;}
+    .grav-desc {height: 293px;}
+    .grav-txt {margin: 0 0 40px 0;}
+    .grav-h2 {margin: 26px 0 31px 0;}
+    .decantersRow__Mystique {padding-top:113px;}
+    .decantersRow__Carafe {padding-top:69px;}
+        
+}
+
+@media(min-width:1200px){
+    .grav-desc {height:360px}
+    .grav-h2 {margin: 26px 0 31px 0;}
+}
+

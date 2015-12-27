@@ -125,7 +125,7 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
     }
 }
 
-@media (min-width: 993px){
+ @media (min-width: 993px){
 ul.navbar-nav {
     margin-left: 11%;
 }
@@ -138,22 +138,22 @@ ul.navbar-nav {
       width:140px;
     }
 
- .content2 {
-     font-size: 14px;
+.content2 {
+    font-size: 14px;
      width:37%;
 }
-
+    
 }
 
 
 @media (min-width: 1201px){
 ul.navbar-nav {
     margin-left: 11%;
-}
+    }
     .carousel__content_gravitas,
     .carousel__content_oomph {
     line-height:57px;
-    }
+}
 
     .carousel__content_gravitasCover {
       width:140px;

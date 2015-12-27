@@ -36,3 +36,7 @@ div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName{
  .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover{
 font-family:'Microsoft YaHei UI';
  }
+ /*-------------dropdown menuitem------------*/
+.drop{
+    font-family:'Microsoft YaHei UI'!important;
+}

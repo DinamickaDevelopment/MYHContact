@@ -2,7 +2,7 @@
     $('.swicher').on('click', function () {
         if ($(this).parent().find('.description').css('display') == 'none') {
             $(this).parent().find('.description').slideDown(700);
-            $(this).html('Hide details');
+            $(this).html('隐藏细节');
         } else {
             $(this).parent().find('.description').slideUp(700);
             $(this).html('查看细节');

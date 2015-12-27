@@ -116,3 +116,6 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
 .carousel__content_gravitas, .carousel__content_oomph{
     width:80px;
 }}
+.drop{
+    font-family:'Microsoft YaHei UI'!important;
+}

@@ -248,13 +248,26 @@
     .grav-desc {height: 293px;}
     .grav-txt {margin: 0 0 40px 0;}
     .grav-h2 {margin: 26px 0 31px 0;}
+    
+    .glass-title {font-size:1.4em}
+    
     .decantersRow__Mystique {padding-top:113px;}
     .decantersRow__Carafe {padding-top:69px;}
-        
+    .waterRow__Crystal-Clear { padding-top: 240px; }
+    .waterRow__Coupe-Effect  { padding-top: 240px; }
+    
 }
 
 @media(min-width:1200px){
     .grav-desc {height:360px}
     .grav-h2 {margin: 26px 0 31px 0;}
+
+    .glass-title {font-size:1.571em}
+
+    .decantersRow__Mystique {padding-top:55px;}
+    .decantersRow__Carafe {padding-top:0;}
+    .waterRow__Crystal-Clear { padding-top: 240px; }
+    .waterRow__Coupe-Effect  { padding-top: 240px; }
+
 }
 

@@ -50,8 +50,12 @@ font-family:'Microsoft YaHei UI';
          padding-top: 5%;
  }
  
- .fourth, .fifth, .sixth {
+ .fourth, .fifth {
            height: 235px;
+         padding-top: 5%;
+ }
+  .sixth {
+           height: 245px;
          padding-top: 5%;
  }
  .seventh{

@@ -60,6 +60,9 @@ h2 {
 /*-----juryRes------*/
 .black {
     background-color: #263238;
+        height: 32px;
+    line-height: 32px;
+}
 }
 
 .blackmobile {
@@ -132,11 +135,15 @@ h2 {
 /*-----juryRes-end--*/
 .verticalAligne >h2{
     margin-bottom: 13px;
+    font-size:30px;
 }
+
 @media (min-width: 320px) {
     .history {
         height: 385px;
         padding-top: 5%;
+            width: 92%;
+        margin: auto;
     }
     .denk{
         padding-top: 5%;
@@ -232,6 +239,35 @@ h2 {
 }
 
 @media (min-width: 768px) {
+    .history {
+      
+            width: 100%;
+        
+    }
+    .denk {
+    width: 100%;
+}
+    .angles {
+        width:100%;
+    }
+
+    .unique {
+
+    width:100%;
+    }
+
+    .modern {
+
+    width:100%;
+    }
+
+    .etching {
+    width:100%;
+    }
+
+    .recognition {
+    width:100%;
+    }
     .jurName-m {
         display: none;
     }
@@ -244,38 +280,44 @@ h2 {
         display: block;
     }
 }
-@media (min-width: 992px){
+@media (min-width: 990px){
     .history {
-    height: 0;
-    padding-top:0;
+    margin:auto;
+    width:92%;
 }
-
-     .denk{
-       height: 0;
-    }
+    .denk {
+   
+    width: 92%;
+    margin: auto;
+}
     .angles {
         height:0;
-       
+           margin:auto;
+        width:92%;
     }
 
     .unique {
         height: 0;
-       
+           margin:auto;
+    width:92%;
     }
 
     .modern {
         height: 0;
-        
+            margin:auto;
+    width:92%;
     }
 
     .etching {
         height: 0;
-       
+           margin:auto;
+    width:92%;
     }
 
     .recognition {
         height: 0;
-       
+           margin:auto;
+    width:92%;
     }
 
     .maintxt{
@@ -286,5 +328,7 @@ h2 {
         .maintxt{
         line-height: 30px;
     }
-}
+        .history{
+            padding-top:5%;
+        }
 }

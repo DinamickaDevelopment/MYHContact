@@ -84,12 +84,13 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
             font-family:'Microsoft YaHei UI';
 
 }
-.drop{
-    font-family:'Microsoft YaHei UI'!important;
+.drop {
+    font-family: 'Microsoft YaHei UI' !important;
+}
+@media(min-width:320px){
 
 
-@media (min-width: 320px){
-.carousel__content_gravitas,
+.carousel__content_gravitasCH,
 .carousel__content_oomph {
     line-height:26px;
 }
@@ -99,7 +100,7 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
 }
 
 @media (min-width: 550px){
-.carousel__content_gravitas,
+.carousel__content_gravitasCH,
 .carousel__content_oomph {
     line-height:40px;
 }
@@ -115,7 +116,7 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
     right: 160px;
     
 }
-    .carousel__content_gravitas,
+    .carousel__content_gravitasCH,
     .carousel__content_oomph {
     line-height:50px;
     }
@@ -129,7 +130,7 @@ div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .des
 ul.navbar-nav {
     margin-left: 11%;
 }
- .carousel__content_gravitas,
+ .carousel__content_gravitasCH,
  .carousel__content_oomph {
     line-height:57px;
 }
@@ -149,7 +150,7 @@ ul.navbar-nav {
 ul.navbar-nav {
     margin-left: 11%;
     }
-    .carousel__content_gravitas,
+    .carousel__content_gravitasCH,
     .carousel__content_oomph {
     line-height:57px;
 }

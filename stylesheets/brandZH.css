@@ -88,5 +88,20 @@ font-family:'Microsoft YaHei UI';
 
 }
 @media (min-width: 1200px) {
-
+    .first{
+        padding-top:12%;
+    }
+    .second{
+        padding-top:14%;
+    }
+    .third{
+        padding-top:13%;
+    }
+    .fourth, .fifth{
+        padding-top:16%;
+    }
+    .sixth, .seventh
+    {
+        padding-top:15%;
+    }
 }

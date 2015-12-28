@@ -47,7 +47,7 @@ ul.china > li{
     font-family:'Microsoft YaHei UI';
     font-weight:600;
 }
-a.underline,.param{
+a.underline,.param, .subInput{
      font-family:'Microsoft YaHei UI';
      
 }

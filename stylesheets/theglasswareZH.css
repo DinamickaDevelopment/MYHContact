@@ -1,55 +1,22 @@
-﻿.grav-desc > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2{
-        font-family:'Microsoft YaHei UI';
-    font-weight:600;
-}
-div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .desctitle, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover{
-            font-family:'Microsoft YaHei UI';
-
-}
-ul.china > li{
-    font-family:'Microsoft YaHei UI';
-    font-weight:800;
+﻿.grav-desc > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2 {
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 600;
 }
 
-@media (min-width: 320px){
-    .grav-h2_ch{margin-top:0; margin-bottom:10px;}
+div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .desctitle, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover {
+    font-family: 'Microsoft YaHei UI';
 }
 
-@media (min-width: 550px){
-    .grav-h2_ch{margin-top:0; margin-bottom:10px;}
+ul.china > li {
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 800;
 }
-
-@media (min-width: 769px){
-    .grav-h2_ch{margin-top:0;}
-}
-
-
-@media (min-width: 993px){
-ul.navbar-nav {
-    margin-left: 11%;
-}
-
-    .decantersRow__MystiqueCH {padding-top:114px;}
-    .decantersRow__CarafeCH {padding-top:69px;}
-    .grav-h2_ch{margin-top:17px;}
-}
-
-@media (min-width: 1201px) {
-    .decantersRow__MystiqueCH {padding-top:54px;}
-    .decantersRow__CarafeCH {padding-top:0;}
-
-    .grav-h2_ch{margin-top:45px;}
-    ul.navbar-nav {margin-left: 11%;}
-
-}
-
-
- /*--------------------footer start-----------------*/
+/*--------------------footer start-----------------*/
 
 footer {
     min-height: 100%;
     border-top: 1px solid #c53163;
-    font-family:'Microsoft YaHei UI';
+    font-family: 'Microsoft YaHei UI';
     font-size: 11px;
     letter-spacing: 0.025em;
     line-height: 11px;
@@ -57,6 +24,103 @@ footer {
     background-color: #fafafa;
 }
 /*-------------dropdown menuitem------------*/
-.drop{
-    font-family:'Microsoft YaHei UI'!important;
+.drop {
+    font-family: 'Microsoft YaHei UI' !important;
+}
+
+@media (min-width: 320px) {
+    .grav-h2_ch {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .generalDesc {
+        font-size: 0.96em;
+    }
+
+    .grav-txt {
+        font-size: 1.2em;
+    }
+
+    .decanters > h2 {
+        font-size: 2.2em;
+    }
+    .secenderyDesc{font-size: 1.2em;}
+}
+
+@media (min-width: 550px) {
+    .grav-h2_ch {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .decanters > h2 {
+        font-size: 2.357em;
+    }
+
+    .generalDesc {
+        font-size: 1em;
+    }
+    .secenderyDesc{font-size: 1em;}
+}
+
+@media (min-width: 769px) {
+    .grav-h2_ch {
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 993px) {
+    ul.navbar-nav {
+        margin-left: 11%;
+    }
+
+    .decantersRow__MystiqueCH {
+        padding-top: 114px;
+    }
+
+    .decantersRow__CarafeCH {
+        padding-top: 69px;
+    }
+
+    .grav-h2_ch {
+        margin-top: 17px;
+    }
+
+    .grav-txt {
+        font-size: 1.1em;
+    }
+
+    .generalDesc {
+        font-size: 0.71em;
+    }
+    .secenderyDesc{font-size: 0.794em;}
+}
+
+@media (min-width: 1201px) {
+    .decantersRow__MystiqueCH {
+        padding-top: 54px;
+    }
+
+    .decantersRow__CarafeCH {
+        padding-top: 0;
+    }
+
+    .grav-h2_ch {
+        margin-top: 45px;
+    }
+
+    ul.navbar-nav {
+        margin-left: 11%;
+    }
+
+    .grav-txt {
+        font-size: 1.143em;
+    }
+
+    .generalDesc {
+        font-size: 1em;
+    }
+    .secenderyDesc{font-size: 0.98em;}
 }

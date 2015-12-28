@@ -12,8 +12,18 @@
     display:block;
     margin-top:102px;
 }
-.aboutTxt,.darktxt,.prefootertxt,.contareatxt{
+.darktxt,.prefootertxt,.contareatxt{
     width:66%;
+    margin:0 auto;
+    font-family:'Raleway-Medium';
+    font-size:1.143em;
+    color:#263238;
+    letter-spacing:0.05em;
+    text-align:center;
+    line-height:30px;
+}
+.aboutTxt{
+    width:100%;
     margin:0 auto;
     font-family:'Raleway-Medium';
     font-size:1.143em;
@@ -28,7 +38,7 @@
     background-color:#263238;
     color:#ffffff;
     width:100%;
-    padding:27px 0;
+    padding:27px 10px;
 }
 /*-----blackSect-end--*/
 /*-----prefooter------*/

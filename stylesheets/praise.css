@@ -39,18 +39,18 @@
 
 .animationR {
     top: -100%;
-    -moz-animation: slideAnimation 9s reverse linear;
-    -o-animation: slideAnimation 9s reverse linear;
-    -webkit-animation: slideAnimation 9s reverse linear;
-    animation: slideAnimation 9s reverse linear;
+    -moz-animation: slideAnimation 16s reverse linear;
+    -o-animation: slideAnimation 16s reverse linear;
+    -webkit-animation: slideAnimation 16s reverse linear;
+    animation: slideAnimation 16s reverse linear;
 }
 
 .animationS {
     top: 100%;
-    -moz-animation: slideAnimation 9s linear;
-    -o-animation: slideAnimation 9s linear;
-    -webkit-animation: slideAnimation 9s linear;
-    animation: slideAnimation 9s linear;
+    -moz-animation: slideAnimation 16s linear;
+    -o-animation: slideAnimation 16s linear;
+    -webkit-animation: slideAnimation 16s linear;
+    animation: slideAnimation 16s linear;
 }
 
 @-moz-keyframes slideAnimation {

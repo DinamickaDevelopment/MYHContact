@@ -89,7 +89,9 @@ li.current{
 li.current a,.nav>li a:hover{
     color:#c53163;
 }
-
+/*li.dropdown:hover{
+    border-bottom: 3px solid #c53163;
+}*/
 .dropdown-menu>li>a{
     padding:16px 71px 16px 5px;
     color:#ffffff;

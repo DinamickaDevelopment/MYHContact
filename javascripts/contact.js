@@ -32,10 +32,10 @@
         // after click event is fired!!!
 
         if ($('#mce-RADIOAREA-0').is(':checked')) {
-            
+
             $('.hideJs').hide();
             //auto fill need to pass validation of hiden required fields. when consumer checked hiden fields woudnt include to JSON object
-            $('.hideJs').find('input').attr('value','Consumer case');
+            $('.hideJs').find('input').attr('value', 'Consumer case');
 
             //remove red star for telephone label  
             $('input[name=PHONE]+label').addClass("nostar");
@@ -48,7 +48,7 @@
                 $('input[name=PHONE]').parent().find('.error_msg').remove();
             }
 
-                            
+
         } else {
 
             //add red star for telephone label  
@@ -60,12 +60,91 @@
             //add class required 
 
             $('input[name=PHONE]').addClass("required");
-        $('.hideJs').find('input').val('');
-        $('.hideJs').show();
-        $('.hideJs').each(function () {
-            if ($(this)[0].value == '') { $(this).parent().find('label.placeholderobj').show(); }
-        })
+            $('.hideJs').find('input').val('');
+            $('.hideJs').show();
+            $('.hideJs').each(function () {
+                if ($(this)[0].value == '') { $(this).parent().find('label.placeholderobj').show(); }
+            })
         }
 
     }
+    
+
+    $('input#mce-FNAME, input#mce-LNAME, input#mce-EMAIL, input#mce-NCITY').on('change', function () {
+
+       
+        var id = $(this).attr('id');
+        var val = $(this).val();
+
+      
+        switch (id) {
+
+            //check Fname
+            case 'mce-FNAME':
+                var pattern_name = /^[a-zA-Z'][a-zA-Z-' ]+[a-zA-Z']?$/;
+
+                if (val.length > 2 && val != '' && pattern_name.exec(val)) {
+                    $(this).addClass('not_error');
+                   
+                }
+                else {
+                    $(this).removeClass('not_error').addClass('error_msg');
+                   
+                }
+                break;
+
+            //check Lname
+            case 'mce-LNAME':
+                var pattern_name = /^[a-zA-Z'][a-zA-Z-' ]+[a-zA-Z']?$/;
+
+                if (val.length > 2 && val != '' && pattern_name.exec(val)) {
+                    $(this).addClass('not_error');
+
+                }
+                else {
+                    $(this).removeClass('not_error').addClass('error_msg');
+
+                }
+                break;
+
+
+                //check email
+            case 'mce-EMAIL':
+                var pattern_email = /^^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+                if (val != '' && pattern_email.exec(val)) {
+                    $(this).addClass('not_error');
+                   
+                }
+                else {
+                    $(this).removeClass('not_error').addClass('error_msg');
+                   
+                }
+                break;
+
+
+                // check city
+            //case 'mce-NCITY':
+            //    if (val.length > 2 && val != '' && pattern_city(val)) {
+            //        $(this).addClass('not_error');
+
+            //    }
+            //    else {
+            //        $(this).removeClass('not_error').addClass('error_msg');
+
+            //    }
+            //    break;
+
+
+        } // end switch
+
+    }); // end blur()
+
+    $("form#mc-embedded-subscribe-form").submit(function (e) {
+
+        if ($('.not_error').length !== 3)
+        {
+            return false;
+        }
+    })
+
 });

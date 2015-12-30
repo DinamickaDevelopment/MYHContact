@@ -10,6 +10,95 @@
     var MailInProgres = false;
     function checkReq() {//Function for validation form
         if ($(this).hasClass('required')) {
+
+            ////////////////////////////////////////////////// first name regexp
+            if ($(this).prop('name') == 'FNAME')
+            { // if it is first name
+                if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) == null && $(this).val() !== '')
+                {
+
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+
+                    if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
+                    {
+                        $(this).addClass('invalid');
+                        if (Zhversion) { // Chanise version
+                            $(this).parent().append('<div class="error_msg">Translate</div>');
+                        }
+                        else {// English version
+                            $(this).parent().append('<div class="error_msg">This first name is invalid.</div>');
+                        }
+                    }
+                }
+                else if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) !== null) // regexp found matches
+                {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+
+            ///////////////////////////////////// last name regexp
+            if ($(this).prop('name') == 'LNAME') { // if it is name
+                if ($(this).val() !== '' && $(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) == null) {
+
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+
+                    if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
+                    {
+                        $(this).addClass('invalid');
+
+                        if (Zhversion) { // Chanise version
+                            $(this).parent().append('<div class="error_msg">Translate</div>');
+                        }
+                        else {// English version
+                            $(this).parent().append('<div class="error_msg">This last name is invalid.</div>');
+                        }
+                                                
+                    }
+                }
+                else if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) !== null) // regexp found matches
+                {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+
+            //////////////////////////////// regexp city name
+            if ($(this).prop('name') == 'NCITY') { // if it is city name
+                if ($(this).val() !== '' && $(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) == null) {
+
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+
+                    if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
+                    {
+                        $(this).addClass('invalid');
+
+                        if (Zhversion) { // Chanise version
+                            $(this).parent().append('<div class="error_msg">Translate</div>');
+                        }
+                        else {// English version
+                            $(this).parent().append('<div class="error_msg">This city name is invalid.</div>');
+                        }
+                                                
+                    }
+                }
+                else if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) !== null) // regexp found matches
+                {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+
+
             // email regexp
             if ($(this).prop('type') == 'email' && $(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) == null && $(this).val() !== '') {
                 if ($(this).hasClass('error')) {
@@ -17,8 +106,14 @@
                     $(this).parent().find('.error_msg').remove();
                 }
                 if (!$(this).hasClass('invalid')){
-                $(this).addClass('invalid');
-                $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
+                    $(this).addClass('invalid');
+
+                    if (Zhversion) { // Chanise version
+                        $(this).parent().append('<div class="error_msg">请输入有效邮箱帐号</div>');
+                    }
+                    else {// English version
+                        $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
+                    }                
             }
             } else {
                 if ($(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) !== null) {
@@ -26,7 +121,9 @@
                     $(this).parent().find('.error_msg').remove();
                 }
             }
-            //phone regexp /^[0-9\(\)\+\-\s]{5,20}$/gmi
+
+
+            /////////phone regexp /^[0-9\(\)\+\-\s]{5,20}$/gmi
             if ($(this).prop('name') == 'PHONE' && $(this).val().match(/^[0-9\(\)\+\-\s]{5,20}$/gmi) == null && $(this).val() !== '') {
                 if ($(this).hasClass('error')) {
                     $(this).removeClass('error');
@@ -43,6 +140,7 @@
                     $(this).parent().find('.error_msg').remove();
                 }
             }
+
             //check fill of required fields
             if ($(this).val() == '') {
                 if ($(this).hasClass('invalid')) {
@@ -81,7 +179,14 @@
                     // if input has text, but this text is INVALID 
                     if (!$(this).hasClass('invalid')) {
                         $(this).addClass('invalid');
-                        $(this).parent().append('<div class="error_msg">This value is invalid.</div>');
+
+                        if (Zhversion) {
+                            $(this).parent().append('<div class="error_msg">Translate</div>'); // Chanise version
+                        } else {
+                            $(this).parent().append('<div class="error_msg">This value is invalid.</div>'); //English version
+                        }
+
+                        
                     }
                 }
                 //if input has a text, but this text is VALID 
@@ -108,8 +213,6 @@
             }
 
         } // it is a telephone field
-
-         
 
     }
 

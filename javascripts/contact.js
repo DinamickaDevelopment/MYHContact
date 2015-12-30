@@ -58,7 +58,7 @@
             }
 
             //add class required 
-        $('input[name=PHONE]').addClass("required");
+            $('input[name=PHONE]').addClass("required");
         $('.hideJs').find('input').val('');
         $('.hideJs').show();
         $('.hideJs').each(function () {

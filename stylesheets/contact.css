@@ -12,6 +12,10 @@
 font-family:'Microsoft YaHei UI'!important;
  }
 
+ /*form class*/
+ .not_error{
+     border:1px solid green;
+ }
 
 /*---------Reset style--------------*/
 textarea, input {

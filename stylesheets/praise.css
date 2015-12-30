@@ -81,12 +81,12 @@
         opacity: 0;
     }
 
-    20% {
+    5% {
         top: 0;
         opacity: 1;
     }
 
-    80% {
+    95% {
         top: 0;
         opacity: 1;
     }
@@ -103,12 +103,12 @@
         opacity: 0;
     }
 
-    20% {
+    10% {
         top: 0;
         opacity: 1;
     }
 
-    80% {
+    90% {
         top: 0;
         opacity: 1;
     }

@@ -100,7 +100,7 @@
 
 
             // email regexp
-            if ($(this).prop('type') == 'email' && $(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) == null && $(this).val() !== '') {
+            if ($(this).prop('type') == 'email' && $(this).val().match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/igm) == null && $(this).val() !== '') {
                 if ($(this).hasClass('error')) {
                     $(this).removeClass('error');
                     $(this).parent().find('.error_msg').remove();
@@ -116,7 +116,7 @@
                     }                
             }
             } else {
-                if ($(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) !== null) {
+                if ($(this).val().match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/igm) !== null) {
                     $(this).removeClass('invalid');
                     $(this).parent().find('.error_msg').remove();
                 }

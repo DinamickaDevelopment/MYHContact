@@ -100,7 +100,7 @@
 
 
             // email regexp
-            if ($(this).prop('type') == 'email' && $(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) == null && $(this).val() !== '') {
+            if ($(this).prop('type') == 'email' && $(this).val().match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/) == null && $(this).val() !== '') {
                 if ($(this).hasClass('error')) {
                     $(this).removeClass('error');
                     $(this).parent().find('.error_msg').remove();

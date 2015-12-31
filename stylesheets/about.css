@@ -64,7 +64,7 @@
     margin:0 auto;
     padding-top:18px;
 }
-.contareabtn a{
+.contareabtn div{
     color:#ffffff;
     font-family:'ArcaMajoraHeavy';
     font-size:16px;
@@ -75,7 +75,7 @@
     width:100%;
     display:block;
 }
-.contareabtn a:hover,.contareabtn a:active{
+.contareabtn div:hover,.contareabtn div:active{
     color:#fafafa;
     text-decoration:none;
 }

@@ -26,7 +26,7 @@
                     {
                         $(this).addClass('invalid');
                         if (Zhversion) { // Chanise version
-                            $(this).parent().append('<div class="error_msg">Translate</div>');
+                            $(this).parent().append('<div class="error_msg">请正确填写您的名字。</div>');
                         }
                         else {// English version
                             $(this).parent().append('<div class="error_msg">This first name is invalid.</div>');
@@ -54,7 +54,7 @@
                         $(this).addClass('invalid');
 
                         if (Zhversion) { // Chanise version
-                            $(this).parent().append('<div class="error_msg">Translate</div>');
+                            $(this).parent().append('<div class="error_msg">请正确填写您的姓氏。</div>');
                         }
                         else {// English version
                             $(this).parent().append('<div class="error_msg">This last name is invalid.</div>');
@@ -83,7 +83,7 @@
                         $(this).addClass('invalid');
 
                         if (Zhversion) { // Chanise version
-                            $(this).parent().append('<div class="error_msg">Translate</div>');
+                            $(this).parent().append('<div class="error_msg">该城市名不存在。</div>');
                         }
                         else {// English version
                             $(this).parent().append('<div class="error_msg">This city name is invalid.</div>');
@@ -181,7 +181,7 @@
                         $(this).addClass('invalid');
 
                         if (Zhversion) {
-                            $(this).parent().append('<div class="error_msg">Translate</div>'); // Chanise version
+                            $(this).parent().append('<div class="error_msg">请输入正确信息。</div>'); // Chanise version
                         } else {
                             $(this).parent().append('<div class="error_msg">This value is invalid.</div>'); //English version
                         }

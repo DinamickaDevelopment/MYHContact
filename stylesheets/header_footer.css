@@ -329,7 +329,7 @@ margin-bottom:14px;
     .botMargin{margin-bottom:150px;}*/
     .foot-cont-txt{margin-bottom:10px;}
 
-    .hollow{height:0;}
+    /*.hollow{height:0;}*/
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
     .wechat-logo{display:block;}
@@ -357,7 +357,7 @@ margin-bottom:14px;
     li.current{border-bottom: 3px solid #c53163;}
     .expand{height:102px}
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
-    .hollow{height:36px;}
+    /*.hollow{height:36px;}*/
     .mobil-center{float:right}
 }
 @media(min-width:769px){

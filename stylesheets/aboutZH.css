@@ -1,4 +1,13 @@
 ﻿
+.contareabtnZN {
+padding:0;
+}
+
+.contareabtnZN div {
+font-family:'Microsoft YaHei UI';
+line-height:48px;
+}
+
 ul.china > li{
     font-family:'Microsoft YaHei UI';
     font-weight:800;

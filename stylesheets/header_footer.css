@@ -105,8 +105,8 @@ li.current a,.nav>li a:hover{
     color:#c53163;
 }
 .lang-cont{
-    /*display: inline-block;*/
-    font-family: 'Roboto-Light';
+    font-family:"Roboto-Thin";
+    /*font-family: 'Roboto-Light';*/
     letter-spacing: 0.025em;
     color:#333333!important;
 }

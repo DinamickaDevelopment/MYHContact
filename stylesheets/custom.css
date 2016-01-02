@@ -434,15 +434,10 @@ div.error_msg { margin:0 0 .1em 0; padding: 5px 10px; background-color:#6B0505; 
 /*---------Adaptive styles section--------------*/
 @media(min-width:320px){
     
-  
-
-  
-   
-
     ul.navbar-nav{margin-left:0;}
     .lang-cont{margin: 42px 0 42px 15%;font-size: 1em;letter-spacing:0.025em}
     .Mobile{display:inline-block;}
-    .Desktop{display:none;}
+    /*.Desktop{display:none;}*/
     body{font-size:12px}
     
     li.current{border-bottom:0}

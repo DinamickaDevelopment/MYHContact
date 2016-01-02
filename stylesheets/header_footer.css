@@ -105,7 +105,7 @@ li.current a,.nav>li a:hover{
     color:#c53163;
 }
 .lang-cont{
-    display: inline-block;
+    /*display: inline-block;*/
     font-family: 'Roboto-Light';
     letter-spacing: 0.025em;
     color:#333333!important;
@@ -320,7 +320,8 @@ margin-bottom:14px;
     .botMargin2{margin-bottom:8px;}
     .botMargin{margin-bottom:0;}
     .footer__Address_HK, .footer__Address_China{margin-bottom:30px;}
-    
+
+    .Desktop {display:none;}
     .lang-cont{margin: 32px 0 0 0;font-size: 1em;letter-spacing:0.025em;}
     body{font-size:12px}
          
@@ -362,8 +363,10 @@ margin-bottom:14px;
 }
 @media(min-width:769px){
 
+
 .footer_contacts_TwoTelephoneCover {margin-top:0; margin-bottom:0;}
 .footer_contacts_EmailSiteCover {margin-top:0; margin-bottom:0;}
+.Desktop {display:inline-block;}
 }
 
 @media (max-width: 767px){
@@ -377,19 +380,14 @@ margin-bottom:14px;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
     
 .navbar-nav .open .dropdown-menu>li>a {
     padding: 10px 15px 10px 25px;
     color:#263238 !important;
     line-height:normal;
 }
-
-
-
-    .navbar-nav .open .dropdown-menu > li > a:hover {
-    color:#c53163 !important;
-    }
+    .navbar-nav .open .dropdown-menu > li > a:hover {color:#c53163 !important;}
+    
 
 }
 

@@ -1,8 +1,8 @@
 ﻿$(window).ready(function () {
-    if ($('html').prop('lang') == 'zh') {
-        Zhversion = true
+    if ($('html').prop('lang') == 'CN') {
+        CNversion = true
     } else {
-        Zhversion = false;
+        CNversion = false;
     }
     $('#mc-embedded-subscribe-form input').on('change', checkReq);
     //Submit eventon the contact form 
@@ -25,7 +25,7 @@
                     if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
                     {
                         $(this).addClass('invalid');
-                        if (Zhversion) { // Chanise version
+                        if (CNversion) { // Chanise version
                             $(this).parent().append('<div class="error_msg">请正确填写您的名字。</div>');
                         }
                         else {// English version
@@ -53,7 +53,7 @@
                     {
                         $(this).addClass('invalid');
 
-                        if (Zhversion) { // Chanise version
+                        if (CNversion) { // Chanise version
                             $(this).parent().append('<div class="error_msg">请正确填写您的姓氏。</div>');
                         }
                         else {// English version
@@ -82,7 +82,7 @@
                     {
                         $(this).addClass('invalid');
 
-                        if (Zhversion) { // Chanise version
+                        if (CNversion) { // Chanise version
                             $(this).parent().append('<div class="error_msg">该城市名不存在。</div>');
                         }
                         else {// English version
@@ -108,7 +108,7 @@
                 if (!$(this).hasClass('invalid')){
                     $(this).addClass('invalid');
 
-                    if (Zhversion) { // Chanise version
+                    if (CNversion) { // Chanise version
                         $(this).parent().append('<div class="error_msg">请输入有效邮箱帐号</div>');
                     }
                     else {// English version
@@ -149,7 +149,7 @@
                 }
                 if (!$(this).hasClass('error')) {
                     $(this).addClass('error');
-                    if (Zhversion) {
+                    if (CNversion) {
                         $(this).parent().append('<div class="error_msg">必填</div>');
                     } else {
                         $(this).parent().append('<div class="error_msg">This field is required.</div>');
@@ -180,7 +180,7 @@
                     if (!$(this).hasClass('invalid')) {
                         $(this).addClass('invalid');
 
-                        if (Zhversion) {
+                        if (CNversion) {
                             $(this).parent().append('<div class="error_msg">请输入正确信息。</div>'); // Chanise version
                         } else {
                             $(this).parent().append('<div class="error_msg">This value is invalid.</div>'); //English version
@@ -272,7 +272,7 @@
 
                 Newsletter = 'Yes';               
                 //change a pop up messages if nesletter was chacked   谢谢您的订阅！我们会及时回复您的询问。
-                if (Zhversion) {
+                if (CNversion) {
                 successResponse.html("谢谢您的订阅！我们会及时回复您的询问。");
                 } else {
                 successResponse.html("Thank you. <br/> You are subscribed to the newsletter. <br/> We will promptly reply to your inquiry.");
@@ -296,7 +296,7 @@
 
                 Newsletter = 'No';
                 //change a pop up messages if nesletter was chacked
-                if (Zhversion) {
+                if (CNversion) {
                     successResponse.html("谢谢您！我们会及时回复您的询问。");
                 } else {
                     successResponse.html("Thank you. </br> We will promptly reply to your inquiry.");
@@ -367,7 +367,7 @@
                 emailGot = 'sales@myhfinewines.com';//sales@myhfinewines.com
 
                 var successResponse = $('#mce-success-response');
-                if (Zhversion) {
+                if (CNversion) {
                     successResponse.html("您已经订阅成功。");
                 } else {
                     successResponse.html("You are now subscribed");

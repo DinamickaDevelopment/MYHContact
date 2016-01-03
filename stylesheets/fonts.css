@@ -91,10 +91,10 @@
 }
 /*	Chinese Fonts*/
 
-@font-face {
+/*@font-face {
     font-family: 'NotoSans';
     src: url('../fonts/Noto/NotoSansCJKsc-Regular.otf') format('opentype');
-}
+}*/
 
 @font-face {
     font-family: 'yahei';

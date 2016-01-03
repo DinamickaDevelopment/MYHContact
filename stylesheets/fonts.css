@@ -6,8 +6,37 @@
 */
 @font-face {
     font-family: 'ADAM-CGPRO';
-    src: url('../fonts/ADAM-CGPRO/ADAM-CGPRO.woff') format('woff'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.ttf') format('truetype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.otf') format('opentype'), url('../fonts/ADAM-CGPRO/ADAM-CGPRO.eot') format('embedded-opentype');
+    src: url('../fonts/ADAM-CGPRO/ADAM-CGPRO.woff') format('woff'), 
+        url('../fonts/ADAM-CGPRO/ADAM-CGPRO.ttf') format('truetype'), 
+        url('../fonts/ADAM-CGPRO/ADAM-CGPRO.otf') format('opentype'), 
+        url('../fonts/ADAM-CGPRO/ADAM.svg') format('svg'),
+        url('../fonts/ADAM-CGPRO/ADAM-CGPRO.eot') format('embedded-opentype');
 }
+
+@font-face {
+    font-family: 'ArcaMajoraHeavy';
+     src: url('../fonts/Arca Majora Heavy/ArcaMajora-Heavy.eot') format('embedded-opentype'),
+          url('../fonts/Arca Majora Heavy/ArcaMajora-Heavy.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/Arca Majora Heavy/ArcaMajora-Heavy.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/Arca Majora Heavy/ArcaMajora-Heavy.svg#ArcaMajora-Heavy') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: ModernGrotesk */@font-face {
+    font-family: 'ModernGrotesk';
+    src: url('../fonts/Modern Grotesk/ModernGrotesk.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Modern Grotesk/ModernGrotesk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Modern Grotesk/ModernGrotesk.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Modern Grotesk/ModernGrotesk.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Modern Grotesk/ModernGrotesk.svg#ModernGrotesk') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 
 @font-face {
     font-family: 'Raleway-ExtraLight';
@@ -42,7 +71,9 @@
 }
 @font-face {
     font-family: 'Roboto-Light';
-    src: url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light/Roboto-Light.eot') format('embedded-opentype');
+    src: url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'), 
+         url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'), 
+         url('../fonts/Roboto-Light/Roboto-Light.eot') format('embedded-opentype');
 }
 @font-face {
     font-family: 'Roboto-Thin';
@@ -59,15 +90,13 @@
     src: url('../fonts/Open Sans Light/2209.ttf') format('truetype');
 }
 /*	Chinese Fonts*/
-@font-face {
-    font-family: 'NotoSansCJKsc-Medium';
-    src: url('../fonts/Noto/NotoSansCJKsc-Medium.otf') format('opentype');
-}
-@font-face {
-    font-family: 'NotoSansCJKsc-Regular';
+
+/*@font-face {
+    font-family: 'NotoSans';
     src: url('../fonts/Noto/NotoSansCJKsc-Regular.otf') format('opentype');
-}
+}*/
+
 @font-face {
-    font-family: 'NotoSansCJKsc-Bold';
-    src: url('../fonts/Noto/NotoSansCJKsc-Bold.otf') format('opentype');
+    font-family: 'yahei';
+    src: url('../fonts/microsoft/MSYH.TTC');
 }

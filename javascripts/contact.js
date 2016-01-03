@@ -29,7 +29,7 @@
         }
 
         //When "Consumer" button is cheked. The attribute chacked set up 
-        // after click event is fired!!!
+        //after click event is fired!!!
 
         if ($('#mce-RADIOAREA-0').is(':checked')) {
             
@@ -58,7 +58,6 @@
             }
 
             //add class required 
-
             $('input[name=PHONE]').addClass("required");
         $('.hideJs').find('input').val('');
         $('.hideJs').show();

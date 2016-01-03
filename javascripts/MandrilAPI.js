@@ -1,8 +1,8 @@
 ﻿$(window).ready(function () {
-    if ($('html').prop('lang') == 'zh') {//check for leng of page
-        Zhversion = true
+    if ($('html').prop('lang') == 'CN') {
+        CNversion = true
     } else {
-        Zhversion = false;
+        CNversion = false;
     }
     $('#mc-embedded-subscribe-form input').on('change', checkReq);
     //Submit eventon the contact form 
@@ -10,23 +10,120 @@
     var MailInProgres = false;
     function checkReq() {//Function for validation form
         if ($(this).hasClass('required')) {
+
+            ////////////////////////////////////////////////// first name regexp
+            if ($(this).prop('name') == 'FNAME')
+            { // if it is first name
+                if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) == null && $(this).val() !== '')
+                {
+
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+
+                    if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
+                    {
+                        $(this).addClass('invalid');
+                        if (CNversion) { // Chanise version
+                            $(this).parent().append('<div class="error_msg">请正确填写您的名字。</div>');
+                        }
+                        else {// English version
+                            $(this).parent().append('<div class="error_msg">This first name is invalid.</div>');
+                        }
+                    }
+                }
+                else if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) !== null) // regexp found matches
+                {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+
+            ///////////////////////////////////// last name regexp
+            if ($(this).prop('name') == 'LNAME') { // if it is name
+                if ($(this).val() !== '' && $(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) == null) {
+
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+
+                    if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
+                    {
+                        $(this).addClass('invalid');
+
+                        if (CNversion) { // Chanise version
+                            $(this).parent().append('<div class="error_msg">请正确填写您的姓氏。</div>');
+                        }
+                        else {// English version
+                            $(this).parent().append('<div class="error_msg">This last name is invalid.</div>');
+                        }
+                                                
+                    }
+                }
+                else if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) !== null) // regexp found matches
+                {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+
+            //////////////////////////////// regexp city name
+            if ($(this).prop('name') == 'NCITY') { // if it is city name
+                if ($(this).val() !== '' && $(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) == null) {
+
+                    if ($(this).hasClass('error')) {
+                        $(this).removeClass('error');
+                        $(this).parent().find('.error_msg').remove();
+                    }
+
+                    if (!$(this).hasClass('invalid')) // add invalid class, because inout has test, but regexp without matches 
+                    {
+                        $(this).addClass('invalid');
+
+                        if (CNversion) { // Chanise version
+                            $(this).parent().append('<div class="error_msg">该城市名不存在。</div>');
+                        }
+                        else {// English version
+                            $(this).parent().append('<div class="error_msg">This city name is invalid.</div>');
+                        }
+                                                
+                    }
+                }
+                else if ($(this).val().match(/^[-'a-z\u4e00-\u9eff]{1,20}$/igm) !== null) // regexp found matches
+                {
+                    $(this).removeClass('invalid');
+                    $(this).parent().find('.error_msg').remove();
+                }
+            }
+
+
             // email regexp
-            if ($(this).prop('type') == 'email' && $(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) == null && $(this).val() !== '') {
+            if ($(this).prop('type') == 'email' && $(this).val().match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/igm) == null && $(this).val() !== '') {
                 if ($(this).hasClass('error')) {
                     $(this).removeClass('error');
                     $(this).parent().find('.error_msg').remove();
                 }
                 if (!$(this).hasClass('invalid')){
                 $(this).addClass('invalid');
+
+                    if (CNversion) { // Chanise version
+                        $(this).parent().append('<div class="error_msg">请输入有效邮箱帐号</div>');
+                    }
+                    else {// English version
                 $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
             }
+            }
             } else {
-                if ($(this).val().match(/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/igm) !== null) {
+                if ($(this).val().match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/igm) !== null) {
                     $(this).removeClass('invalid');
                     $(this).parent().find('.error_msg').remove();
                 }
             }
-            //phone regexp /^[0-9\(\)\+\-\s]{5,20}$/gmi
+
+
+            /////////phone regexp /^[0-9\(\)\+\-\s]{5,20}$/gmi
             if ($(this).prop('name') == 'PHONE' && $(this).val().match(/^[0-9\(\)\+\-\s]{5,20}$/gmi) == null && $(this).val() !== '') {
                 if ($(this).hasClass('error')) {
                     $(this).removeClass('error');
@@ -43,6 +140,7 @@
                     $(this).parent().find('.error_msg').remove();
                 }
             }
+
             //check fill of required fields
             if ($(this).val() == '') {
                 if ($(this).hasClass('invalid')) {
@@ -51,7 +149,7 @@
                 }
                 if (!$(this).hasClass('error')) {
                     $(this).addClass('error');
-                    if (Zhversion) {
+                    if (CNversion) {
                         $(this).parent().append('<div class="error_msg">必填</div>');
                     } else {
                         $(this).parent().append('<div class="error_msg">This field is required.</div>');
@@ -81,7 +179,14 @@
                     // if input has text, but this text is INVALID 
                     if (!$(this).hasClass('invalid')) {
                         $(this).addClass('invalid');
-                        $(this).parent().append('<div class="error_msg">This value is invalid.</div>');
+
+                        if (CNversion) {
+                            $(this).parent().append('<div class="error_msg">请输入正确信息。</div>'); // Chanise version
+                        } else {
+                            $(this).parent().append('<div class="error_msg">This value is invalid.</div>'); //English version
+                        }
+
+                        
                     }
                 }
                 //if input has a text, but this text is VALID 
@@ -108,8 +213,6 @@
             }
 
         } // it is a telephone field
-
-         
 
     }
 
@@ -169,7 +272,7 @@
 
                 Newsletter = 'Yes';               
                 //change a pop up messages if nesletter was chacked   谢谢您的订阅！我们会及时回复您的询问。
-                if (Zhversion) {
+                if (CNversion) {
                 successResponse.html("谢谢您的订阅！我们会及时回复您的询问。");
                 } else {
                 successResponse.html("Thank you. <br/> You are subscribed to the newsletter. <br/> We will promptly reply to your inquiry.");
@@ -193,7 +296,7 @@
 
                 Newsletter = 'No';
                 //change a pop up messages if nesletter was chacked
-                if (Zhversion) {
+                if (CNversion) {
                     successResponse.html("谢谢您！我们会及时回复您的询问。");
                 } else {
                     successResponse.html("Thank you. </br> We will promptly reply to your inquiry.");
@@ -264,7 +367,7 @@
                 emailGot = 'sales@myhfinewines.com';//sales@myhfinewines.com
 
                 var successResponse = $('#mce-success-response');
-                if (Zhversion) {
+                if (CNversion) {
                     successResponse.html("您已经订阅成功。");
                 } else {
                     successResponse.html("You are now subscribed");

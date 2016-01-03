@@ -1,0 +1,141 @@
+﻿/*-------------menu start------------*/
+ul.china > li {
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 800;
+}
+
+@media (min-width: 1201px) {
+    ul.navbar-nav {
+        margin-left: 11%;
+    }
+}
+
+@media (min-width: 993px) {
+    ul.navbar-nav {
+        margin-left: 11%;
+    }
+}
+/*-------------menu end------------*/
+div.verticalAligne > h2, div.juri > h2, .jurplace, .jurName, .jurtitle > h2, .jurName-m {
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 600;
+}
+
+.jurdescr-txt {
+    font-family: 'Microsoft YaHei UI';
+}
+
+.maintxt {
+    font-family: 'Microsoft YaHei UI';
+    text-align: left;
+    letter-spacing: 0.13em;
+}
+/*.leftText{
+         padding-right: 5%!important;
+ }*/
+/*.rightText{
+     padding-left: 5%!important;
+ }*/
+
+/*--------------------footer start-----------------*/
+.botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover, .jurplace-m {
+    font-family: 'Microsoft YaHei UI';
+}
+/*-------------dropdown menuitem------------*/
+.drop {
+    font-family: 'Microsoft YaHei UI' !important;
+}
+
+@media (min-width: 320px) {
+    .first {
+        height: 290px;
+        padding-top: 5%;
+        width: 92%;
+        margin: auto;
+    }
+    .third {
+        height: 310px;
+        padding-top: 5%;
+        width: 92%;
+        margin: auto;
+    }
+
+    .second {
+        height: 290px;
+        padding-top: 5%;
+            width: 92%;
+    margin: auto;
+    }
+
+     .fifth {
+        height: 243px;
+        padding-top: 5%;
+            width: 92%;
+    margin: auto;
+    }
+    .fourth {
+        height: 255px;
+        padding-top: 5%;
+            width: 92%;
+    margin: auto;
+    }
+
+    .sixth {
+        height: 253px;
+        padding-top: 5%;
+            width: 92%;
+    margin: auto;
+    }
+
+    .seventh {
+        height: 320px;
+        padding-top: 5%;
+            width: 92%;
+    margin: auto;
+    }
+}
+
+@media (min-width: 550px) {
+    .first, .second, .third, .seventh {
+        height: 220px;
+    }
+
+    .fourth, .fifth, .sixth {
+        height: 190px;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    div.first > div.leftText, div.third > div.leftText, div.fifth > div.leftText, div.seventh > div.leftText {
+        padding-right: 5%;
+    }
+
+    div.second > div.rightText, div.fourth > div.rightText, div.sixth > div.rightText {
+        padding-left: 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .first {
+        padding-top: 12%;
+    }
+
+    .second {
+        padding-top: 14%;
+    }
+
+    .third {
+        padding-top: 13%;
+    }
+
+    .fourth, .fifth {
+        padding-top: 16%;
+    }
+
+    .sixth, .seventh {
+        padding-top: 15%;
+    }
+}

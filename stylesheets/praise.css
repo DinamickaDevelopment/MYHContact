@@ -6,57 +6,119 @@
     1.doubleslider
 */
 /*----------doubleslider----------*/
-#doubleslider{text-align:center;position:relative;margin:102px 0 46px;}
-.ginkoslider{
-    top:46px;
-    height:296px;
-    width:100%;
-    position:relative;
-    display:inline-block;
-    overflow:hidden;
-    background-color:#fafafa;
+#doubleslider {
+    text-align: center;
+    position: relative;
+    margin: 102px 0 46px;
 }
-.border-left{border-left:1px solid #c53163}
-.border-right{border-right:1px solid #c53163}
-.g-slide{
-    top:100%;
-    width:100%;
-    height:100%;
-    position:absolute;
+
+.ginkoslider {
+    top: 46px;
+    height: 296px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #fafafa;
 }
-.animationR{
-    top:-100%;
-        -moz-animation: slideAnimation 4s reverse linear;
-    -o-animation: slideAnimation 4s reverse linear;
-    -webkit-animation: slideAnimation 4s reverse linear;
-    animation: slideAnimation 4s reverse linear;
+
+.border-left {
+    border-left: 1px solid #c53163;
+}
+
+.border-right {
+    border-right: 1px solid #c53163;
+}
+
+.g-slide {
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.animationR {
+    top: -100%;
+    -moz-animation: slideAnimation 16s reverse linear;
+    -o-animation: slideAnimation 16s reverse linear;
+    -webkit-animation: slideAnimation 16s reverse linear;
+    animation: slideAnimation 16s reverse linear;
 }
 
 .animationS {
-    top:100%;
-    -moz-animation: slideAnimation 4s linear;
-    -o-animation: slideAnimation 4s linear;
-    -webkit-animation: slideAnimation 4s linear;
-    animation: slideAnimation 4s linear;
+    top: 100%;
+    -moz-animation: slideAnimation 16s linear;
+    -o-animation: slideAnimation 16s linear;
+    -webkit-animation: slideAnimation 16s linear;
+    animation: slideAnimation 16s linear;
 }
-@-moz-keyframes slideAnimation{
-    0%{top:100%;opacity:0;}
-    20%{top:0;opacity:1}
-    80%{top:0;opacity:1}
-    100%{top:-100%;opacity:0;}
+
+@-moz-keyframes slideAnimation {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    20% {
+        top: 0;
+        opacity: 1;
+    }
+
+    80% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -100%;
+        opacity: 0;
+    }
 }
-@-webkit-keyframes slideAnimation{
-    0%{top:100%;opacity:0;}
-    20%{top:0;opacity:1}
-    80%{top:0;opacity:1}
-    100%{top:-100%;opacity:0;}
+
+@-webkit-keyframes slideAnimation {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    5% {
+        top: 0;
+        opacity: 1;
+    }
+
+    95% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -100%;
+        opacity: 0;
+    }
 }
-@keyframes slideAnimation{
-    0%{top:100%;opacity:0;}
-    20%{top:0;opacity:1}
-    80%{top:0;opacity:1}
-    100%{top:-100%;opacity:0;}
+
+@keyframes slideAnimation {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    10% {
+        top: 0;
+        opacity: 1;
+    }
+
+    90% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -100%;
+        opacity: 0;
+    }
 }
+
 .verticalAligne {
     position: relative;
     top: 50%;
@@ -65,15 +127,18 @@
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding:0 15px;
+    padding: 0 15px;
 }
 /*----------doubleslider---end----*/
 
+.firstPriceRow__JulienFrogerCol > .praise-img {
+    height: 60px;
+}
 
 
 /*----------aaa----------*/
-.praTitle{
-    font-family:'Raleway-Light';
+.praTitle {
+    font-family: 'Raleway-Light';
     color: #ab2b56;
     font-size: 1.429em;
     letter-spacing: 0.15em;
@@ -81,37 +146,133 @@
     text-align: center;
     text-transform: uppercase;
 }
-.praPersonetitle{
-    font-family:'Raleway-Regular';
-    color:#455a64;
-    font-size:1em;
-    letter-spacing:0.075em;
-    width:100%;
-    text-align:center;
-    margin-bottom:20px;
+
+.praPersonetitle {
+    font-family: 'Raleway-Regular';
+    color: #455a64;
+    font-size: 1em;
+    letter-spacing: 0.075em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.praTestemon{
-    font-family:'Raleway-Medium';
-    color:#263238;
-    font-size:1.143em;
-    letter-spacing:0.05em;
-    width:100%;
-    margin:0 auto;
-    text-align:left;
+
+.praTestemon {
+    font-family: 'Raleway-Medium';
+    color: #263238;
+    font-size: 1.143em;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
 }
-.w-85{
-    width:85%
+
+.w-85 {
+    width: 85%;
 }
-.praise-img img{
-    display:block;
-    margin:0 auto;
+
+.praise-img img {
+    display: block;
+    margin: 0 auto;
+    height:60px;
+    width:auto;
 }
-.praise-img{
-    margin-bottom:25px;
+
+.praise-img {
+    margin-bottom: 25px;
 }
 /*----------aaa---end----*/
 
 
 /*----------aaa----------*/
-/*----------aaa---end----*/.hollow{height:60px;}
+/*----------aaa---end----*/ 
+.hollow {
+    height: 22px;
+    margin-top: 0;
+}
 
+.secondPriceRow__Ginsberg_Chan {
+    padding-top:10px;
+    height: 60px;
+}
+
+.secondPriceRow__Ginsberg_Chan img {
+    
+    height:40px;
+}
+
+
+@media(min-width:320px) {
+
+    #doubleslider {
+        font-size: 10px;
+    }
+
+    .thirdPriceRow_ClaretwhiteCol_ClaretwhiteCol_imgCover img {
+        /*width: 90%;*/
+        height:22px;
+    }
+
+    .firstPriceRow__JulienFrogerCol {
+        margin-bottom: 46px;
+    }
+
+    .secondPriceRow__DickyLeeCol {
+        margin-bottom: 46px;
+    }
+
+    .thirdPriceRow_ClaretwhiteCol {
+        margin-bottom: 46px;
+    }
+
+    .fourthPriceRow__RobertMiller {
+        margin-bottom: 46px;
+    }
+
+    .fifthPriceRow__FrancoisMauss {
+        margin-bottom: 46px;
+    }
+}
+
+@media(min-width:550px) {
+    #doubleslider {
+        font-size: 12px;
+    }
+
+    .thirdRow_ClaretwhiteCol_ClaretwhiteCol_imgCover img {
+        width: auto;
+    }
+}
+
+@media(min-width:769px) {
+
+    #doubleslider {
+        font-size: inherit;
+    }
+
+    .firstPriceRow__JulienFrogerCol {
+        margin-bottom: 0;
+    }
+
+    .secondPriceRow__DickyLeeCol {
+        margin-bottom: 0;
+    }
+
+    .thirdPriceRow_ClaretwhiteCol {
+        margin-bottom: 0;
+    }
+
+    .fourthPriceRow__RobertMiller {
+        margin-bottom: 0;
+    }
+
+    .fifthPriceRow__FrancoisMauss {
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width:993px) {
+}
+
+@media(min-width:1200px) {
+}

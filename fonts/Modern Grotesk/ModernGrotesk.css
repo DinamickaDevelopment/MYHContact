@@ -1,0 +1,12 @@
+/* Webfont: ModernGrotesk */@font-face {
+    font-family: 'ModernGrotesk';
+    src: url('ModernGrotesk.eot'); /* IE9 Compat Modes */
+    src: url('ModernGrotesk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ModernGrotesk.woff') format('woff'), /* Modern Browsers */
+         url('ModernGrotesk.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('ModernGrotesk.svg#ModernGrotesk') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

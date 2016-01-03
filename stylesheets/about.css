@@ -12,8 +12,18 @@
     display:block;
     margin-top:102px;
 }
-.aboutTxt,.darktxt,.prefootertxt,.contareatxt{
+.darktxt,.prefootertxt,.contareatxt{
     width:66%;
+    margin:0 auto;
+    font-family:'Raleway-Medium';
+    font-size:1.143em;
+    color:#263238;
+    letter-spacing:0.05em;
+    text-align:center;
+    line-height:30px;
+}
+.aboutTxt{
+    width:100%;
     margin:0 auto;
     font-family:'Raleway-Medium';
     font-size:1.143em;
@@ -28,7 +38,7 @@
     background-color:#263238;
     color:#ffffff;
     width:100%;
-    padding:27px 0;
+    padding:27px 10px;
 }
 /*-----blackSect-end--*/
 /*-----prefooter------*/
@@ -52,21 +62,26 @@
     height:48px;
     background-color:#263238;
     margin:0 auto;
-
+    padding-top:16px;
+    cursor:pointer;
 }
-.contareabtn a{
+.contareabtn div{
     color:#ffffff;
-    font-family:'ADAM-CGPRO';
-    font-size:1.143em;
+    font-family:'ArcaMajoraHeavy';
+    font-size:16px;
     letter-spacing:0.075em;
     text-align:center;
     text-decoration:none;
-    line-height:48px;
+    line-height:16px;
     width:100%;
     display:block;
 }
-.contareabtn a:hover,.contareabtn a:active{
+.contareabtn div:hover,.contareabtn div:active{
     color:#fafafa;
     text-decoration:none;
 }
 /*-----prefooter-end--*/
+ /*--------------------footer start-----------------*/
+ .botMargin, .footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer__Address_ChinaLine1, .footer_contacts_chinaPhoneCover, .footer_contacts_hkPhoneCover{
+font-family:'Microsoft YaHei UI'!important;
+ }

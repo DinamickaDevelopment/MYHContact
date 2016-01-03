@@ -62,19 +62,23 @@ h3{
 .navbar-header{
     height:100%;
 }
+/*.navbar-collapse.in {
+overflow-y: visible;
+}*/
 .collapse ul.navbar-nav{
-    height:102px;
+    /*height:102px;*/
     width: auto;
 }
 .navbar-nav{
-    height:102px;
+    /*height:102px;*/
 }
 .nav>li{
     height: 100%;
 }
 .nav>li a{
     font-family:'ADAM-CGPRO';
-    font-size:1.143em;
+    /*font-size:1.143em;*/
+    
     letter-spacing:0.075em;
     color:#263238;
     height: 100%;
@@ -85,22 +89,24 @@ li.current{
 li.current a,.nav>li a:hover{
     color:#c53163;
 }
-
+/*li.dropdown:hover{
+    border-bottom: 3px solid #c53163;
+}*/
 .dropdown-menu>li>a{
     padding:16px 71px 16px 5px;
     color:#ffffff;
 }
 .dropdown-menu>li>a:hover{
     background-color:#ffffff;
-    color:#263238;
+    color:#333333;
 }
 .dropdown-menu>li:hover{
     background-color:#ffffff;
     color:#c53163;
 }
 .lang-cont{
-    display: inline-block;
-    font-family: 'Roboto-Light';
+    font-family:"Roboto-Thin";
+    /*font-family: 'Roboto-Light';*/
     letter-spacing: 0.025em;
     color:#333333!important;
 }
@@ -142,7 +148,7 @@ footer{
 .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover {
 
     font-family:'Roboto-Light';
-    line-height: 14px;
+    line-height: 12px;
 
     white-space:nowrap;
     display:inline-block;
@@ -185,7 +191,7 @@ footer{
 }
 
 .footer__Address {
-padding-top:21px;
+padding-top:11px;
 }
 
 .footer__Address_HK, .footer__Address_China{
@@ -201,7 +207,7 @@ padding-top:21px;
 
 
 .footer__Address_HKLine1 {
-    font-family:'Raleway-Regular';
+    font-family:'Microsoft YaHei UI';
 }
 
 .footer__Address_HKLine2 {
@@ -214,7 +220,7 @@ padding-top:21px;
 }
 
 .footer__Address_HKLine3 {
-    font-family:Noto-Regular;
+    font-family:'Microsoft YaHei UI';
     font-size:12px;
     
 }
@@ -230,7 +236,7 @@ padding-top:21px;
 }
 
 .footer__Address_ChinaLine1 {
-font-family:'Raleway-Regular';
+font-family:'Microsoft YaHei UI';
 margin-bottom:14px;
 }
 
@@ -244,7 +250,7 @@ margin-bottom:14px;
 }
 
 .footer__Address_ChinaLine3 {
- font-family:Noto-Regular;
+ font-family:'Microsoft YaHei UI';
  font-size:12px;
 }
 
@@ -292,25 +298,39 @@ margin-bottom:14px;
 @media(max-width:993px){ .mobileWidth{width:100%;padding:0 15px;}}
 
 @media(min-width:320px){
+
+      /*navigation menu*/
+    
+    .nav>li{margin:0 10px;}
+    .nav > li a { font-size:14px;}
+    ul.navbar-nav{margin-left:0;}
+    .navbar-collapse{}
+    .collapse ul.navbar-nav {height:100%;}
+    .navbar-nav > li > a {line-height:normal !important;}
+    li.current{border-bottom:0}
+    
     .Mobile{display:block;}
-    .Desktop,.Desktop-block{display:none;}
+    /*.Desktop,.Desktop-block{display:none;}*/
     .Mobile-foot{display:block;}
     .Desktop-foot{display:none;}
     .footer__logoCover_CopyRight {display:none;}
     .undercover{ padding:21px 15px 0 15px;}
     .navbar-header {text-align:center}
-    .nav>li{margin:0 10px;}
     footer{text-align:center;}
     .botMargin2{margin-bottom:8px;}
     .botMargin{margin-bottom:0;}
     .footer__Address_HK, .footer__Address_China{margin-bottom:30px;}
-    ul.navbar-nav{margin-left:0;}
+
+    .Desktop {display:none;}
     .lang-cont{margin: 32px 0 0 0;font-size: 1em;letter-spacing:0.025em;}
     body{font-size:12px}
-    .navbar-collapse{height:0;overflow: hidden;}
-    li.current{border-bottom:0}
-    .expand{height:405%}
-    .hollow{height:0;}
+         
+     .margtp{margin-top:10px}
+    /*.botMargin2{margin-bottom:10px;}
+    .botMargin{margin-bottom:150px;}*/
+    .foot-cont-txt{margin-bottom:10px;}
+
+    /*.hollow{height:0;}*/
     .no-paddings{padding-left:15px;}
     .mobil-center{float:none}
     .wechat-logo{display:block;}
@@ -331,22 +351,50 @@ margin-bottom:14px;
     .Desktop{display:inline-block;}
     
     .lang-cont{margin: 46px 0 0 0;font-size: .9em;letter-spacing:0}
-    .navbar-collapse{height:102px;overflow: visible;}
+    
+    .navbar-collapse{height:102px !important;}
+    .navbar-nav>li>a{line-height:75px !important;}
+    
     li.current{border-bottom: 3px solid #c53163;}
     .expand{height:102px}
     .dropdown-menu{background-color:#263238;padding:0;border:1px solid transparent;width:100%}
-    .hollow{height:36px;}
+    /*.hollow{height:36px;}*/
     .mobil-center{float:right}
 }
 @media(min-width:769px){
 
+
 .footer_contacts_TwoTelephoneCover {margin-top:0; margin-bottom:0;}
 .footer_contacts_EmailSiteCover {margin-top:0; margin-bottom:0;}
+.Desktop {display:inline-block;}
+}
+
+@media (max-width: 767px){
+.navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+    
+.navbar-nav .open .dropdown-menu>li>a {
+    padding: 10px 15px 10px 25px;
+    color:#263238 !important;
+    line-height:normal;
+}
+    .navbar-nav .open .dropdown-menu > li > a:hover {color:#c53163 !important;}
+    
+
 }
 
 @media(min-width:993px) {
 footer{text-align:left;}
 .nav > li {margin: 0 15px;} 
+.nav > li a { font-size:16px;}
 ul.navbar-nav {margin-left: 45px;}
 .lang-cont {margin: 42px 0 0 9%;font-size: 1em;letter-spacing: 0.025em}
 body {font-size: 14px;}

@@ -1,0 +1,172 @@
+﻿div.carousel-content > h2 {
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+div.carousel-content > h2~p {
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+.gravomega{
+    text-align:right;
+    font-family:'Microsoft YaHei UI';
+    font-weight:500;
+}
+.carousel__content_gravitasCover,
+.carousel__content_oomphCover {
+padding-top:0;
+}
+
+.carousel__content_gravitas, .carousel__content_oomph{
+     height: 100%;
+     font-family:'Microsoft YaHei UI';
+     
+}
+.contetnP{
+    font-family:'Microsoft YaHei UI';
+        letter-spacing: 3px;
+}
+/*.content2{
+    width:37%;
+}*/
+div.contetnP2 > span{
+    font-family:'Times New Roman';
+}
+
+div.contetnH2 >span{
+    font-family:'Times New Roman', Times, serif;
+}
+ul.china > li{
+    font-family:'Microsoft YaHei UI';
+    font-weight:800;
+}
+
+.contetnH2{
+    letter-spacing: 0.09em;
+    }
+.tagline > h2 > span{
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+a.underline,.param, .subInput{
+     font-family:'Microsoft YaHei UI';
+     
+}
+h3.glass-title, h3.subs_tagline{
+    font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+span.swicher, .showMore-text{
+    font-family:'Microsoft YaHei UI';
+}
+ div.udertext{
+     font-family:'Microsoft YaHei UI';
+         letter-spacing: 0.09em;
+}
+ .subBtn, h3.video_tagline, h3.zalto-brand{
+      font-weight:600;
+      font-family:'Microsoft YaHei UI';
+ }
+ div.slogan{
+     font-family:'Microsoft YaHei UI';
+     font-weight:100;
+}
+ .aboutTxt, div.brand-btn a, div.praise-btn a{
+     font-family:'Microsoft YaHei UI';
+ }
+ .botMargin,.footer__logoCover_CopyRight, .footer__Address_HKLine1, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover, .footer__Address_ChinaLine1{
+     font-family:'Microsoft YaHei UI';
+ }
+ div.verticalAligne > h2, div.steam > h2, h3.glass-title, .wat-coc > h2, div.decanters > h2{
+        font-family:'Microsoft YaHei UI';
+    font-weight:600;
+}
+div.grav-txt, div.grav-subline, .param, div.generalDesc, div.secenderyDesc, .desctitle, .footer_contacts_hkPhoneCover, .footer_contacts_chinaPhoneCover{
+            font-family:'Microsoft YaHei UI';
+
+}
+.drop {
+    font-family: 'Microsoft YaHei UI' !important;
+}
+@media(min-width:320px){
+
+
+.carousel__content_gravitasCH,
+.carousel__content_oomph {
+    line-height:26px;
+}
+
+.carousel__content_gravitasCover {width:75px;}
+.carousel__content_oomphCover { width:55px; margin-top:1px; }
+}
+
+@media (min-width: 550px){
+.carousel__content_gravitasCH,
+.carousel__content_oomph {
+    line-height:40px;
+}
+
+.carousel__content_gravitasCover {width:110px;}
+.carousel__content_oomphCover {  width:75px; margin-top:10px; }
+
+}
+
+@media (min-width: 767px){
+.content2 {
+    top: 25%;
+    right: 160px;
+    
+}
+    .carousel__content_gravitasCH,
+    .carousel__content_oomph {
+    line-height:50px;
+    }
+    
+    .carousel__content_gravitasCover { width:130px; }
+    .carousel__content_oomphCover {  width:105px; }
+
+}
+    
+ @media (min-width: 993px){
+ul.navbar-nav {
+    margin-left: 11%;
+}
+ .carousel__content_gravitasCH,
+ .carousel__content_oomph {
+    line-height:57px;
+}
+
+ .carousel__content_gravitasCover {width:140px;}
+ .carousel__content_oomphCover {  width:120px; }
+
+.content2 {
+    font-size: 14px;
+     width:37%;
+    }
+    
+}
+
+
+@media (min-width: 1201px){
+ul.navbar-nav {
+    margin-left: 11%;
+    }
+    .carousel__content_gravitasCH,
+    .carousel__content_oomph {
+    line-height:57px;
+}
+
+    .carousel__content_gravitasCover {width:140px;}
+    .carousel__content_oomphCover {  width:120px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+

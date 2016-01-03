@@ -22,12 +22,12 @@ function start() {
         a = a.next();
         b = b.next();
         i++;
-        if (i == 4) {
+        if (i == 5) {
             a = $('#ginkoslider1 .g-slide:first-child');
             b = $('#ginkoslider2 .g-slide:first-child');
             first = true;
             i = 0;
         }
         }
-    },4001)
+    },16001)
 }

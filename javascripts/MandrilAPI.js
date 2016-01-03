@@ -1,5 +1,5 @@
 ﻿$(window).ready(function () {
-    if ($('html').prop('lang') == 'zh') {
+    if ($('html').prop('lang') == 'zh') {//check for leng of page
         Zhversion = true
     } else {
         Zhversion = false;

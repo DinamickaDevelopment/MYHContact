@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="CN">
 <head>
     <title>铭英会－Zalto葡萄酒酒杯－香港,澳门和中国大陆－总经销商。</title>
     <meta charset="utf-8" />
@@ -21,7 +21,7 @@
     <link href="../stylesheets/index.css" rel="stylesheet" />
     <!--favicon-->
     <link rel="shortcut icon" href="../images/Favicon.png" type="image/png">
-
+    <script src="javascripts/modernizr-custom.js"></script>
 </head>
 <body>
     <nav class="navbar navmy-cutom navbar-default navbar-fixed-top">
@@ -310,20 +310,18 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                     <div class="slogan">观看酒杯艺术大师的工作流程</div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 videoColumn">
+
+                <div id="videoclick" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 videoColumn">
                     <div class="videoContainer">
-
                         <iframe id="ProcVideo" scrolling="auto" src="//content.jwplatform.com/players/ftSd3lVt-bvQe7L05.html" frameborder="0" allowfullscreen></iframe>
-
                         <!--<video id="ProcVideo" preload="auto" controls poster="images/poster.jpg">
-                            <source src="video/process.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" />
-                            <source src="video/process.ogv" type='video/ogg; codecs="theora, vorbis"' />
-                            <source src="video/process.webm" type='video/webm; codecs="vp8, vorbis"' />
-                        </video>-->
-
-
+                <source src="video/process.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" />
+                <source src="video/process.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source src="video/process.webm" type='video/webm; codecs="vp8, vorbis"' />
+            </video>-->
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -536,35 +534,44 @@
     <!--<script src="../javascripts/custom.js"></script>-->
     <!-- Code for mail validation and send function -->
     <script src="../javascripts/MandrilAPI.js"></script>
-
+    <script src="javascripts/oldversion.js"></script>
+    <script src="javascripts/jquery.iframetracker.js"></script>
     <!-- Yandex.Metrika counter -->
-
     <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter34515455 = new Ya.Metrika({
-                        id: 34515455,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) { }
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter34515455 = new Ya.Metrika({
+                    id:34515455,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script> <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#ProcVideo').iframeTracker({
+                blurCallback: function () {
+                    yaCounter34515455.reachGoal('ProcVideo');
+                }
             });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-
+        });
+    </script>
     <!-- /Yandex.Metrika counter -->
 
 </body>

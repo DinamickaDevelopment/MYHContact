@@ -106,14 +106,14 @@
                     $(this).parent().find('.error_msg').remove();
                 }
                 if (!$(this).hasClass('invalid')){
-                    $(this).addClass('invalid');
+                $(this).addClass('invalid');
 
                     if (CNversion) { // Chanise version
                         $(this).parent().append('<div class="error_msg">请输入有效邮箱帐号</div>');
                     }
                     else {// English version
-                        $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
-                    }                
+                $(this).parent().append('<div class="error_msg">This email is invalid.</div>');
+            }
             }
             } else {
                 if ($(this).val().match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/igm) !== null) {

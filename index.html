@@ -557,7 +557,21 @@
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
-    })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    })(document, window, "yandex_metrika_callbacks"); </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var oneTime = true;
+            $('#ProcVideo').iframeTracker({
+                blurCallback: function () {
+                    if (oneTime) {
+                        yaCounter34515455.reachGoal('ProcVideo');
+                        oneTime = false;
+                    }
+                }
+            });
+        });
+    </script>
 
     <!-- /Yandex.Metrika counter -->
 

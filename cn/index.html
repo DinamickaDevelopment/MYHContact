@@ -565,9 +565,13 @@
     </script> <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <script type="text/javascript">
         $(document).ready(function () {
+            var oneTime = true;
             $('#ProcVideo').iframeTracker({
                 blurCallback: function () {
-                    yaCounter34515455.reachGoal('ProcVideo');
+                    if (oneTime) {
+                        yaCounter34515455.reachGoal('ProcVideo');
+                        oneTime = false;
+                    }
                 }
             });
         });

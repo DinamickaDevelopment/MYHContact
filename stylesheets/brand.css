@@ -32,9 +32,9 @@ h2 {
     line-height: 30px;
 }
 
-.infoblock {
+/*.infoblock {
     height: 341px;
-}
+}*/
 
 .verticalAligne {
     /*position: relative;
@@ -140,49 +140,49 @@ h2 {
 
 @media (min-width: 320px) {
     .history {
-        height: 395px;
+        /*height: 395px;*/
         padding-top: 5%;
             width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
     .denk{
         padding-top: 5%;
                     width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
     .angles {
-        height: 410px;
+        /*height: 410px;*/
         padding-top: 5%;
                     width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
 
     .unique {
-        height: 408px;
+        /*height: 408px;*/
         padding-top: 5%;
                     width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
 
     .modern {
-        height: 390px;
+        /*height: 390px;*/
         padding-top: 5%;
                     width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
 
     .etching {
-        height: 310px;
+        /*height: 310px;*/
         padding-top: 5%;
                     width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
 
     .recognition {
-        height: 425px;
+        /*height: 425px;*/
         padding-top: 5%;
                     width: 92%;
-        margin: auto;
+        margin: 0 auto 20px;;
     }
 
     .result {

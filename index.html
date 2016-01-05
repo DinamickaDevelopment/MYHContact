@@ -15,7 +15,7 @@
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom css------->
     <link href="stylesheets/custom.css" rel="stylesheet" />
-    <link href="stylesheets/header_footer.css" rel="stylesheet"/>
+    <link href="stylesheets/header_footer.css" rel="stylesheet" />
     <!--favicon-->
     <link rel="shortcut icon" href="images/Favicon.png" type="image/png">
     <script src="javascripts/modernizr-custom.js"></script>
@@ -39,7 +39,7 @@
                 </a>
                 <div class="lang-cont Mobile">
                     <a href="index.html" class="lang">ENGLISH</a>|
-                    <a href="CN/index.html" class="lang">中文 </a>
+                    <a href="cn/index.html" class="lang">中文 </a>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -58,7 +58,7 @@
                 </ul>
                 <div class="lang-cont Desktop">
                     <a href="index.html" class="lang">ENGLISH</a>|
-                    <a href="CN/index.html" class="lang">中文 </a>
+                    <a href="cn/index.html" class="lang">中文 </a>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -308,7 +308,7 @@
                 </div>
                 <div id="videoclick" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 videoColumn">
                     <div class="videoContainer">
-                        <iframe id="ProcVideo"  scrolling="auto" src="//content.jwplatform.com/players/ftSd3lVt-bvQe7L05.html" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="ProcVideo" scrolling="auto" src="//content.jwplatform.com/players/ftSd3lVt-bvQe7L05.html" frameborder="0" allowfullscreen></iframe>
                         <!--<video id="ProcVideo" preload="auto" controls poster="images/poster.jpg">
                             <source src="video/process.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" />
                             <source src="video/process.ogv" type='video/ogg; codecs="theora, vorbis"' />
@@ -316,6 +316,7 @@
                         </video>-->
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -527,11 +528,13 @@
     <script src="javascripts/custom.js"></script>
     <!-- Code for mail validation and send function -->
     <script src="javascripts/MandrilAPI.js"></script>
+    <script src="javascripts/modernizr-custom.js"></script>
     <script src="javascripts/oldversion.js"></script>
-    <script src="javascripts/jquery.iframetracker.js"></script>
+
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
-    (function (d, w, c) {
+    <!--(function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
                 w.yaCounter34515455 = new Ya.Metrika({
@@ -554,17 +557,10 @@
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-    </script> <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#ProcVideo').iframeTracker({
-                blurCallback: function () {
-                    yaCounter34515455.reachGoal('ProcVideo');
-                }
-            });
-        });
-    </script>
+    })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34515455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
     <!-- /Yandex.Metrika counter -->
+
+
 </body>
 </html>

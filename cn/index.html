@@ -22,6 +22,11 @@
     <!--favicon-->
     <link rel="shortcut icon" href="../images/Favicon.png" type="image/png">
     <script src="../javascripts/modernizr-custom.js"></script>
+
+    <!--jw palyer-->
+    <script type="text/javascript" src="/jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">jwplayer.key = "oSB7+FtXbLIdlFvXSBkcZGcAvcELK4+zY83c2Q==";</script>
+
 </head>
 <body>
     <nav class="navbar navmy-cutom navbar-default navbar-fixed-top">
@@ -313,12 +318,48 @@
 
                 <div id="videoclick" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 videoColumn">
                     <div class="videoContainer">
-                        <iframe id="ProcVideo" scrolling="auto" src="//content.jwplatform.com/players/ftSd3lVt-bvQe7L05.html" frameborder="0" allowfullscreen></iframe>
+
+
+                        <!--<iframe id="ProcVideo" scrolling="auto" src="//content.jwplatform.com/players/ftSd3lVt-bvQe7L05.html" frameborder="0" allowfullscreen></iframe>-->
+                        
                         <!--<video id="ProcVideo" preload="auto" controls poster="images/poster.jpg">
-                <source src="video/process.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" />
-                <source src="video/process.ogv" type='video/ogg; codecs="theora, vorbis"' />
-                <source src="video/process.webm" type='video/webm; codecs="vp8, vorbis"' />
-            </video>-->
+                            <source src="video/process.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" />
+                            <source src="video/process.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                            <source src="video/process.webm" type='video/webm; codecs="vp8, vorbis"' />
+                        </video>-->
+
+                        <div id="ProcVideo">Loading the player...</div>
+
+                        <!--<pre id="abr"></pre>-->
+
+                        <script type="text/javascript">
+
+                            jwplayer("ProcVideo").setup({
+                                sources: [{
+                                    file: "http://54.169.138.49:1935/vod/smil:zalto_smil.smil/jwplayer.smil"
+                                }, {
+                                    file: "http://54.169.138.49:1935/vod/smil:zalto_smil.smil/playlist.m3u8"
+                                }],
+                                rtmp: {
+                                    bufferlength: 3
+                                },
+                                width: "100%",
+                                aspectratio: "16:9",
+                                image: "http://assets-jpcust.jwpsrv.com/thumbs/ftSd3lVt-720.jpg",
+                            });
+
+                            //jwplayer("player").onMeta(function (event) {
+                            //    if (event.metadata.bandwidth) {
+                            //        var html = 'bandwidth: ' + event.metadata.bandwidth;
+                            //        html += ', screenwidth: ' + event.metadata.screenwidth;
+                            //        html += ', qualitylevel: ' + event.metadata.qualitylevel;
+                            //        html += ', transitioning: ' + event.metadata.transitioning;
+                            //        html += ', bufferfill: ' + event.metadata.bufferfill;
+                            //        //document.getElementById('abr').innerHTML = html;
+                            //    }
+                            //});
+                        </script>
+
                     </div>
                 </div>
 
